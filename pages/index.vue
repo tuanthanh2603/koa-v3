@@ -11,11 +11,11 @@ const fadeOut = ref(false)
 const showMenu = ref(false)
 const showButtonMenu = ref(false)
 const menuItems = [
-    { labelKey: 'menu.projects', to: '/projects' },
-    { labelKey: 'menu.knowledge', to: '/knowledge' },
-    { labelKey: 'menu.recruitment', to: '/recruitment' },
-    { labelKey: 'menu.info', to: '/info' },
-    { labelKey: 'menu.contact', to: '/contact' }
+  { labelKey: 'menu.projects', to: '/projects' },
+  { labelKey: 'menu.knowledge', to: '/knowledge' },
+  { labelKey: 'menu.recruitment', to: '/recruitment' },
+  { labelKey: 'menu.info', to: '/info' },
+  { labelKey: 'menu.contact', to: '/contact' }
 ]
 onMounted(() => {
   // Sau 2.5 giây bắt đầu fade out
@@ -29,10 +29,12 @@ onMounted(() => {
     showButtonMenu.value = true
   }, 3000)
 })
+
 </script>
 
 <template>
-  <section class="relative">
+  <div class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+  <section class="relative h-screen snap-start flex items-center justify-center  text-white text-3xl">
 
     <!-- Splash Screen -->
     <Transition enter-active-class="transition-opacity duration-500" enter-from-class="opacity-0"
@@ -52,10 +54,12 @@ onMounted(() => {
 
     <!-- Logo nổi trên cùng -->
     <!-- Logo chính luôn nổi -->
-    <div v-if="!showSplash" class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+    <div v-if="!showSplash" class="absolute top-4 left-1/2 transform -translate-x-1/2 z-50">
       <img :src="Logo1" alt="Logo"
         class="w-[350px] h-auto brightness-150 drop-shadow-[0_4px_15px_rgba(255,255,255,0.8)]" />
     </div>
+
+
 
 
 
@@ -120,13 +124,14 @@ onMounted(() => {
 
       </div>
     </transition>
-
-
-
-
-
-
   </section>
+  <section class="h-screen snap-start flex items-center justify-center bg-green-500 text-white text-3xl">
+    fdsdfs
+  </section>
+  <section class="h-screen snap-start flex items-center justify-center bg-blue-500 text-white text-3xl">
+    fdsdfs
+  </section>
+  </div>
 </template>
 
 <style scoped>
@@ -249,5 +254,8 @@ onMounted(() => {
 .slide-leave-to {
   transform: translateY(-20px);
   opacity: 0;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 </style>
