@@ -1,0 +1,11 @@
+{
+  "welcome": "Chào mừng bạn đến với KOA",
+  "language": "Ngôn ngữ",
+  "menu": {
+    "projects": "Dự án",
+    "knowledge": "Kiến thức",
+    "recruitment": "Tuyển dụng",
+    "info": "Thông tin",
+    "contact": "Liên hệ"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome to KOA",
+  "language": "Language",
+  "menu": {
+    "projects": "Projects",
+    "knowledge": "Knowledge",
+    "recruitment": "Recruitment",
+    "info": "Information",
+    "contact": "Contact"
+  }
+}
