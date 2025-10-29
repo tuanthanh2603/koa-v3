@@ -1,2 +1,18 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@font-face {
+    font-family: 'MBFSpaceHabitat';
+    src: url('~/assets/fonts/MBFSpaceHabitat.otf') format('opentype'),
+        url('~/assets/fonts/MBFSpaceHabitat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

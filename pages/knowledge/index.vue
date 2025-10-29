@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <h1 class="text-3xl font-bold">Welcome to Nuxt 3</h1>
-  <p class="mt-4">This is your starter template.</p>
-  
+  <section class="min-h-screen bg-white py-[12%] px-4 ">
+
+  </section>
 </template>
