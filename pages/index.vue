@@ -177,7 +177,7 @@ onMounted(() => {
           </transition>
 
           <div class="relative z-40 p-6 w-full flex justify-between items-center text-sm text-gray-200">
-            <div class="px-5">© 2025 KOA. All rights reserved.</div>
+            <div class="px-5">© 2022 KOA. All rights reserved.</div>
             <div class="flex space-x-4 px-5">
               <a href="https://facebook.com" target="_blank" class="hover:text-blue-500 transition mr-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
