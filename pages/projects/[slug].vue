@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import { getProjectBySlug } from '~/mocks/project'
+import { ref, onMounted, computed } from 'vue'
+import { getProjectBySlug, categories } from '~/mocks/project'
 import type { Project } from '~/types/project'
 
 const route = useRoute()
@@ -10,6 +10,15 @@ const project = ref<Project | null>(null)
 const selectedImageIndex = ref(0)
 const isLightboxOpen = ref(false)
 const thumbnailContainer = ref<HTMLElement | null>(null)
+
+const currentCategory = computed(() => {
+  if (!project.value) return null
+  return categories.find(cat => 
+    cat.projects.some(p => p.id === project.value?.id)
+  )
+})
+
+const categoryId = computed(() => currentCategory.value?.id || '')
 
 onMounted(() => {
   const slug = route.params.slug as string
@@ -59,27 +68,59 @@ const closeLightbox = () => {
   isLightboxOpen.value = false
 }
 
-const goBack = () => {
-  router.push('/projects')
+const goToProjects = () => {
+  router.push({
+    path: '/projects',
+    query: {
+      category: categoryId.value
+    }
+  })
 }
 </script>
 
 <template>
-  <div v-if="project" class="min-h-screen bg-gray-50 py-[6%] px-4">
-    <!-- Header -->
-    <div class="bg-white shadow-sm mb-8">
-      <div class="max-w-7xl mx-auto px-4 py-6">
-        <button @click="goBack" class="flex items-center gap-2 text-gray-600 hover:text-black transition-colors mb-4 mt-5 cursor-pointer">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+  <div v-if="project" class="min-h-screen bg-white py-[12%] px-4">
+    <!-- Breadcrumb Navigation -->
+    <div class="max-w-7xl mx-auto mb-8">
+      <nav class="flex items-center gap-2 text-sm text-gray-600">
+        <router-link to="/" class="hover:text-black transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-3m0 0l7-4 7 4M5 9v10a1 1 0 001 1h12a1 1 0 001-1V9m-9 11l4-4m0 0l4 4m-4-4v4" />
           </svg>
-          Quay lại
+        </router-link>
+        
+        <span>/</span>
+        
+        <button 
+          @click="goToProjects"
+          class="hover:text-black transition-colors hover:underline"
+        >
+          Dự án
         </button>
         
-        <div>
-          <h1 class="text-xl font-bold text-gray-900 mb-3">{{ project.name }}</h1>
-          <p class="text-gray-600 text-base">{{ project.description }}</p>
-        </div>
+        <span>/</span>
+        
+        <button 
+          v-if="currentCategory"
+          @click="goToProjects"
+          class="hover:text-black transition-colors hover:underline max-w-[200px] truncate"
+        >
+          {{ currentCategory.name }}
+        </button>
+        
+        <span v-if="currentCategory">/</span>
+        
+        <span class="text-gray-900 font-semibold max-w-[300px] truncate">
+          {{ project.name }}
+        </span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="bg-gray-50 -mx-4 px-4 py-8 mb-8">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ project.name }}</h1>
+        <p class="text-lg text-gray-600 max-w-2xl">{{ project.description }}</p>
       </div>
     </div>
 
@@ -101,19 +142,19 @@ const goBack = () => {
           </div>
 
           <!-- Navigation buttons below main image -->
-          <div class="flex justify-between items-center mt-4 gap-2">
+          <div class="flex justify-between items-center mt-6 gap-4">
             <button 
               @click="prevImage"
-              class="flex items-center justify-center w-10 h-10 rounded-lg bg-white border border-gray-300 hover:border-gray-500 transition-colors"
+              class="flex items-center justify-center w-12 h-12 rounded-lg bg-white border-2 border-gray-300 hover:border-gray-500 hover:bg-gray-50 transition-all"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <p class="text-sm text-gray-600">{{ selectedImageIndex + 1 }} / {{ getImages().length }}</p>
+            <p class="text-sm text-gray-600 font-medium">{{ selectedImageIndex + 1 }} / {{ getImages().length }}</p>
             <button 
               @click="nextImage"
-              class="flex items-center justify-center w-10 h-10 rounded-lg bg-white border border-gray-300 hover:border-gray-500 transition-colors"
+              class="flex items-center justify-center w-12 h-12 rounded-lg bg-white border-2 border-gray-300 hover:border-gray-500 hover:bg-gray-50 transition-all"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -123,7 +164,7 @@ const goBack = () => {
         </div>
 
         <!-- Right: Thumbnail List -->
-        <div class="w-24">
+        <div class="w-28">
           <div 
             ref="thumbnailContainer"
             class="flex flex-col gap-3 max-h-[70vh] overflow-y-auto pr-2"
@@ -133,10 +174,10 @@ const goBack = () => {
               :key="img.id"
               :data-thumbnail="index"
               @click="selectImage(index)"
-              class="relative aspect-square flex-shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-200"
+              class="relative aspect-square flex-shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-200 hover:border-gray-400"
               :class="selectedImageIndex === index 
-                ? 'border-blue-500 shadow-md' 
-                : 'border-gray-300 hover:border-gray-400'"
+                ? 'border-blue-500 shadow-md ring-2 ring-blue-200' 
+                : 'border-gray-300'"
             >
               <img 
                 :src="img.image" 
@@ -159,27 +200,53 @@ const goBack = () => {
     </div>
 
     <!-- Lightbox Modal -->
-    <div 
-      v-if="isLightboxOpen" 
-      @click="closeLightbox"
-      class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+    <Transition
+      enter-active-class="transition-opacity duration-200"
+      leave-active-class="transition-opacity duration-200"
+      enter-from-class="opacity-0"
+      leave-to-class="opacity-0"
     >
-      <button 
+      <div 
+        v-if="isLightboxOpen" 
         @click="closeLightbox"
-        class="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+        class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
       >
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      
-      <img 
-        :src="getImages()[selectedImageIndex].image" 
-        alt="Project image"
-        class="max-w-full max-h-[90vh] object-contain"
-        @click.stop
-      />
-    </div>
+        <button 
+          @click="closeLightbox"
+          class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors z-10"
+        >
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        
+        <img 
+          :src="getImages()[selectedImageIndex].image" 
+          alt="Project image"
+          class="max-w-full max-h-[90vh] object-contain"
+          @click.stop
+        />
+
+        <!-- Navigation controls in lightbox -->
+        <button
+          @click.stop="prevImage"
+          class="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors"
+        >
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          @click.stop="nextImage"
+          class="absolute right-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors"
+        >
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </Transition>
   </div>
 
   <!-- Loading or not found state -->

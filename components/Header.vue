@@ -2,7 +2,7 @@
 import ImageLogo from '~/assets/images/logo__Artboard 5.png'
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
-
+const colorMode = useColorMode()
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
 }
@@ -41,97 +41,86 @@ onMounted(() => {
     locale.value = saved
   }
 })
+const isDark = ref(false)
+
+const toggleDarkMode = () => {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
 </script>
 
 <template>
-  <header
-    :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
-      isScrolled
-        ? 'bg-white/95 backdrop-blur-md shadow-lg'
-        : 'bg-white'
-    ]"
-  >
+  <header :class="[
+    'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
+    isScrolled
+      ? 'bg-white/95 backdrop-blur-md shadow-lg'
+      : 'bg-white'
+  ]">
     <UContainer>
       <!-- Top Row -->
-      <div
-        :class="[
-          'flex items-center justify-between border-b border-white/10 transition-all duration-500 ease-in-out',
-          isScrolled ? 'h-12' : 'h-20'
-        ]"
-      >
+      <div :class="[
+        'flex items-center justify-between border-b border-white/10 transition-all duration-500 ease-in-out',
+        isScrolled ? 'h-12' : 'h-20'
+      ]">
         <!-- Left: Language -->
-        <div class="flex-1">
-          <button
-            @click="toggleLanguage"
-            :class="[
-              'group flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:scale-105',
-              isScrolled
-                ? 'text-gray-800 hover:bg-gray-100'
-                : 'text-gray-800 hover:bg-white/10'
-            ]"
-          >
+        <div class="flex flex-1">
+          <button @click="toggleLanguage" :class="[
+            'group flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:scale-105',
+            isScrolled
+              ? 'text-gray-800 hover:bg-gray-100'
+              : 'text-gray-800 hover:bg-white/10'
+          ]">
             <UIcon name="i-heroicons-language" class="w-5 h-5" />
             <span class="font-light tracking-wide text-sm uppercase">
               {{ selectedLang === 'vi' ? 'VI' : 'EN' }}
             </span>
-            <UIcon
-              name="i-heroicons-chevron-down"
-              class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-            />
+            <UIcon name="i-heroicons-chevron-down"
+              class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
           </button>
+          <button @click="toggleDarkMode" :class="[
+            'group flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:scale-105',
+            isScrolled
+              ? 'text-gray-800 hover:bg-gray-100'
+              : 'text-gray-800 hover:bg-white/10'
+          ]">
+            <UIcon :name="colorMode.value === 'dark' ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+              class="w-5 h-5" />
+            <span class="font-light tracking-wide text-sm uppercase">
+              {{ colorMode.value === 'dark' ? 'Dark' : 'Light' }}
+            </span>
+          </button>
+          <!-- <h1>Color mode: {{ $colorMode.value }}</h1> -->
         </div>
 
         <!-- Center: Logo -->
         <div class="flex-1 flex justify-center">
           <NuxtLink to="/" class="flex-shrink-0">
-            <img
-              :src="ImageLogo"
-              alt="Logo"
-              class="transition-all duration-500 ease-in-out mt-1"
-              :class="[
-                isScrolled
-                  ? 'w-[140px] scale-90 opacity-90'
-                  : 'w-[220px] scale-100 opacity-100'
-              ]"
-            />
+            <img :src="ImageLogo" alt="Logo" class="transition-all duration-500 ease-in-out mt-1" :class="[
+              isScrolled
+                ? 'w-[140px] scale-90 opacity-90'
+                : 'w-[220px] scale-100 opacity-100'
+            ]" />
           </NuxtLink>
         </div>
 
         <!-- Right: Contact -->
         <div class="flex-1 flex justify-end items-center">
-          <div
-            :class="[
-              'hidden md:flex items-center gap-2 text-sm font-light tracking-wide transition-colors duration-300',
-              isScrolled ? 'text-gray-800' : 'text-gray-800'
-            ]"
-          >
-            <UButton
-              icon="i-heroicons-magnifying-glass"
-              variant="ghost"
-              color="black"
-              square
-            />
+          <div :class="[
+            'hidden md:flex items-center gap-2 text-sm font-light tracking-wide transition-colors duration-300',
+            isScrolled ? 'text-gray-800' : 'text-gray-800'
+          ]">
+            <UButton icon="i-heroicons-magnifying-glass" variant="ghost" color="black" square />
             <UIcon name="i-heroicons-phone" class="w-4 h-4" />
             <span class="uppercase">Contact</span>
             <span>|</span>
-            <a
-              href="tel:0785968888"
-              class="hover:opacity-70 transition-opacity"
-            >
+            <a href="tel:0785968888" class="hover:opacity-70 transition-opacity">
               0785 96 8888
             </a>
           </div>
 
           <!-- Mobile Menu Button -->
-          <UButton
-            :icon="isMobileMenuOpen ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'"
-            variant="ghost"
-            :color="isScrolled ? 'black' : 'white'"
-            class="md:hidden ml-4"
-            @click="isMobileMenuOpen = !isMobileMenuOpen"
-            square
-          />
+          <UButton :icon="isMobileMenuOpen ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" variant="ghost"
+            :color="isScrolled ? 'black' : 'white'" class="md:hidden ml-4" @click="isMobileMenuOpen = !isMobileMenuOpen"
+            square />
         </div>
       </div>
 
@@ -139,37 +128,28 @@ onMounted(() => {
       <nav class="hidden md:flex items-center justify-center h-16 space-x-10 transition-all duration-500" :class="[
         isScrolled ? 'mb-[-2%]' : 'mb-[-5%]'
       ]">
-        <NuxtLink
-          v-for="item in menuItems"
-          :key="item.labelKey"
-          :to="item.to"
-          :class="[
-            ' text-sm tracking-widest uppercase font-light transition-all duration-300 hover:tracking-wider relative group',
-            isScrolled
-              ? 'text-gray-800 hover:text-black mt-[-10px]'
-              : 'text-black hover:text-gray-700'
-          ]"
-        >
+        <NuxtLink v-for="item in menuItems" :key="item.labelKey" :to="item.to" :class="[
+          ' text-sm tracking-widest uppercase font-light transition-all duration-300 hover:tracking-wider relative group',
+          isScrolled
+            ? 'text-gray-800 hover:text-black mt-[-10px]'
+            : 'text-black hover:text-gray-700'
+        ]">
           {{ $t(item.labelKey) }}
-          <span
-            :class="[
-              'absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full',
-              isScrolled ? 'bg-black' : 'bg-black'
-            ]"
-          />
+          <span :class="[
+            'absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full',
+            isScrolled ? 'bg-black' : 'bg-black'
+          ]" />
         </NuxtLink>
       </nav>
     </UContainer>
 
     <!-- Decorative Line -->
-    <div
-      :class="[
-        'h-px transition-opacity duration-500',
-        isScrolled
-          ? 'opacity-100 bg-gradient-to-r from-transparent via-amber-600 to-transparent'
-          : 'opacity-0'
-      ]"
-    />
+    <div :class="[
+      'h-px transition-opacity duration-500',
+      isScrolled
+        ? 'opacity-100 bg-gradient-to-r from-transparent via-amber-600 to-transparent'
+        : 'opacity-0'
+    ]" />
   </header>
 </template>
 

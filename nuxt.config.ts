@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [ '@nuxt/ui', '@nuxtjs/i18n' ],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxtjs/color-mode'],
   css: [ '~/assets/css/main.css' ],
   i18n: {
     vueI18n: '~/i18n/i18n.config.ts', // đường dẫn đúng
