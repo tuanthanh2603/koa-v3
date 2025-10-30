@@ -10,7 +10,13 @@ export default defineNuxtConfig({
       { code: 'vi', name: 'Vietnamese' },
       { code: 'en', name: 'English' }
     ],
-    defaultLocale: 'vi'
+    defaultLocale: 'vi',
+    strategy: 'no_prefix', // 👉 không thêm /vi hay /en vào URL
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'lang',
+      redirectOn: 'root', // hoặc 'no_prefix' tùy cách bạn định tuyến
+    }
   },
   app: {
     head: {

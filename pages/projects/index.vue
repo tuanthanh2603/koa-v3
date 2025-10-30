@@ -7,6 +7,7 @@ const route = useRoute()
 const router = useRouter()
 const activeCategory = ref(0)
 const hoveredProject = ref<number | null>(null)
+const { locale } = useI18n()
 
 const currentCategory = computed(() => categories[ activeCategory.value ])
 const syncCategoryFromQuery = () => {
@@ -65,7 +66,7 @@ const navigateToProject = (project: Project) => {
             ? 'text-black border-2 border-black bg-black/5'
             : 'text-gray-700 border-2 border-black/30 hover:border-black hover:text-black'
         ]">
-          {{ cat.name }}
+          {{ locale === 'vi' ? cat.name_vn : cat.name_en }}
           <span
             class="absolute inset-0 border border-black opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100" />
         </button>
@@ -79,7 +80,7 @@ const navigateToProject = (project: Project) => {
         <div v-for="project in currentCategory.projects" :key="project.id" @mouseenter="hoveredProject = project.id"
           @mouseleave="hoveredProject = null" class="group mb-5">
           <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg">
-            <img :src="project.image" :alt="project.name"
+            <img :src="project.image" :alt="project.name_en"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
 
             <div
@@ -90,15 +91,15 @@ const navigateToProject = (project: Project) => {
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-8 opacity-0'
                 ">
-                <h4 class="text-lg font-bold mb-2">{{ project.name }}</h4>
+                <h4 class="text-lg font-bold mb-2">{{ locale === 'vi' ? project.name_vn : project.name_en }}</h4>
                 <p class="text-sm text-gray-100 mb-6 line-clamp-4">
-                  {{ project.description }}
+                  {{ locale === 'vi' ? project.description_vn : project.description_en }}
                 </p>
 
                 <button @click="navigateToProject(project)"
                   class="wave-button cursor-pointer group/btn relative w-full bg-white/10 border-2 border-white text-white font-semibold py-3 px-6 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden hover:bg-white hover:text-black hover:shadow-xl">
                   <span class="relative z-10 flex items-center gap-2">
-                    Xem chi tiết
+                    {{ locale === 'vi' ? 'Xem chi tiết' : 'View details' }}
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
                       stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -111,14 +112,14 @@ const navigateToProject = (project: Project) => {
 
           <h3 @click="navigateToProject(project)"
             class="cursor-pointer mt-4 text-base text-center text-gray-900 uppercase tracking-wide group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
-            {{ project.name }}
+            {{ locale === 'vi' ? project.name_vn : project.name_en }}
           </h3>
         </div>
 
       </div>
 
       <div v-if="currentCategory.projects.length === 0" class="text-center py-20">
-        <p class="text-gray-600 text-lg">Chưa có dự án trong danh mục này</p>
+        <p class="text-gray-600 text-lg">{{ locale === 'vi' ? 'Chưa có dự án trong danh mục này' : 'No project in this category' }}</p>
       </div>
     </div>
   </div>

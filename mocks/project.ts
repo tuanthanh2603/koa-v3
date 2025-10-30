@@ -95,8 +95,8 @@ export const categories: Category[] = [
         slug: "villa-dong-nai-2",
       },
     ],
-    name_vn: '',
-    name_en: ''
+    name_vn: 'Villa',
+    name_en: 'Villa'
   },
   {
     id: 3,
