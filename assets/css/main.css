@@ -9,11 +9,12 @@
     font-style: normal;
     font-display: swap;
 }
-
+.font-habitat {
+  font-family: 'MBFSpaceHabitat', sans-serif;
+}
 body {
     background-color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'MBFSpaceHabitat', sans-serif;
 }

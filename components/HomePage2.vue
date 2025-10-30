@@ -42,18 +42,16 @@ onMounted(() => {
 
 const isImageLoaded = (index: number) => imagesLoaded.value.has(index)
 
-// ✅ Cập nhật filter logic - cột hover sáng hơn
 const getFilter = (index: number) => {
   if (hoveredIndex.value === null) {
-    return 'brightness(0.5) blur(0px)'
+    return 'brightness(0.5)'
   }
   if (hoveredIndex.value === index) {
-    return 'brightness(1.1) blur(0px)'  // Cột hover sáng nhất
+    return 'brightness(1.1)'
   }
-  return 'brightness(0.3) blur(1px)'    // Các cột khác tối hơn + blur nhẹ
+  return 'brightness(0.3) blur(1px)'
 }
 
-// ✅ Thêm hàm tính scale - cột hover to hơn
 const getScale = (index: number) => {
   return hoveredIndex.value === index ? 'scale(1.05)' : 'scale(1)'
 }
@@ -69,7 +67,7 @@ const handleClick = (path: string) => {
       <div 
         v-for="(item, index) in items"
         :key="index"
-        class="flex items-center justify-center bg-center bg-cover cursor-pointer transition-all duration-300 relative overflow-hidden group"
+        class="grid-item"
         :style="{
           backgroundImage: isImageLoaded(index) ? `url('${item.image}')` : 'none',
           backgroundColor: isImageLoaded(index) ? 'transparent' : '#1a1a1a',
@@ -79,34 +77,33 @@ const handleClick = (path: string) => {
         }"
         @mouseenter="hoveredIndex = index"
         @mouseleave="hoveredIndex = null"
-        @click="handleClick(item.path)" 
+        @click="handleClick(item.path)"
       >
         <!-- Loading skeleton -->
         <div 
           v-if="!isImageLoaded(index)"
-          class="absolute inset-0 bg-gradient-to-r from-gray-600 via-gray-500 to-gray-600 bg-200% animate-pulse"
+          class="skeleton"
         />
 
         <!-- Label -->
         <h3 
-          class="font-MBFSpaceHabitat text-xl relative z-10 bg-black/50 py-2 px-4 rounded-lg transition-all duration-300"
-          :class="hoveredIndex === index ? 'bg-black/70 scale-105' : 'group-hover:bg-black/70'"
+          class="label"
+          :class="hoveredIndex === index && 'hovered'"
         >
           {{ item.label }}
         </h3>
 
-        <!-- Overlay - Hiệu ứng khi hover -->
+        <!-- Overlay -->
         <div 
           v-if="isImageLoaded(index)"
-          class="absolute inset-0 transition-opacity duration-300"
-          :class="hoveredIndex === index ? 'opacity-0' : 'opacity-30 bg-black'"
+          class="overlay"
+          :class="hoveredIndex === index && 'hidden'"
         />
 
-        <!-- Shine effect khi hover -->
+        <!-- Shine effect -->
         <div 
           v-if="isImageLoaded(index) && hoveredIndex === index"
-          class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-10 pointer-events-none"
-          style="animation: shine 0.6s ease-in-out infinite;"
+          class="shine"
         />
       </div>
     </div>
@@ -120,10 +117,68 @@ section {
 
 .grid {
   contain: layout style;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
 }
 
-.group {
-  will-change: filter, transform;
+/* ✅ Mobile: 2 cột */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  
+  .grid-item {
+    min-height: 300px;
+  }
+}
+
+/* ✅ Tablet: 1 cột */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .grid-item {
+    min-height: 280px;
+  }
+  
+  .label {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* ✅ Chỉ apply transition trên những cái cần thiết */
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+  /* ✅ Quan trọng: will-change + transform-gpu */
+  will-change: filter, transform, z-index;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  
+  /* ✅ Chỉ transition filter & transform */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Loading skeleton */
+.skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #4b5563, #3f4654, #4b5563);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
@@ -135,11 +190,47 @@ section {
   }
 }
 
-.animate-pulse {
-  animation: shimmer 2s infinite;
+/* Label */
+.label {
+  font-family: 'MBFSpaceHabitat', sans-serif;
+  font-size: 1.25rem;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  will-change: background-color, transform;
 }
 
-/* Shine effect - hiệu ứng sáng bóng khi hover */
+.label.hovered {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
+
+.overlay.hidden {
+  opacity: 0;
+}
+
+/* Shine effect */
+.shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  pointer-events: none;
+  animation: shine 0.8s ease-in-out forwards;
+  will-change: transform;
+}
+
 @keyframes shine {
   0% {
     transform: translateX(-100%);
@@ -147,10 +238,5 @@ section {
   100% {
     transform: translateX(100%);
   }
-}
-
-/* Smooth transition cho tất cả */
-div {
-  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 </style>
