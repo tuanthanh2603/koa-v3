@@ -110,29 +110,29 @@ const resetForm = () => {
         <div class="lg:col-span-2 space-y-12">
           <!-- About Company -->
           <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
               <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
               Về KOA
             </h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="text-sm text-gray-700 leading-relaxed mb-4">
               KOA là công ty chuyên về thiết kế và thi công nội thất, ngoại thất, kiến trúc và xây dựng với hơn 10 năm
               kinh nghiệm. Chúng tôi tự hào về những công trình chất lượng cao, sáng tạo và bền vững.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="text-sm text-gray-700 leading-relaxed mb-4">
               Với đội ngũ kiến trúc sư, kỹ sư xây dựng, và thợ thi công giỏi, chúng tôi đã hoàn thành hàng trăm dự án từ
               nhỏ đến lớn cho các khách hàng cá nhân và doanh nghiệp.
             </p>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-sm text-gray-700 leading-relaxed">
               Chúng tôi luôn tìm kiếm những nhân tài mới để cùng phát triển và xây dựng những công trình tuyệt vời.
             </p>
           </div>
 
           <!-- Recruitment Process -->
           <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
               <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
@@ -149,8 +149,8 @@ const resetForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-900 mb-2">Nộp hồ sơ</h3>
-                  <p class="text-gray-600">Điền đầy đủ thông tin cá nhân, chọn vị trí ứng tuyển và gửi hồ sơ qua form.
+                  <h3 class="font-bold text-gray-900 mb-2 text-base">Nộp hồ sơ</h3>
+                  <p class="text-gray-600 text-sm">Điền đầy đủ thông tin cá nhân, chọn vị trí ứng tuyển và gửi hồ sơ qua form.
                   </p>
                 </div>
               </div>
@@ -162,8 +162,8 @@ const resetForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-900 mb-2">Kiểm tra hồ sơ</h3>
-                  <p class="text-gray-600">Đội HR của chúng tôi sẽ xem xét hồ sơ và liên hệ bạn trong vòng 3-5 ngày.</p>
+                  <h3 class="font-bold text-gray-900 mb-2 text-base">Kiểm tra hồ sơ</h3>
+                  <p class="text-gray-600 text-sm">Đội HR của chúng tôi sẽ xem xét hồ sơ và liên hệ bạn trong vòng 3-5 ngày.</p>
                 </div>
               </div>
 
@@ -174,8 +174,8 @@ const resetForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-900 mb-2">Phỏng vấn sơ bộ</h3>
-                  <p class="text-gray-600">Cuộc phỏng vấn trực tuyến hoặc qua điện thoại để tìm hiểu thêm về bạn.</p>
+                  <h3 class="font-bold text-gray-900 mb-2 text-base">Phỏng vấn sơ bộ</h3>
+                  <p class="text-gray-600 text-sm">Cuộc phỏng vấn trực tuyến hoặc qua điện thoại để tìm hiểu thêm về bạn.</p>
                 </div>
               </div>
 
@@ -186,8 +186,8 @@ const resetForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-900 mb-2">Phỏng vấn chuyên môn</h3>
-                  <p class="text-gray-600">Gặp trực tiếp với bộ phận chuyên môn để đánh giá kỹ năng và kiến thức.</p>
+                  <h3 class="font-bold text-gray-900 mb-2 text-base">Phỏng vấn chuyên môn</h3>
+                  <p class="text-gray-600 text-sm">Gặp trực tiếp với bộ phận chuyên môn để đánh giá kỹ năng và kiến thức.</p>
                 </div>
               </div>
 
@@ -198,8 +198,8 @@ const resetForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 class="font-bold text-gray-900 mb-2">Quyết định cuối cùng</h3>
-                  <p class="text-gray-600">Nếu đạt yêu cầu, chúng tôi sẽ gửi offer và thuyết phục về lương, thời gian.
+                  <h3 class="font-bold text-gray-900 mb-2 text-base">Quyết định cuối cùng</h3>
+                  <p class="text-gray-600 text-sm">Nếu đạt yêu cầu, chúng tôi sẽ gửi offer và thuyết phục về lương, thời gian.
                   </p>
                 </div>
               </div>
@@ -208,7 +208,7 @@ const resetForm = () => {
 
           <!-- Why KOA -->
           <div class="bg-white rounded-lg p-8 shadow-lg border border-gray-200">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
               <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -224,7 +224,7 @@ const resetForm = () => {
                     clip-rule="evenodd" />
                 </svg>
                 <div>
-                  <p class="font-bold text-gray-900">Môi trường chuyên nghiệp</p>
+                  <p class="font-bold text-gray-900 text-base">Môi trường chuyên nghiệp</p>
                   <p class="text-gray-600 text-sm">Làm việc với đội ngũ tàn tài, sáng tạo</p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ const resetForm = () => {
                     clip-rule="evenodd" />
                 </svg>
                 <div>
-                  <p class="font-bold text-gray-900">Lương và phúc lợi cạnh tranh</p>
+                  <p class="font-bold text-gray-900 text-base">Lương và phúc lợi cạnh tranh</p>
                   <p class="text-gray-600 text-sm">Mức lương xứng đáng với năng lực</p>
                 </div>
               </div>
@@ -248,7 +248,7 @@ const resetForm = () => {
                     clip-rule="evenodd" />
                 </svg>
                 <div>
-                  <p class="font-bold text-gray-900">Cơ hội phát triển</p>
+                  <p class="font-bold text-gray-900 text-base">Cơ hội phát triển</p>
                   <p class="text-gray-600 text-sm">Đào tạo và phát triển kỹ năng</p>
                 </div>
               </div>
@@ -260,7 +260,7 @@ const resetForm = () => {
                     clip-rule="evenodd" />
                 </svg>
                 <div>
-                  <p class="font-bold text-gray-900">Dự án đa dạng</p>
+                  <p class="font-bold text-gray-900 text-base">Dự án đa dạng</p>
                   <p class="text-gray-600 text-sm">Làm việc trên các dự án thú vị, quy mô khác nhau</p>
                 </div>
               </div>
