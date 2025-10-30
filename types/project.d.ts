@@ -11,10 +11,11 @@ export interface Image {
 }
 export interface Project {
     id: number
-    name: string
-    description: string
+    name_vn: string
+    name_en: string
+    description_vn: string
+    description_en: string
     image: string
-    tag?: string
     slug?: string
     images?: Image[]
 }

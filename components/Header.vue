@@ -1,8 +1,30 @@
 <script setup lang="ts">
 import ImageLogo from '~/assets/images/logo__Artboard 5.png'
+
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 const colorMode = useColorMode()
+const isDark = ref(false)
+const { locale } = useI18n()
+const selectedLang = ref(locale.value)
+
+// 🟢 Load ngôn ngữ từ localStorage NGAY khi component setup (nếu đang client)
+if (process.client) {
+  const saved = localStorage.getItem('lang')
+  if (saved === 'vi' || saved === 'en') {
+    selectedLang.value = saved
+    locale.value = saved
+  }
+}
+const menuItems = [ { labelKey: 'menu.projects', to: '/projects' }, { labelKey: 'menu.knowledge', to: '/knowledge' }, { labelKey: 'menu.recruitment', to: '/recruitment' }, { labelKey: 'menu.info', to: '/info' }, { labelKey: 'menu.contact', to: '/contact' } ]
+const toggleLanguage = () => {
+  selectedLang.value = selectedLang.value === 'vi' ? 'en' : 'vi'
+  locale.value = selectedLang.value
+  if (process.client) {
+    localStorage.setItem('lang', selectedLang.value)
+  }
+}
+
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
 }
@@ -14,39 +36,11 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
-const languages = [
-  { value: 'vi', label: 'Tiếng Việt' },
-  { value: 'en', label: 'English' }
-]
-
-const menuItems = [
-  { labelKey: 'menu.projects', to: '/projects' },
-  { labelKey: 'menu.knowledge', to: '/knowledge' },
-  { labelKey: 'menu.recruitment', to: '/recruitment' },
-  { labelKey: 'menu.info', to: '/info' },
-  { labelKey: 'menu.contact', to: '/contact' }
-]
-
-const { locale } = useI18n()
-const selectedLang = ref(locale.value)
-const toggleLanguage = () => {
-  selectedLang.value = selectedLang.value === 'vi' ? 'en' : 'vi'
-  locale.value = selectedLang.value
-}
-
-onMounted(() => {
-  const saved = localStorage.getItem('lang')
-  if (saved === 'vi' || saved === 'en') {
-    selectedLang.value = saved
-    locale.value = saved
-  }
-})
-const isDark = ref(false)
-
 const toggleDarkMode = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 </script>
+
 
 <template>
   <header :class="[
