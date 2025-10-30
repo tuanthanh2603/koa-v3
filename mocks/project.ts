@@ -24,63 +24,48 @@ export const categories: Category[] = [
         slug: "villa-dong-nai-1",
         images: [
           {
-            id: 211,
             image: "/uploads/projects/villa-dong-nai-1/1.jpg"
           },
           {
-            id: 212,
             image: "/uploads/projects/villa-dong-nai-1/2.jpg"
           },
           {
-            id: 213,
             image: "/uploads/projects/villa-dong-nai-1/3.jpg"
           },
           {
-            id: 214,
             image: "/uploads/projects/villa-dong-nai-1/4.jpg"
           },
           {
-            id: 215,
             image: "/uploads/projects/villa-dong-nai-1/5.jpg"
           },
           {
-            id: 216,
             image: "/uploads/projects/villa-dong-nai-1/6.jpg"
           },
           {
-            id: 217,
             image: "/uploads/projects/villa-dong-nai-1/7.jpg"
           },
           {
-            id: 218,
             image: "/uploads/projects/villa-dong-nai-1/8.jpg"
           },
           {
-            id: 219,
             image: "/uploads/projects/villa-dong-nai-1/9.jpg"
           },
           {
-            id: 2110,
             image: "/uploads/projects/villa-dong-nai-1/10.jpg"
           },
           {
-            id: 2111,
             image: "/uploads/projects/villa-dong-nai-1/11.jpg"
           },
           {
-            id: 2112,
             image: "/uploads/projects/villa-dong-nai-1/12.jpg"
           },
           {
-            id: 2113,
             image: "/uploads/projects/villa-dong-nai-1/13.jpg"
           },
           {
-            id: 2114,
             image: "/uploads/projects/villa-dong-nai-1/14.jpg"
           },
           {
-            id: 2115,
             image: "/uploads/projects/villa-dong-nai-1/15.jpg"
           },
         ],
@@ -91,8 +76,182 @@ export const categories: Category[] = [
         name_en: "Villa Dong Nai 2",
         description_vn: "Tân cổ điển kết hợp hiện đại, nội thất cao cấp.",
         description_en: "Classic meets modern, high-end interior.",
-        image: "https://via.placeholder.com/600x600?text=Villa+District+2",
+        image: "/uploads/projects/villa-dong-nai-2/SHC/26.jpg",
         slug: "villa-dong-nai-2",
+        images: [
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/23.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/24.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/25.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/26.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/New folder/29.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/New folder/29.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/New folder/33.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/New folder/34.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/SHC/New folder/35.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/12.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/18.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/19.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/20.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/21.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/22.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/23.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/24.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/25.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/26.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/khach bep/27.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/MASTER/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/29.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/NHA DONG NAI NEW/NHA DONG NAI NEW LOGO/31.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P DOC SACH/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P DOC SACH/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P DOC SACH/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P DOC SACH/18.jpg"
+          },
+          
+        ],
       },
     ],
     name_vn: 'Villa',

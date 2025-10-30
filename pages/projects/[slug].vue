@@ -76,6 +76,7 @@ const goToProjects = () => {
     }
   })
 }
+const { locale } = useI18n()
 </script>
 
 <template>
@@ -95,7 +96,7 @@ const goToProjects = () => {
           @click="goToProjects"
           class="hover:text-black transition-colors hover:underline"
         >
-          Dự án
+          {{ locale === 'vi' ? 'Dự án' : 'Projects' }}
         </button>
         
         <span>/</span>
@@ -105,13 +106,13 @@ const goToProjects = () => {
           @click="goToProjects"
           class="hover:text-black transition-colors hover:underline max-w-[200px] truncate"
         >
-          {{ currentCategory.name }}
+          {{ locale === 'vi' ? currentCategory.name_vn : currentCategory.name_en }}
         </button>
         
         <span v-if="currentCategory">/</span>
         
         <span class="text-gray-900 font-semibold max-w-[300px] truncate">
-          {{ project.name }}
+          {{ locale === 'vi' ? project.name_vn : project.name_en }}
         </span>
       </nav>
     </div>
@@ -119,8 +120,8 @@ const goToProjects = () => {
     <!-- Header -->
     <div class="bg-gray-50 -mx-4 px-4 py-8 mb-8">
       <div class="max-w-7xl mx-auto">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ project.name }}</h1>
-        <p class="text-lg text-gray-600 max-w-2xl">{{ project.description }}</p>
+        <h1 class="text-2xl font-bold text-gray-900 mb-4 text-center">{{ locale === 'vi' ? project.name_vn : project.name_en }}</h1>
+        <p class="text-base text-gray-600 max-w-2xl">{{ locale === 'vi' ? project.description_vn : project.description_en }}</p>
       </div>
     </div>
 
@@ -135,7 +136,7 @@ const goToProjects = () => {
           >
             <img 
               :src="getImages()[selectedImageIndex].image" 
-              :alt="project.name"
+              :alt="project.images?.filter(img => img.image === getImages()[selectedImageIndex].image)[0]?.image || project.name_en"
               class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
@@ -162,6 +163,7 @@ const goToProjects = () => {
             </button>
           </div>
         </div>
+        
 
         <!-- Right: Thumbnail List -->
         <div class="w-28">
@@ -171,7 +173,7 @@ const goToProjects = () => {
           >
             <div 
               v-for="(img, index) in getImages()" 
-              :key="img.id"
+              :key="`${img.image} - ${index + 1}`"
               :data-thumbnail="index"
               @click="selectImage(index)"
               class="relative aspect-square flex-shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all duration-200 hover:border-gray-400"
@@ -181,11 +183,12 @@ const goToProjects = () => {
             >
               <img 
                 :src="img.image" 
-                :alt="`${project.name} - ${index + 1}`"
+                :alt="`${project.name_en} - ${index + 1}`"
                 class="w-full h-full object-cover"
               />
               <div v-if="selectedImageIndex === index" class="absolute inset-0 bg-blue-500/10" />
             </div>
+            
           </div>
         </div>
       </div>

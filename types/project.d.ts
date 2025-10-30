@@ -6,7 +6,6 @@ export interface Category {
     projects: Project[]
 }
 export interface Image {
-    id: number
     image: string
 }
 export interface Project {
