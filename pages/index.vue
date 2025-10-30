@@ -13,6 +13,7 @@ const fadeOut = ref(false)
 const showMenu = ref(false)
 const showButtonMenu = ref(false)
 const showLogo2 = ref(false)
+const homePageRef = ref<HTMLElement>()
 
 const menuItems = [
   { labelKey: 'menu.projects', to: '/projects' },
@@ -21,6 +22,13 @@ const menuItems = [
   { labelKey: 'menu.info', to: '/info' },
   { labelKey: 'menu.contact', to: '/contact' }
 ]
+
+// Scroll to HomePage2
+const scrollToHomePage = () => {
+  if (homePageRef.value) {
+    homePageRef.value.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 
 onMounted(() => {
   // Sử dụng requestAnimationFrame để schedule animation tối ưu
@@ -105,6 +113,7 @@ onMounted(() => {
       >
         <button 
           v-if="showLogo2"
+          @click="scrollToHomePage"
           class="text-sm absolute bottom-[24%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 px-8 py-1 border-2 border-white text-white font-semibold hover:bg-white hover:text-black transition duration-300 flex items-center gap-2 group will-change-transform"
         >
           Khám phá
@@ -187,7 +196,9 @@ onMounted(() => {
         </div>
       </transition>
     </section>
-    <HomePage2 />
+    <section ref="homePageRef">
+      <HomePage2 />
+    </section>
   </div>
 </template>
 
