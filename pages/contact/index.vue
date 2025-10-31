@@ -65,15 +65,15 @@ async function submitForm() {
                 <div class="grid">
                     <div class="field">
                         <label for="name" class="text-base">Họ và tên<span class="req">*</span></label>
-                        <input id="name" type="text" v-model="form.name" placeholder="Nguyễn Văn A" />
+                        <input class="text-black placeholder-gray-400" id="name" type="text" v-model="form.name" placeholder="Nguyễn Văn A" />
                     </div>
                     <div class="field">
                         <label for="phone" class="text-base">Số điện thoại</label>
-                        <input id="phone" type="tel" v-model="form.phone" placeholder="090x xxx xxx" />
+                        <input class="text-black placeholder-gray-400" id="phone" type="tel" v-model="form.phone" placeholder="090x xxx xxx" />
                     </div>
                     <div class="field">
                         <label for="email" class="text-base">Email</label>
-                        <input id="email" type="email" v-model="form.email" placeholder="ban@congty.com" />
+                        <input class="text-black placeholder-gray-400" id="email" type="email" v-model="form.email" placeholder="your@email.com" />
                     </div>
                     <div class="field">
                         <label for="projectType" class="text-base">Loại dự án</label>
