@@ -17,22 +17,6 @@ const syncCategoryFromQuery = () => {
 }
 
 
-onMounted(() => {
-  syncCategoryFromQuery()
-})
-
-// Theo dõi khi URL query thay đổi (nếu bạn dùng navigation nội bộ)
-watch(() => route.query.category, syncCategoryFromQuery)
-
-// 🧭 Khi click, đổi URL để giữ trạng thái category trên route
-const handleCategoryClick = (idx: number) => {
-  activeCategory.value = idx
-  router.push({
-    path: '/projects',
-    query: { category: categories[ idx ].id }
-  })
-}
-
 const navigateToProject = (project: Project) => {
   if (project.slug) {
     // ✅ Lưu category trước khi navigate
@@ -44,6 +28,44 @@ const navigateToProject = (project: Project) => {
       }
     })
   }
+}
+
+// Detect touch device to enable tap-to-reveal overlay on mobile/tablet
+const isTouchDevice = ref(false)
+
+onMounted(() => {
+  syncCategoryFromQuery()
+  isTouchDevice.value = typeof window !== 'undefined' && (
+    'ontouchstart' in window ||
+    // @ts-ignore - safari/ios
+    (navigator as any).maxTouchPoints > 0 ||
+    (navigator as any).msMaxTouchPoints > 0
+  )
+})
+
+// On touch devices: first tap reveals overlay, second tap navigates
+const handleProjectClick = (project: Project) => {
+  if (!isTouchDevice.value) {
+    navigateToProject(project)
+    return
+  }
+  if (hoveredProject.value !== project.id) {
+    hoveredProject.value = project.id
+    return
+  }
+  navigateToProject(project)
+}
+
+// Theo dõi khi URL query thay đổi (nếu bạn dùng navigation nội bộ)
+watch(() => route.query.category, syncCategoryFromQuery)
+
+// 🧭 Khi click, đổi URL để giữ trạng thái category trên route
+const handleCategoryClick = (idx: number) => {
+  activeCategory.value = idx
+  router.push({
+    path: '/projects',
+    query: { category: categories[ idx ].id }
+  })
 }
 </script>
 
@@ -79,7 +101,7 @@ const navigateToProject = (project: Project) => {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         <div v-for="project in currentCategory.projects" :key="project.id" @mouseenter="hoveredProject = project.id"
           @mouseleave="hoveredProject = null" class="group mb-5">
-          <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg mb-4">
+          <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg mb-4" @click="handleProjectClick(project)">
             <img :src="project.image" :alt="project.name_en"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-point" />
 
@@ -96,7 +118,7 @@ const navigateToProject = (project: Project) => {
                   {{ locale === 'vi' ? project.description_vn : project.description_en }}
                 </p>
 
-                <button @click="navigateToProject(project)"
+                <button @click.stop="navigateToProject(project)"
                   class="wave-button cursor-pointer group/btn relative w-full bg-white/10 border-2 border-white text-white font-semibold py-3 px-6 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden hover:bg-white hover:text-black hover:shadow-xl">
                   <span class="relative z-10 flex items-center gap-2">
                     {{ locale === 'vi' ? 'Xem chi tiết' : 'View details' }}
