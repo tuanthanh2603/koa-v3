@@ -84,7 +84,7 @@ const resetForm = () => {
 </script>
 
 <template>
-  <section class="min-h-screen bg-white py-[12%] px-4">
+  <section>
     <!-- Header Banner -->
 
 

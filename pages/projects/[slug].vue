@@ -80,7 +80,7 @@ const { locale } = useI18n()
 </script>
 
 <template>
-  <div v-if="project" class="min-h-screen bg-white py-[12%] px-4">
+  <div v-if="project">
     <!-- Breadcrumb Navigation -->
     <div class="max-w-7xl mx-auto mb-8">
       <nav class="flex items-center gap-2 text-sm text-gray-600">

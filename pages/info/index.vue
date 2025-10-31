@@ -45,7 +45,7 @@ const services = ref<Service[]>([
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-black py-[10%] px-4">
+  <div >
     <!-- Header Section -->
     <section class="pt-20 pb-16 px-4">
       <div class="max-w-6xl mx-auto">

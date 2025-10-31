@@ -48,7 +48,7 @@ const navigateToProject = (project: Project) => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-white py-[12%] px-4">
+  <div >
     <!-- Header -->
     <div class="max-w-7xl mx-auto mb-10">
       <!-- <div class="text-center mb-2">

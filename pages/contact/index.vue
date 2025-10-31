@@ -56,7 +56,7 @@ async function submitForm() {
 }
 </script>
 <template>
-    <section class="min-h-screen bg-white text-black py-[10%] px-4">
+    <section >
         <div class="contact-wrapper">
             <h1 class="text-2xl font-bold text-center">Liên hệ báo giá</h1>
             <p class="text-sm my-5 text-center">Vui lòng điền thông tin, chúng tôi sẽ liên hệ tư vấn và báo giá.</p>

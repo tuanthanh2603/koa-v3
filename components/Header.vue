@@ -109,7 +109,7 @@ onUnmounted(() => {
     <UContainer>
       <!-- Top Row -->
       <div :class="[
-        'flex items-center justify-between border-b border-white/10 transition-all duration-500 ease-in-out',
+        'mb-1 flex items-center justify-between border-b border-white/10 transition-all duration-500 ease-in-out',
         isScrolled ? 'h-12' : 'h-20'
       ]">
         <!-- Left: Language -->
@@ -148,8 +148,8 @@ onUnmounted(() => {
           <NuxtLink to="/" class="shrink-0">
             <img :src="ImageLogo" alt="Logo" class="transition-all duration-500 ease-in-out mt-1" :class="[
               isScrolled
-                ? 'w-[140px] scale-90 opacity-90'
-                : 'w-[220px] scale-100 opacity-100'
+                ? 'w-[100px] md:w-[160px] opacity-90'
+                : 'w-[140px] md:w-[220px] opacity-100'
             ]" />
           </NuxtLink>
         </div>
@@ -173,8 +173,10 @@ onUnmounted(() => {
 
 
           <!-- Mobile Menu Button -->
+          <UButton icon="i-heroicons-magnifying-glass" variant="ghost" color="neutral" class="md:hidden mr-1"
+            @click="isSearchOpen = true" square />
           <UButton :icon="isMobileMenuOpen ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'" variant="ghost"
-            color="neutral" class="md:hidden ml-4" @click="isMobileMenuOpen = !isMobileMenuOpen" square />
+            color="neutral" class="md:hidden" @click="isMobileMenuOpen = !isMobileMenuOpen" square />
         </div>
       </div>
 
@@ -195,6 +197,23 @@ onUnmounted(() => {
           ]" />
         </NuxtLink>
       </nav>
+      
+      <!-- Mobile Menu Panel -->
+      <div v-if="isMobileMenuOpen" class="md:hidden px-2 pb-3">
+        <div class="mt-2 rounded-lg bg-white shadow-lg ring-1 ring-black/5 overflow-hidden">
+          <nav class="flex flex-col">
+            <NuxtLink
+              v-for="item in menuItems"
+              :key="`m-` + item.labelKey"
+              :to="item.to"
+              class="px-4 py-3 text-sm uppercase tracking-widest text-gray-800 hover:bg-gray-100"
+              @click="isMobileMenuOpen = false"
+            >
+              {{ $t(item.labelKey) }}
+            </NuxtLink>
+          </nav>
+        </div>
+      </div>
     </UContainer>
 
     <!-- Decorative Line -->
@@ -209,7 +228,7 @@ onUnmounted(() => {
   <div v-if="isSearchOpen" class="fixed inset-0 z-60" aria-modal="true" role="dialog"
     @click.self="isSearchOpen = false">
     <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-    <div class="relative mx-auto mt-24 w-full max-w-2xl rounded-lg bg-white p-4 shadow-xl">
+    <div class="relative mx-auto mt-0 md:mt-24 w-full max-w-2xl md:rounded-lg bg-white p-4 shadow-xl">
       <div class="flex items-center justify-between mb-3">
         <div class="text-base font-medium">{{ selectedLang === 'vi' ? 'Tìm kiếm dự án' : 'Search projects' }}</div>
         <button class="p-2 rounded-full  active:bg-gray-200 transition cursor-pointer" aria-label="Đóng tìm kiếm"
