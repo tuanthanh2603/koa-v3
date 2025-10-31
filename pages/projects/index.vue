@@ -81,7 +81,7 @@ const navigateToProject = (project: Project) => {
           @mouseleave="hoveredProject = null" class="group mb-5">
           <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg">
             <img :src="project.image" :alt="project.name_en"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-point" />
 
             <div
               class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70 backdrop-blur-sm flex flex-col justify-end p-8 transition-opacity duration-500"

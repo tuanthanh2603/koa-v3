@@ -14,7 +14,9 @@ interface GridItem {
 
 const router = useRouter()
 const hoveredIndex = ref<number | null>(null)
+const activeIndex = ref<number | null>(null)
 const imagesLoaded = ref<Set<number>>(new Set())
+const isMobile = ref(false)
 
 const items: GridItem[] = [
   { label: 'Dự án', image: img1, path: '/projects' },
@@ -38,6 +40,15 @@ const preloadImages = () => {
 
 onMounted(() => {
   preloadImages()
+  const updateIsMobile = () => {
+    isMobile.value = window.innerWidth <= 640
+  }
+  updateIsMobile()
+  window.addEventListener('resize', updateIsMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', () => {})
 })
 
 const isImageLoaded = (index: number) => imagesLoaded.value.has(index)
@@ -56,7 +67,15 @@ const getScale = (index: number) => {
   return hoveredIndex.value === index ? 'scale(1.05)' : 'scale(1)'
 }
 
-const handleClick = (path: string) => {
+const handleClick = (index: number, path: string) => {
+  if (isMobile.value) {
+    if (activeIndex.value === index) {
+      router.push(path)
+    } else {
+      activeIndex.value = index
+    }
+    return
+  }
   router.push(path)
 }
 </script>
@@ -77,7 +96,7 @@ const handleClick = (path: string) => {
         }"
         @mouseenter="hoveredIndex = index"
         @mouseleave="hoveredIndex = null"
-        @click="handleClick(item.path)"
+        @click="handleClick(index, item.path)"
       >
         <!-- Loading skeleton -->
         <div 
@@ -85,19 +104,31 @@ const handleClick = (path: string) => {
           class="skeleton"
         />
 
-        <!-- Label -->
-        <h3 
-          class="label"
-          :class="hoveredIndex === index && 'hovered'"
-        >
-          {{ item.label }}
-        </h3>
+        <!-- Label + CTA overlay: show on hover (desktop) or on tap (mobile) -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div
+            class="flex flex-col items-center gap-3 px-4"
+            :class="[
+              (hoveredIndex === index) || (isMobile && activeIndex === index) ? '' : 'opacity-100',
+            ]"
+          >
+            <h3 class="label" :class="(hoveredIndex === index) || (isMobile && activeIndex === index) ? 'hovered' : ''">
+              {{ item.label }}
+            </h3>
+            <button
+              class="mt-1 text-xs md:text-sm uppercase tracking-wide px-4 py-2 rounded bg-white/90 text-black hover:bg-white transition"
+              @click.stop="router.push(item.path)"
+            >
+              {{ 'Xem chi tiết' }}
+            </button>
+          </div>
+        </div>
 
         <!-- Overlay -->
         <div 
           v-if="isImageLoaded(index)"
           class="overlay"
-          :class="hoveredIndex === index && 'hidden'"
+          :class="(hoveredIndex === index) || (isMobile && activeIndex === index) ? 'hidden' : ''"
         />
 
         <!-- Shine effect -->
