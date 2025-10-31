@@ -70,7 +70,7 @@ const toggleDarkMode = () => {
             <UIcon name="i-heroicons-chevron-down"
               class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
           </button>
-          <button @click="toggleDarkMode" :class="[
+          <!-- <button @click="toggleDarkMode" :class="[
             'group flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:scale-105',
             isScrolled
               ? 'text-gray-800 hover:bg-gray-100'
@@ -81,7 +81,7 @@ const toggleDarkMode = () => {
             <span class="font-light tracking-wide text-sm uppercase">
               {{ colorMode.value === 'dark' ? 'Dark' : 'Light' }}
             </span>
-          </button>
+          </button> -->
           <!-- <h1>Color mode: {{ $colorMode.value }}</h1> -->
         </div>
 

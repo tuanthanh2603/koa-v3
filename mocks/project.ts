@@ -250,7 +250,78 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/villa-dong-nai-2/P DOC SACH/18.jpg"
           },
-          
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P THO/28.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/P THO/30.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/18.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/19.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/20.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/21.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 1/22.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/PNGU 2/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/WC CHUNG/L1/31.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/WC CHUNG/L1/32.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/WC CHUNG/TRET/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dong-nai-2/WC CHUNG/TRET/12.jpg"
+          },
         ],
       },
     ],
