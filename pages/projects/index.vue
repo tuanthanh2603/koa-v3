@@ -79,7 +79,7 @@ const navigateToProject = (project: Project) => {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         <div v-for="project in currentCategory.projects" :key="project.id" @mouseenter="hoveredProject = project.id"
           @mouseleave="hoveredProject = null" class="group mb-5">
-          <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg">
+          <div class="relative aspect-square overflow-hidden bg-gray-200 shadow-lg mb-4">
             <img :src="project.image" :alt="project.name_en"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-point" />
 
@@ -111,7 +111,7 @@ const navigateToProject = (project: Project) => {
           </div>
 
           <h3 @click="navigateToProject(project)"
-            class="cursor-pointer mt-4 text-base text-center text-gray-900 uppercase tracking-wide group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
+            class="cursor-pointer text-base text-center text-gray-900 uppercase tracking-wide group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
             {{ locale === 'vi' ? project.name_vn : project.name_en }}
           </h3>
         </div>
