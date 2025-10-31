@@ -143,7 +143,7 @@ section {
   }
   
   .grid-item {
-    min-height: 280px;
+    min-height: 188px;
   }
   
   .label {

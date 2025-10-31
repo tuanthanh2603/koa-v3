@@ -225,10 +225,11 @@ onUnmounted(() => {
     ]" />
 
   </header>
-  <div v-if="isSearchOpen" class="fixed inset-0 z-60" aria-modal="true" role="dialog"
-    @click.self="isSearchOpen = false">
-    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-    <div class="relative mx-auto mt-0 md:mt-24 w-full max-w-2xl md:rounded-lg bg-white p-4 shadow-xl">
+  <Teleport to="body">
+    <div v-if="isSearchOpen" class="fixed inset-0 z-60" aria-modal="true" role="dialog"
+      @click.self="isSearchOpen = false">
+      <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+      <div class="relative mx-auto mt-0 md:mt-24 w-full max-w-2xl md:rounded-lg bg-white p-4 shadow-xl">
       <div class="flex items-center justify-between mb-3">
         <div class="text-base font-medium">{{ selectedLang === 'vi' ? 'Tìm kiếm dự án' : 'Search projects' }}</div>
         <button class="p-2 rounded-full  active:bg-gray-200 transition cursor-pointer" aria-label="Đóng tìm kiếm"
@@ -267,8 +268,9 @@ onUnmounted(() => {
       <div v-else-if="searchQuery" class="mt-4 text-sm text-gray-500">
         Không tìm thấy kết quả phù hợp.
       </div>
+      </div>
     </div>
-  </div>
+  </Teleport>
 </template>
 
 <style scoped>

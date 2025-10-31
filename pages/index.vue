@@ -159,7 +159,7 @@ onMounted(() => {
         </div>
       </transition>
     </section>
-    <section ref="homePageRef">
+    <section ref="homePageRef" class="relative min-h-screen snap-start bg-white">
       <HomePage2 />
     </section>
   </div>
