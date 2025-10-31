@@ -135,15 +135,18 @@ section {
   }
 }
 
-/* ✅ Tablet: 1 cột */
+/* ✅ Mobile nhỏ: 1 cột, chia đều chiều cao */
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
-    height: auto;
+    height: 100vh;
+    grid-auto-rows: 1fr;
+    /* Có 5 item hiện tại → chia đều 5 phần; nếu số lượng thay đổi, grid-auto-rows vẫn đảm bảo các hàng bằng nhau trong 100vh */
+    grid-template-rows: repeat(5, 1fr);
   }
   
   .grid-item {
-    min-height: 188px;
+    min-height: 0;
   }
   
   .label {
