@@ -341,6 +341,86 @@ export const categories: Category[] = [
     id: 4,
     name: "F&B",
     projects: [
+      {
+        id: 41,
+        name_vn: "CASE DE ROSA TUY HOÀ",
+        name_en: "CASE DE ROSA TUY HOÀ",
+        description_vn: "Thiết kế quán cafe phong cách Địa Trung Hải.",
+        description_en: "Cafe design in Mediterranean style.",
+        image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9400.jpg",
+        slug: "case-de-rosa-tuy-hoa",
+        images: [
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9400.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9406.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9411.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9412.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9413-2.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9416.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9425.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9426.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9430.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9434.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9436.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9439.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9445.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9447.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9448.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9473.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9483.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9486.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9496-2.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9497.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9500.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9508.jpg"
+          },
+          {
+            image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9511.jpg"
+          },
+        ],
+      }
       
     ],
     name_vn: 'F&B',
