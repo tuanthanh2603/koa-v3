@@ -125,11 +125,7 @@ const services = ref<Service[]>([
         <h2 class="text-2xl font-bold mb-4">Sẵn sàng bắt đầu dự án?</h2>
         <p class="text-gray-600 mb-8 text-base">Hãy liên hệ với chúng tôi để được tư vấn miễn phí</p>
         <div class="flex gap-4 justify-center flex-wrap">
-          <a href="mailto:info@koa.vn"
-            class="px-8 py-3 border border-black rounded-lg hover:bg-black hover:text-white transition-all">
-            Gửi email
-          </a>
-          <a href="tel:0123456789"
+          <a href="tel:0785968888"
             class="px-8 py-3 border border-black rounded-lg hover:bg-black hover:text-white transition-all">
             Gọi ngay
           </a>

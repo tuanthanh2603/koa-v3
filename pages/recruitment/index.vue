@@ -40,9 +40,10 @@ const form = ref<ApplicationForm>({
 })
 
 const submitted = ref(false)
+const submitting = ref(false)
 const submitError = ref('')
 
-const submitForm = () => {
+const submitForm = async () => {
   submitError.value = ''
 
   if (!form.value.fullName || !form.value.email || !form.value.phone || !form.value.position) {
@@ -50,10 +51,18 @@ const submitForm = () => {
     return
   }
 
-  submitted.value = true
-  console.log('Application submitted:', form.value)
-
-  setTimeout(() => {
+  submitting.value = true
+  try {
+    const res = await fetch('/api/recruitment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form.value),
+    })
+    const data = await res.json()
+    if (!res.ok || !data?.ok) {
+      throw new Error(data?.statusMessage || 'Gửi không thành công')
+    }
+    submitted.value = true
     form.value = {
       fullName: '',
       email: '',
@@ -64,8 +73,15 @@ const submitForm = () => {
       skills: '',
       coverLetter: ''
     }
-    submitted.value = false
-  }, 5000)
+    // Auto hide success message after 5 seconds
+    setTimeout(() => {
+      submitted.value = false
+    }, 5000)
+  } catch (err: any) {
+    submitError.value = err?.message || 'Có lỗi xảy ra. Vui lòng thử lại.'
+  } finally {
+    submitting.value = false
+  }
 }
 
 const resetForm = () => {
@@ -336,13 +352,13 @@ const resetForm = () => {
 
 
               <!-- Submit Button -->
-              <button type="submit"
-                class="w-full bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-blue-800 text-white font-bold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2">
+              <button type="submit" :disabled="submitting"
+                class="w-full bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-blue-800 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg>
-                Gửi ứng tuyển
+                {{ submitting ? 'Đang gửi...' : 'Gửi ứng tuyển' }}
               </button>
 
               <!-- Reset Button -->

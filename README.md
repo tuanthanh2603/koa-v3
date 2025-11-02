@@ -73,3 +73,27 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Email Configuration
+
+To enable email notifications for contact form submissions, update the email configuration in `server/api/contact.post.ts`:
+
+```typescript
+const smtpHost = 'smtp.gmail.com'
+const smtpPort = 587
+const smtpUser = 'your-email@gmail.com' // Thay bằng email của bạn
+const smtpPass = 'your-app-password' // Thay bằng app password
+const toEmail = 'recipient@example.com' // Email nhận thông báo
+```
+
+### Gmail Setup
+
+If using Gmail:
+1. Enable 2-Step Verification on your Google account
+2. Go to Google Account Settings > Security > App passwords
+3. Generate an app-specific password
+4. Use this password as `smtpPass`
+
+### Other Email Providers
+
+For other SMTP providers (Outlook, Yahoo, SendGrid, etc.), update `smtpHost` and `smtpPort` accordingly.
