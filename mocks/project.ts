@@ -11,7 +11,7 @@ export const categories: Category[] = [
         name_en: "BICH HOUSE",
         description_vn: "Thiết kế nội thất nhà phố hiện đại, sang trọng tại Bích House.",
         description_en: "Modern and luxurious townhouse interior design at Bich House.",
-        image: "/uploads/projects/bich-house/NGOAI THAT NHA CHI TRANG/40000.jpg",
+        image: "/uploads/projects/bich-house/NGOAI THAT NHA CHI TRANG/10000.jpg",
         slug: "bich-house",
         images: [
           {
@@ -146,6 +146,343 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/bich-house/2. KHACH BEP/2. KHACH BEP/16.jpg"
           }
+        ]
+      },
+      {
+        id: 12,
+        name_vn: "KIỀU'S HOUSE",
+        name_en: "KIEU'S HOUSE",
+        description_vn: "Thiết kế nội thất nhà phố hiện đại, tiện nghi tại Kiều's House.",
+        description_en: "Modern, convenient interior design at Kieu's House.",
+        image: "/uploads/projects/kieus-house-rach-gia-kien-giang/13.jpg",
+        slug: "kieus-house-rach-gia-kien-giang",
+        images: [
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/1.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/2.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/3.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/4.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/5.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/6.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/7.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/8.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/9.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/10.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/11.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/12.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/13.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/14.jpg"
+          },
+          {
+            image: "/uploads/projects/kieus-house-rach-gia-kien-giang/15.jpg"
+          },
+        ]
+      },
+      {
+        id: 13,
+        name_vn: "LỆCH HOUSE",
+        name_en: "LECH HOUSE",
+        description_vn: "Thiết kế nội thất nhà phố hiện đại, ấm cúng tại Lệch House.",
+        description_en: "Modern and cozy townhouse interior design at Lech House.",
+        image: "/uploads/projects/lech-house/NGOAITHAT_4.jpg",
+        slug: "lech-house",
+        images: [
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/NGOAITHAT_6.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_1-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_2-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_3-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_4-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_5-1-scaled.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_6-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_7-1-scaled.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_8-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_9-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_10-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_11-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_12-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_13-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_14-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_15-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_16-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGKHACH_17-1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_6.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUMASTER_7.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/PHONGNGUSAU_6.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/WC_1.jpg"
+          },
+          {  
+            image: "/uploads/projects/lech-house/WC_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/WC_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lech-house/WC_4.jpg"
+          },
+        ]
+      },
+      {
+        id: 14,
+        name_vn: "LOTUS'S HOUSE",
+        name_en: "LOTUS'S HOUSE",
+        description_vn: "Thiết kế nội thất nhà phố hiện đại, tinh tế tại Lotus's House.",
+        description_en: "Modern, sophisticated townhouse interior design at Lotus's House.",
+        image: "/uploads/projects/lotuss-house/4.jpg",
+        slug: "lotuss-house",
+        images: [
+          {
+            image: "/uploads/projects/lotuss-house/1.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/2.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/3.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/4.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/5.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/6.jpg"   
+          },
+          {
+            image: "/uploads/projects/lotuss-house/7.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/8.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/9.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/10.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/11.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/12.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_6.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_7.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_8.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_9.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_10.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_11.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_12.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_13.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_14.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_15.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_16.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_17.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_18.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_19.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_20.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PHONGKHACH_21.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN CON_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN CON_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN CON_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN CON_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN CON_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN MASTER_1.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN MASTER_2.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN MASTER_3.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN MASTER_4.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/PN MASTER_5.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/WC_MASTER 1.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/WC_MASTER 2.jpg"
+          },
+          {
+            image: "/uploads/projects/lotuss-house/WC_MASTER 3.jpg"
+          },
+
         ]
       }
       
@@ -467,6 +804,141 @@ export const categories: Category[] = [
           },
         ],
       },
+      {
+        id: 23,
+        name_vn: "Mr Hieu Villa",
+        name_en: "Mr Hieu Villa",
+        description_vn: "Thiết kế nội thất villa hiện đại, sang trọng tại Mr Hieu Villa.",
+        description_en: "Modern and luxurious villa interior design at Mr Hieu Villa.",
+        image: "/uploads/projects/mr-hieu-villa/EX_1.jpg",
+        slug: "mr-hieu-villa",
+        images: [
+          {
+            image: "/uploads/projects/mr-hieu-villa/EX_1.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/EX_2.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/EX_3.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/EX_4.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_1.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_2.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_3.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_4.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_5.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_6.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_7.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_8.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_9.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_10.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_11.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_12.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_13.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_14.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_15.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_16.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_17.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_18.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_19.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PK_20.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PLV_1.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PLV_2.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PLV_3.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_1.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_2.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_3.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_4.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_5.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_6.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/PN_7.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_1.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_2.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_3.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_4.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_5.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_6.jpg"
+          },
+          {
+            image: "/uploads/projects/mr-hieu-villa/SHC_7.jpg"
+          }
+
+        ]
+      }
     ],
     name_vn: 'Villa',
     name_en: 'Villa'
@@ -557,8 +1029,366 @@ export const categories: Category[] = [
             image: "/uploads/projects/akari-binh-tan/MB_AKARI1.jpg"
           },
         ],
+      }, 
+      {
+        id: 32,
+        name_vn: "CĂN HỘ VINHOME CHỊ HIỀN",
+        name_en: "VINHOME APARTMENT MS. HIEN",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi tại Vinhomes.",
+        description_en: "Modern and convenient apartment interior design at Vinhomes.",
+        image: "/uploads/projects/can-ho-vinhome-chi-hien/1.jpg",
+        slug: "can-ho-vinhomes-chi-hien",
+        images: [
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/1.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/2.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/3.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/4.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/5.jpg"  
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/6.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/7.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/8.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/9.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/10.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/11.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/13.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/14.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/15.jpg"
+          }
+        ],
+      },
+      {
+        id: 33,
+        name_vn: "CHUNG CƯ HAPPY ONE BÌNH DƯƠNG",
+        name_en: "HAPPY ONE APARTMENT BINH DUONG",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi tại Happy One Bình Dương.",
+        description_en: "Modern and convenient apartment interior design at Happy One Binh Duong.",
+        image: "/uploads/projects/chung-cu-happy-one-binh-duong/1.jpg",
+        slug: "chung-cu-happy-one-binh-duong",
+        images: [
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/1.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/2.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/3.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/4.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/5.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/6.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/7.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/8.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/9.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/10.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/11.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/12.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/13.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/14.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/15.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/16.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/17.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/18.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/19.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/20.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/21.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/22.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/23.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/24.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/25.jpg"
+          },
+          {
+            image: "/uploads/projects/chung-cu-happy-one-binh-duong/26.jpg"
+          },
+        ],
+      },
+      {
+        id: 34,
+        name_vn: "DIAMOND CELADON TÂN PHÚ",
+        name_en: "DIAMOND CELADON TAN PHU",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi tại Diamond Celadon Tân Phú.",
+        description_en: "Modern and convenient apartment interior design at Diamond Celadon Tan Phu.",
+        image: "/uploads/projects/diamond-celadon-tan-phu/1.jpg",
+        slug: "diamond-celadon-tan-phu",
+        images: [
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/1.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/2.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/3.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/4.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/5.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/6.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/7.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/8.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/9.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/10.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/11.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/12.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/13.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/14.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/15.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/16.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/17.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/18.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/19.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/20.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/21.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/22.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/23.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/24.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/25.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/26.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/36.jpg"
+          },
+          {            image: "/uploads/projects/diamond-celadon-tan-phu/37.jpg"
+          },
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/38.jpg"
+          },
+        ],
+      },
+      {
+        id: 35,
+        name_vn: "DJ PHATKON'S STUDIO HOME",
+        name_en: "DJ PHATKON'S STUDIO HOME",
+        description_vn: "Thiết kế nội thất căn hộ phong cách hiện đại, cá tính cho DJ Phatkon.",
+        description_en: "Modern and personal style apartment interior design for DJ Phatkon.",
+        image: "/uploads/projects/dj-phatkons-studio-home/1.jpg",
+        slug: "dj-phatkons-studio-home",
+        images: [
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/1.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/2.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/3.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/4.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/5.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/6.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/7.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/8.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/9.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/10.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/11.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/12.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/13.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/14.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/15.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/16.jpg"
+          },
+          {            image: "/uploads/projects/dj-phatkons-studio-home/17.jpg"
+          },
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/18.jpg"
+          },
+        ],  
+      },
+      {
+        id: 36,
+        name_vn: "CĂN HỘ CHỊ DIỆP",
+        name_en: "MS. DIEP'S APARTMENT",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Diệp.",
+        description_en: "Modern and convenient apartment interior design for Ms. Diep's family.",
+        image: "/uploads/projects/can-ho-chi-diep/KB_1.jpg",
+        slug: "can-ho-chi-diep",
+        images: [
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_1.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_2.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_3.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_4.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_5.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_6.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_7.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_8.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_9.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_10.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/KB_11.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_12.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_14.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_15.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_16.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_17.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_18.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_1.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_2.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/PN_3.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/PN_4.jpg"
+          },
+          {            image: "/uploads/projects/can-ho-chi-diep/PN_5.jpg"
+          },
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_6.jpg"
+          },
+        ]
       }
-      
     ],
     name_vn: 'Căn hộ',
     name_en: 'Apartment'
@@ -644,6 +1474,237 @@ export const categories: Category[] = [
           },
           {
             image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9511.jpg"
+          },
+        ],
+      },
+      {
+        id: 42,
+        name_vn: "CHOM'S COFFEE",
+        name_en: "CHOM'S COFFEE",
+        description_vn: "Thiết kế quán cafe hiện đại, trẻ trung tại Chom's Coffee.",
+        description_en: "Modern and youthful cafe design at Chom's Coffee.",
+        image: "/uploads/projects/choms-coffee/1.jpg",
+        slug: "choms-coffee",
+        images: [
+          {
+            image: "/uploads/projects/choms-coffee/1.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/2.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/3.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/4.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/5.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/6.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/7.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/8.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/9.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/10.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/11.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/12.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/13.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/14.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/15.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/16.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/17.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/18.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/19.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/20.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/21.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/22.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/23.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/24.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/25.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/26.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/27.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/28.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/29.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/30.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/31.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/32.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/33.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/34.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/35.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/36.jpg"
+          },
+          {            
+            image: "/uploads/projects/choms-coffee/37.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/38.jpg"
+          },
+          {            
+            image: "/uploads/projects/choms-coffee/39.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/40.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/41.jpg"
+          },
+          {
+            image: "/uploads/projects/choms-coffee/42.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/43.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/44.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/45.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/46.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/47.jpg"
+          },
+          {            image: "/uploads/projects/choms-coffee/48.jpg"
+          },
+        ],
+      }, 
+      {
+        id: 43,
+        name_vn: "LÀ COFFEE",
+        name_en: "LA COFFEE",
+        description_vn: "Thiết kế quán cafe phong cách hiện đại, tối giản tại La Coffee.",
+        description_en: "Modern and minimalist cafe design at La Coffee.",
+        image: "/uploads/projects/la-coffee/9.jpg",
+        slug: "la-coffee",
+        images: [
+          {
+            image: "/uploads/projects/la-coffee/1.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/2.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/3.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/4.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/6.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/7.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/8.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/9.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/10.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/12.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/13.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/14.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/15.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/16.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/17.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/18.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/19.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/20.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/facade/10000.jpg"
+          },
+          {
+            image: "/uploads/projects/la-coffee/facade/20000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/30000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/40000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/50000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/60000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/70000.jpg"
+          },
+          {            image: "/uploads/projects/la-coffee/facade/80000.jpg"
           },
         ],
       }
