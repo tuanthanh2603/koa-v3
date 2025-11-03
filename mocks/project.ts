@@ -115,7 +115,7 @@ export const categories: Category[] = [
           },
           {
             image: "/uploads/projects/bich-house/2. KHACH BEP/2. KHACH BEP/6.jpg"
-          },    
+          },
           {
             image: "/uploads/projects/bich-house/2. KHACH BEP/2. KHACH BEP/7.jpg"
           },
@@ -324,7 +324,7 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/lech-house/WC_1.jpg"
           },
-          {  
+          {
             image: "/uploads/projects/lech-house/WC_2.jpg"
           },
           {
@@ -360,7 +360,7 @@ export const categories: Category[] = [
             image: "/uploads/projects/lotuss-house/5.jpg"
           },
           {
-            image: "/uploads/projects/lotuss-house/6.jpg"   
+            image: "/uploads/projects/lotuss-house/6.jpg"
           },
           {
             image: "/uploads/projects/lotuss-house/7.jpg"
@@ -484,8 +484,123 @@ export const categories: Category[] = [
           },
 
         ]
+      },
+      {
+        id: 15,
+        name_vn: "NHA PHO CHI THAO HOA HUNG",
+        name_en: "TOWNHOUSE OF MS THAO IN HOA HUNG",
+        description_vn: "Thiết kế nội thất nhà phố hiện đại",
+        description_en: "Modern and convenient interior design",
+        image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix.jpg",
+        slug: "nha-pho-chi-thao-hoa-hung",
+        images: [
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix_View02.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix_View03.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix_View04.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix_View05.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/2.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/3.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/4.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/5.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/6.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/7.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/8.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/9.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/10.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/11.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/12.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/13.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/14.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/23.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/24.jpg"
+          },
+        ]
+      },
+      {
+        id: 16,
+        name_vn: "Thang House",
+        name_en: "Thang House",
+        description_vn: "Thiết kế ngoại thất hiện đại, sang trọng tại Thang House.",
+        description_en: "Modern and luxurious exterior design at Thang House.",
+        image: "/uploads/projects/thang-house/10000.jpg",
+        slug: "thang-house",
+        images: [
+          {
+            image: "/uploads/projects/thang-house/10000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/20000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/30000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/40000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/50000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/60000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/70000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/80000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/90000.jpg"
+          },
+          {
+            image: "/uploads/projects/thang-house/100000.jpg"
+          }
+        ]
       }
-      
+
     ],
     name_vn: 'Nhà phố',
     name_en: 'Townhouse'
@@ -938,6 +1053,386 @@ export const categories: Category[] = [
           }
 
         ]
+      },
+      {
+        id: 24,
+        name_vn: "VILLA ĐĂK LĂK",
+        name_en: "VILLA Dak Lak",
+        description_vn: "Thiết kế nội thất villa hiện đại, sang trọng tại Đăk Lăk.",
+        description_en: "Modern and luxurious villa interior design at Dak Lak.",
+        image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/17.jpg",
+        slug: "villa-dak-lak",
+        images: [
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/12.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/18.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/19.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/110.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/111.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/112.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/113.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/114.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/115.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/116.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/117.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/118.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/119.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/120.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/121.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/122.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/123.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/12.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/18.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/19.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/20.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/21.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/22.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/23.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/24.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/25.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/26.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/27.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/28.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/29.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/30.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/31.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/32.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/33.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/34.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/35.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/khach bep ps/36.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/12.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/19.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/20.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/21.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/22.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/23.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/24.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/25.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/27.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/28.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/29.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/30.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/31.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/new 2501/32.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/P.GAME/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/3.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/6.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/8.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/12.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN MORNING PS/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/1.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/2.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/4.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/5.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/7.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/9.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/10.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/11.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/13.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SÂN NIGHT/14.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SAN PHOI/15.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SAN PHOI/16.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SAN PHOI/17.jpg"
+          },
+          {
+            image: "/uploads/projects/villa-dak-lak/SAN PHOI/18.jpg"
+          },
+        ]
       }
     ],
     name_vn: 'Villa',
@@ -1029,7 +1524,7 @@ export const categories: Category[] = [
             image: "/uploads/projects/akari-binh-tan/MB_AKARI1.jpg"
           },
         ],
-      }, 
+      },
       {
         id: 32,
         name_vn: "CĂN HỘ VINHOME CHỊ HIỀN",
@@ -1052,7 +1547,7 @@ export const categories: Category[] = [
             image: "/uploads/projects/can-ho-vinhome-chi-hien/4.jpg"
           },
           {
-            image: "/uploads/projects/can-ho-vinhome-chi-hien/5.jpg"  
+            image: "/uploads/projects/can-ho-vinhome-chi-hien/5.jpg"
           },
           {
             image: "/uploads/projects/can-ho-vinhome-chi-hien/6.jpg"
@@ -1232,30 +1727,38 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/diamond-celadon-tan-phu/17.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/18.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/18.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/19.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/19.jpg"
           },
           {
             image: "/uploads/projects/diamond-celadon-tan-phu/20.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/21.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/21.jpg"
           },
           {
             image: "/uploads/projects/diamond-celadon-tan-phu/22.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/23.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/23.jpg"
           },
           {
             image: "/uploads/projects/diamond-celadon-tan-phu/24.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/25.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/25.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/26.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/26.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/36.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/36.jpg"
           },
-          {            image: "/uploads/projects/diamond-celadon-tan-phu/37.jpg"
+          {
+            image: "/uploads/projects/diamond-celadon-tan-phu/37.jpg"
           },
           {
             image: "/uploads/projects/diamond-celadon-tan-phu/38.jpg"
@@ -1295,30 +1798,37 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/dj-phatkons-studio-home/8.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/9.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/9.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/10.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/10.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/11.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/11.jpg"
           },
           {
             image: "/uploads/projects/dj-phatkons-studio-home/12.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/13.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/13.jpg"
           },
           {
             image: "/uploads/projects/dj-phatkons-studio-home/14.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/15.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/15.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/16.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/16.jpg"
           },
-          {            image: "/uploads/projects/dj-phatkons-studio-home/17.jpg"
+          {
+            image: "/uploads/projects/dj-phatkons-studio-home/17.jpg"
           },
           {
             image: "/uploads/projects/dj-phatkons-studio-home/18.jpg"
           },
-        ],  
+        ],
       },
       {
         id: 36,
@@ -1338,21 +1848,29 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/can-ho-chi-diep/KB_3.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_4.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_4.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_5.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_5.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_6.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_6.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_7.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_7.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_8.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_8.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_9.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_9.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_10.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_10.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/KB_11.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/KB_11.jpg"
           },
           {
             image: "/uploads/projects/can-ho-chi-diep/KB_12.jpg"
@@ -1378,11 +1896,14 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/can-ho-chi-diep/PN_2.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/PN_3.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_3.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/PN_4.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_4.jpg"
           },
-          {            image: "/uploads/projects/can-ho-chi-diep/PN_5.jpg"
+          {
+            image: "/uploads/projects/can-ho-chi-diep/PN_5.jpg"
           },
           {
             image: "/uploads/projects/can-ho-chi-diep/PN_6.jpg"
@@ -1594,13 +2115,13 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/choms-coffee/36.jpg"
           },
-          {            
+          {
             image: "/uploads/projects/choms-coffee/37.jpg"
           },
           {
             image: "/uploads/projects/choms-coffee/38.jpg"
           },
-          {            
+          {
             image: "/uploads/projects/choms-coffee/39.jpg"
           },
           {
@@ -1612,20 +2133,26 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/choms-coffee/42.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/43.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/43.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/44.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/44.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/45.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/45.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/46.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/46.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/47.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/47.jpg"
           },
-          {            image: "/uploads/projects/choms-coffee/48.jpg"
+          {
+            image: "/uploads/projects/choms-coffee/48.jpg"
           },
         ],
-      }, 
+      },
       {
         id: 43,
         name_vn: "LÀ COFFEE",
@@ -1677,7 +2204,8 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/la-coffee/16.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/17.jpg"
+          {
+            image: "/uploads/projects/la-coffee/17.jpg"
           },
           {
             image: "/uploads/projects/la-coffee/18.jpg"
@@ -1694,21 +2222,230 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/la-coffee/facade/20000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/30000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/30000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/40000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/40000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/50000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/50000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/60000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/60000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/70000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/70000.jpg"
           },
-          {            image: "/uploads/projects/la-coffee/facade/80000.jpg"
+          {
+            image: "/uploads/projects/la-coffee/facade/80000.jpg"
           },
         ],
+      },
+      {
+        id: 44,
+        name_vn: "QUAN CAFE CHO IU CHILL",
+        name_en: "CHO IU CHILL CAFE",
+        description_vn: "Thiết kế quán cafe sân vườn thoáng mát, gần gũi thiên nhiên.",
+        description_en: "Design of a cool garden cafe, close to nature.",
+        image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/1.jpg",
+        slug: "quan-cafe-cho-iu-chill",
+        images: [
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/4.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/5.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/6.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/7.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/8.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/9.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/4.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/5.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/6.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/7.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/8.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/9.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/10.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/11.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/12.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/13.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG 1/14.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/4.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/5.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/6.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/7.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/8.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/9.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/10.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/11.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/12.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/13.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/NT TANG TRET/14.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/4.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/5.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/6.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/7.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/8.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/9.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/10.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/11.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/12.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/13.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/14.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/15.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/16.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/17.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/18.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/19.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/20.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/21.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/22.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/23.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/24.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/25.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/26.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-cafe-cho-iu-chill/RENDER QUAN CF/27.jpg"
+          },
+        ]
       }
-      
+
     ],
     name_vn: 'F&B',
     name_en: 'F&B'
@@ -2053,6 +2790,346 @@ export const categories: Category[] = [
           },
         ],
       },
+      {
+        id: 54,
+        name_vn: "SHOWROOM LONG ANH",
+        name_en: "LONG ANH SHOWROOM",
+        description_vn: "Thiết kế showroom ô tô hiện đại, sang trọng tại Long Anh.",
+        description_en: "Modern and luxurious car showroom design at Long Anh.",
+        image: "/uploads/projects/showroom-long-anh/mat tien/5.jpg",
+        slug: "showroom-long-anh",
+        images: [
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/2.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/4.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/5.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/6.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/7.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/8.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/9.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/mat tien/10.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/2.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/3.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/4.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/5.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/7.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/8.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/10.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/11.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/12.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/13.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/15.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/17.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/18.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/19.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/văn phòng/20.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/1.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/2.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/3.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/4.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/5.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/6.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/7.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/8.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/9.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/10.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/11.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/12.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/13.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/14.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/15.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/19.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/20.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/21.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/22.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/23.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/24.jpg"
+          },
+          {
+            image: "/uploads/projects/showroom-long-anh/26.jpg"
+          }
+        ]
+      },
+      {
+        id: 55,
+        name_vn: "QUÁN BIDA D8 STATION",
+        name_en: "BILLIARDS CLUB D8 STATION",
+        description_vn: "Thiết kế quán bida hiện đại, sang trọng tại Quận 8.",
+        description_en: "Modern and luxurious billiards club design in District 8.",
+        image: "/uploads/projects/quan-bida-quan-8/INT_10.jpg",
+        slug: "quan-bida-quan-8",
+        images: [
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_4.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_5.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_6.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_8.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_9.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_10.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_11.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_12.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_13.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_14.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_15.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_16.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_17.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_18.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_19.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_20.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_21.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_22.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/INT_23.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/WC_1.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/WC_2.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/WC_3.jpg"
+          },
+          {
+            image: "/uploads/projects/quan-bida-quan-8/WC_4.jpg"
+          },
+        ],
+      },
+      {
+        id: 56,
+        name_vn: "MEOW BILLIARDS",
+        name_en: "MEOW BILLIARDS",
+        description_vn: "Thiết kế quán bida phong cách hiện đại, trẻ trung tại Meow Billiards.",
+        description_en: "Modern and youthful billiards club design at Meow Billiards.",
+        image: "/uploads/projects/meow-billiards/3-1.jpg",
+        slug: "meow-billiards",
+        images: [
+          {
+            image: "/uploads/projects/meow-billiards/1-1.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/2-1.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/3-1.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/1.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/2.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/3.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/4.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/5.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/6.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/7.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/8.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/9.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/10.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/12.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/13.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/14.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/15.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/16.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/17.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/18.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/19.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/20.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/21.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/22.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/23.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/24.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/25.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/27.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/28.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/29.jpg"
+          },
+          {
+            image: "/uploads/projects/meow-billiards/30.jpg"
+          },
+
+        ]
+      }
     ],
     name_vn: 'Khác',
     name_en: 'Other'
