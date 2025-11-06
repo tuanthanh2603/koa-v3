@@ -4,6 +4,7 @@ import Logo1 from '~/assets/images/logo__Artboard 4.png'
 import Logo2 from '~/assets/images/logo__Artboard 52.png'
 import HomePage2 from '~/components/HomePage2.vue'
 
+
 definePageMeta({
   layout: false,
 })

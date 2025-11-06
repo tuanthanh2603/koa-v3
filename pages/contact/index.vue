@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 type FormState = {
     name: string
@@ -9,6 +9,9 @@ type FormState = {
     budget: string
     message: string
 }
+
+const colorMode = useColorMode()
+const isHydrated = ref(false)
 
 const form = ref<FormState>({
     name: '',
@@ -25,6 +28,17 @@ const submitError = ref<string>('')
 
 const isValid = computed(() => {
     return form.value.name.trim().length > 0 && (form.value.phone.trim().length > 0 || form.value.email.trim().length > 0)
+})
+
+onMounted(() => {
+    // Load color mode from localStorage
+    if (process.client) {
+        const savedColorMode = localStorage.getItem('nuxt-color-mode')
+        if (savedColorMode === 'dark' || savedColorMode === 'light') {
+            colorMode.preference = savedColorMode
+        }
+        isHydrated.value = true
+    }
 })
 
 async function submitForm() {
@@ -55,29 +69,118 @@ async function submitForm() {
     }
 }
 </script>
-<template>
-    <section >
-        <div class="contact-wrapper">
-            <h1 class="text-2xl font-bold text-center">Liên hệ báo giá</h1>
-            <p class="text-sm my-5 text-center">Vui lòng điền thông tin, chúng tôi sẽ liên hệ tư vấn và báo giá.</p>
 
-            <form class="contact-form" @submit.prevent="submitForm">
+<template>
+    <section v-if="isHydrated" :class="[
+        'transition-colors duration-500',
+        colorMode.value === 'dark' ? 'bg-slate-950' : 'bg-white'
+    ]">
+        <div class="contact-wrapper">
+            <h1 :class="[
+                'text-2xl font-bold text-center transition-colors duration-300',
+                colorMode.value === 'dark' ? 'text-slate-100' : 'text-black'
+            ]">
+                Liên hệ báo giá
+            </h1>
+            <p :class="[
+                'text-sm my-5 text-center transition-colors duration-300',
+                colorMode.value === 'dark' ? 'text-slate-400' : 'text-gray-600'
+            ]">
+                Vui lòng điền thông tin, chúng tôi sẽ liên hệ tư vấn và báo giá.
+            </p>
+
+            <form class="contact-form" @submit.prevent="submitForm" :class="[
+                'border transition-colors duration-300',
+                colorMode.value === 'dark'
+                    ? 'bg-slate-900 border-slate-800'
+                    : 'bg-white border-gray-200'
+            ]">
                 <div class="grid">
+                    <!-- Name -->
                     <div class="field">
-                        <label for="name" class="text-base">Họ và tên<span class="req">*</span></label>
-                        <input class="text-black placeholder-gray-400" id="name" type="text" v-model="form.name" placeholder="Nguyễn Văn A" />
+                        <label for="name" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Họ và tên
+                            <span class="req">*</span>
+                        </label>
+                        <input 
+                            id="name" 
+                            type="text" 
+                            v-model="form.name" 
+                            placeholder="Nguyễn Văn A"
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 placeholder-gray-400 focus:border-blue-500'
+                            ]"
+                        />
                     </div>
+
+                    <!-- Phone -->
                     <div class="field">
-                        <label for="phone" class="text-base">Số điện thoại</label>
-                        <input class="text-black placeholder-gray-400" id="phone" type="tel" v-model="form.phone" placeholder="090x xxx xxx" />
+                        <label for="phone" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Số điện thoại
+                        </label>
+                        <input 
+                            id="phone" 
+                            type="tel" 
+                            v-model="form.phone" 
+                            placeholder="090x xxx xxx"
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 placeholder-gray-400 focus:border-blue-500'
+                            ]"
+                        />
                     </div>
+
+                    <!-- Email -->
                     <div class="field">
-                        <label for="email" class="text-base">Email</label>
-                        <input class="text-black placeholder-gray-400" id="email" type="email" v-model="form.email" placeholder="your@email.com" />
+                        <label for="email" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Email
+                        </label>
+                        <input 
+                            id="email" 
+                            type="email" 
+                            v-model="form.email" 
+                            placeholder="your@email.com"
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 placeholder-gray-400 focus:border-blue-500'
+                            ]"
+                        />
                     </div>
+
+                    <!-- Project Type -->
                     <div class="field">
-                        <label for="projectType" class="text-base">Loại dự án</label>
-                        <select id="projectType" v-model="form.projectType">
+                        <label for="projectType" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Loại dự án
+                        </label>
+                        <select 
+                            id="projectType" 
+                            v-model="form.projectType"
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 focus:border-blue-500'
+                            ]"
+                        >
                             <option value="">-- Chọn --</option>
                             <option>Thiết kế nội thất</option>
                             <option>Thi công nội thất</option>
@@ -87,25 +190,83 @@ async function submitForm() {
                             <option>Dịch vụ khác</option>
                         </select>
                     </div>
+
+                    <!-- Budget -->
                     <div class="field">
-                        <label for="budget" class="text-base">Ngân sách dự kiến</label>
-                        <input id="budget" type="text" v-model="form.budget" placeholder="VD: 200 triệu" class="text-black placeholder-gray-400"/>
+                        <label for="budget" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Ngân sách dự kiến
+                        </label>
+                        <input 
+                            id="budget" 
+                            type="text" 
+                            v-model="form.budget" 
+                            placeholder="VD: 200 triệu"
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 placeholder-gray-400 focus:border-blue-500'
+                            ]"
+                        />
                     </div>
+
+                    <!-- Message -->
                     <div class="field field-full">
-                        <label for="message" class="text-base">Nội dung yêu cầu</label>
-                        <textarea class="text-black placeholder-gray-400" id="message" rows="5" v-model="form.message" placeholder="Mô tả nhu cầu của bạn..."></textarea>
+                        <label for="message" :class="[
+                            'text-base transition-colors duration-300',
+                            colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-900'
+                        ]">
+                            Nội dung yêu cầu
+                        </label>
+                        <textarea 
+                            id="message" 
+                            rows="5" 
+                            v-model="form.message" 
+                            placeholder="Mô tả nhu cầu của bạn..."
+                            :class="[
+                                'px-3 py-2 border rounded-lg outline-none transition-all duration-300 resize-none',
+                                colorMode.value === 'dark'
+                                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500 focus:border-blue-500'
+                                    : 'bg-white text-black border-gray-300 placeholder-gray-400 focus:border-blue-500'
+                            ]"
+                        ></textarea>
                     </div>
                 </div>
 
+                <!-- Actions -->
                 <div class="actions">
-                    <button class="btn" type="submit" :disabled="submitting">
+                    <button 
+                        class="btn" 
+                        type="submit" 
+                        :disabled="submitting"
+                        :class="[
+                            'transition-all duration-300',
+                            colorMode.value === 'dark'
+                                ? 'bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed'
+                                : 'bg-black hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed'
+                        ]"
+                    >
                         {{ submitting ? 'Đang gửi...' : 'Gửi yêu cầu' }}
                     </button>
                 </div>
 
+                <!-- Messages -->
                 <p v-if="!isValid" class="hint"></p>
-                <p v-if="submitError" class="text-[#dc2626] text-base">{{ submitError }}</p>
-                <p v-if="submitSuccess" class="success">{{ submitSuccess }}</p>
+                <p v-if="submitError" :class="[
+                    'text-base mt-3 transition-colors duration-300',
+                    colorMode.value === 'dark' ? 'text-red-400' : 'text-red-600'
+                ]">
+                    {{ submitError }}
+                </p>
+                <p v-if="submitSuccess" :class="[
+                    'success transition-colors duration-300',
+                    colorMode.value === 'dark' ? 'text-green-400' : 'text-green-600'
+                ]">
+                    {{ submitSuccess }}
+                </p>
             </form>
         </div>
     </section>
@@ -114,25 +275,44 @@ async function submitForm() {
 <style scoped>
 .contact-wrapper { max-width: 880px; margin: 0 auto; padding: 24px 16px; }
 .title { font-size: 28px; font-weight: 700; margin: 8px 0 4px; }
-.subtitle { color: #666; margin: 0 0 20px; }
+.subtitle { margin: 0 0 20px; }
 
-.contact-form { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 16px; }
+.contact-form { border-radius: 12px; padding: 16px; }
 .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
 
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field-full { grid-column: 1 / -1; }
+
 label { font-weight: 600; }
 .req { color: #e11d48; margin-left: 4px; }
-input, select, textarea { padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
-input:focus, select:focus, textarea:focus { border-color: #999; }
+
+input, select, textarea { 
+    border-radius: 8px; 
+    outline: none; 
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus { 
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
 
 .actions { margin-top: 8px; }
-.btn { background: #111; color: #fff; padding: 10px 16px; border-radius: 8px; border: none; cursor: pointer; }
+.btn { 
+    color: #fff; 
+    padding: 10px 16px; 
+    border-radius: 8px; 
+    border: none; 
+    cursor: pointer;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
+
 .btn[disabled] { opacity: 0.6; cursor: not-allowed; }
 
-.hint { margin-top: 8px; color: #888; font-size: 14px; }
-.error { margin-top: 8px; color: #dc2626; font-weight: 600; }
-.success { margin-top: 8px; color: #16a34a; font-weight: 600; }
+.hint { margin-top: 8px; font-size: 14px; }
+.error { margin-top: 8px; font-weight: 600; }
+.success { margin-top: 8px; font-weight: 600; }
 
 @media (min-width: 720px) {
   .grid { grid-template-columns: repeat(2, 1fr); }

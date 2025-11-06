@@ -1433,6 +1433,68 @@ export const categories: Category[] = [
             image: "/uploads/projects/villa-dak-lak/SAN PHOI/18.jpg"
           },
         ]
+      },
+      {
+        id: 25,
+        name_vn: "NHÀ VƯỜN ZEN HOUSE",
+        name_en: "ZEN HOUSE GARDEN HOUSE",
+        description_vn: "Thiết kế nhà vườn phong cách Zen, gần gũi thiên nhiên.",
+        description_en: "Zen-style garden house design, close to nature.",
+        image: "/uploads/projects/nha-vuon-zen-house/IN_10.jpg",
+        slug: "nha-vuon-zen-house",
+        images: [
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_1.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_2.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_3.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_4.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_5.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_6.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_7.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_8.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_9.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/EX_10.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_4.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_5.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_6.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_7.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_8.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_9.jpg"
+          },
+          {
+            image: "/uploads/projects/nha-vuon-zen-house/IN_10.jpg"
+          },
+        ]
       }
     ],
     name_vn: 'Villa',
@@ -3130,68 +3192,7 @@ export const categories: Category[] = [
 
         ]
       },
-      {
-        id: 57,
-        name_vn: "NHÀ VƯỜN ZEN HOUSE",
-        name_en: "ZEN HOUSE GARDEN HOUSE",
-        description_vn: "Thiết kế nhà vườn phong cách Zen, gần gũi thiên nhiên.",
-        description_en: "Zen-style garden house design, close to nature.",
-        image: "/uploads/projects/nha-vuon-zen-house/IN_10.jpg",
-        slug: "nha-vuon-zen-house",
-        images: [
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_1.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_2.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_3.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_4.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_5.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_6.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_7.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_8.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_9.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/EX_10.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_4.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_5.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_6.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_7.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_8.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_9.jpg"
-          },
-          {
-            image: "/uploads/projects/nha-vuon-zen-house/IN_10.jpg"
-          },
-        ]
-      }
+      
     ],
     name_vn: 'Khác',
     name_en: 'Other'

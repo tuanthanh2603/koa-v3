@@ -5,7 +5,11 @@ import { useRouter } from 'vue-router'
 import img1 from '~/assets/images/PK_SKYVIEW1.jpg'
 import img2 from '~/assets/images/PK_SKYVIEW6.jpg'
 import img3 from '~/assets/images/PLV_SKYVIEW4.jpg'
-
+import imgDuAn from '~/assets/home_image/du-an.jpg'
+import imgKienThuc from '~/assets/home_image/kien-thuc.jpg'
+import imgTuyenDung from '~/assets/home_image/tuyen-dung.jpg'
+import imgThongTin from '~/assets/home_image/thong-tin.jpg'
+import imgLienHe from '~/assets/home_image/lien-he.jpg'
 interface GridItem {
   label: string
   image: string
@@ -17,11 +21,11 @@ const hoveredIndex = ref<number | null>(null)
 const imagesLoaded = ref<Set<number>>(new Set())
 
 const items: GridItem[] = [
-  { label: 'Dự án', image: img1, path: '/projects' },
-  { label: 'Kiến thức', image: img2, path: '/knowledge' },
-  { label: 'Tuyển dụng', image: img2, path: '/recruitment' },
-  { label: 'Thông tin', image: img3, path: '/info' },
-  { label: 'Liên hệ', image: img1, path: '/contact' }
+  { label: 'Dự án', image: imgDuAn, path: '/projects' },
+  { label: 'Kiến thức', image: imgKienThuc, path: '/knowledge' },
+  { label: 'Tuyển dụng', image: imgTuyenDung, path: '/recruitment' },
+  { label: 'Thông tin', image: imgThongTin, path: '/info' },
+  { label: 'Liên hệ', image: imgLienHe, path: '/contact' }
 ]
 
 const preloadImages = () => {
