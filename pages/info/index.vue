@@ -59,7 +59,7 @@ onMounted(() => {
 <template>
   <div v-if="isHydrated" :class="[
     'transition-colors duration-500',
-    colorMode.value === 'dark' ? 'bg-slate-950' : 'bg-white'
+    colorMode.value === 'dark' ? 'bg-black' : 'bg-white'
   ]">
     <!-- Header Section -->
     <section class="pt-20 pb-16 px-4">

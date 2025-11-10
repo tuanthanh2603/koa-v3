@@ -73,7 +73,7 @@ async function submitForm() {
 <template>
     <section v-if="isHydrated" :class="[
         'transition-colors duration-500',
-        colorMode.value === 'dark' ? 'bg-slate-950' : 'bg-white'
+        colorMode.value === 'dark' ? 'bg-black' : 'bg-white'
     ]">
         <div class="contact-wrapper">
             <h1 :class="[

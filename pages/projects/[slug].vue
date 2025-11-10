@@ -109,7 +109,7 @@ const { locale } = useI18n()
 <template>
   <div v-if="isHydrated && project" :class="[
     'transition-colors duration-500',
-    colorMode.value === 'dark' ? 'bg-slate-950' : 'bg-white'
+    colorMode.value === 'dark' ? 'bg-black text-white' : 'bg-white'
   ]">
     <div :class="{ 'opacity-0': !pageLoaded }" class="transition-opacity duration-700 ease-out">
       <!-- Breadcrumb Navigation -->
@@ -167,7 +167,7 @@ const { locale } = useI18n()
       <div 
         :class="[
           '-mx-4 px-4 py-8 mb-8 transition-all duration-1000 ease-out',
-          colorMode.value === 'dark' ? 'bg-slate-900' : 'bg-gray-50',
+          colorMode.value === 'dark' ? 'bg-black' : 'bg-gray-50',
           { 'opacity-0 translate-y-[-20px]': !headerVisible }
         ]"
       >

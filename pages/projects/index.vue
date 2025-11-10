@@ -103,7 +103,7 @@ const handleCategoryClick = (idx: number | null) => {
   <div v-if="isHydrated" :class="[
     'min-h-screen transition-colors duration-500',
     colorMode.value === 'dark'
-      ? 'bg-slate-950'
+      ? 'bg-black text-white'
       : 'bg-white'
   ]">
     <!-- Header -->

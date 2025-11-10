@@ -116,7 +116,7 @@ const resetForm = () => {
 <template>
   <section v-if="isHydrated" :class="[
     'transition-colors duration-500',
-    colorMode.value === 'dark' ? 'bg-slate-950' : 'bg-white'
+    colorMode.value === 'dark' ? 'bg-black' : 'bg-white'
   ]">
     <!-- Main Content -->
     <div class="max-w-6xl mx-auto px-4 py-16">
