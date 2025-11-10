@@ -2217,7 +2217,7 @@ export const categories: Category[] = [
       },
       {
         id: 43,
-        name_vn: "LÀ COFFEE",
+        name_vn: "LA COFFEE",
         name_en: "LA COFFEE",
         description_vn: "Thiết kế quán cafe phong cách hiện đại, tối giản tại La Coffee.",
         description_en: "Modern and minimalist cafe design at La Coffee.",
