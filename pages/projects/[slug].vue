@@ -234,7 +234,7 @@ const { locale } = useI18n()
                 <div
                   @click="openLightbox"
                   :class="[
-                    'flex-1 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ring-4 ring-offset-4 shadow-2xl flex items-center justify-center group',
+                    'flex-1 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ring-2 ring-offset-4 shadow-2xl flex items-center justify-center group',
                     colorMode.value === 'dark' 
                       ? 'ring-black ring-offset-slate-800' 
                       : 'ring-black ring-offset-white'
