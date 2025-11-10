@@ -25,8 +25,22 @@ const currentCategory = computed(() => {
 
 const categoryId = computed(() => currentCategory.value?.id || '')
 
+// Lấy 3 ảnh để hiển thị (trước, hiện tại, sau)
+const displayedImages = computed(() => {
+  const images = getImages()
+  if (images.length === 0) return []
+  
+  const prevIndex = (selectedImageIndex.value - 1 + images.length) % images.length
+  const nextIndex = (selectedImageIndex.value + 1) % images.length
+  
+  return [
+    images[prevIndex],
+    images[selectedImageIndex.value],
+    images[nextIndex]
+  ]
+})
+
 onMounted(async () => {
-  // Load color mode from localStorage
   if (process.client) {
     const savedColorMode = localStorage.getItem('nuxt-color-mode')
     if (savedColorMode === 'dark' || savedColorMode === 'light') {
@@ -192,42 +206,67 @@ const { locale } = useI18n()
         class="max-w-7xl mx-auto px-4 transition-all duration-1000 ease-out delay-300"
         :class="{ 'opacity-0 translate-y-[20px]': !galleryVisible }"
       >
-        <div v-if="getImages().length > 0" class="space-y-8">
-          <!-- Main Image - Responsive Container -->
+        <div v-if="getImages().length > 0" class="space-y-3">
+          <!-- 3-Image Carousel Display -->
           <div class="relative">
             <div 
-              @click="openLightbox"
               :class="[
-                'relative rounded-2xl overflow-hidden cursor-pointer group flex items-center justify-center transition-colors duration-300',
+                'relative rounded-2xl overflow-hidden flex items-center justify-center transition-colors duration-300 py-2 max-h-[85vh]',
                 colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-100'
               ]"
             >
-              <!-- Container thích ứng theo aspect ratio -->
-              <div class="relative w-full flex items-center justify-center max-h-[70vh]">
-                <Transition
-                  mode="out-in"
-                  enter-active-class="transition-opacity duration-700 ease-in-out"
-                  leave-active-class="transition-opacity duration-700 ease-in-out"
-                  enter-from-class="opacity-0"
-                  leave-to-class="opacity-0"
+              <div class="flex items-center justify-center w-full h-full">
+                <!-- Ảnh bên trái (mờ) -->
+                <div
+                  :class="[
+                    'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-75 flex items-center justify-center',
+                    colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
+                  ]"
                 >
                   <img 
-                    :key="selectedImageIndex"
-                    :src="getImages()[selectedImageIndex].image" 
-                    :alt="project.images?.filter(img => img.image === getImages()[selectedImageIndex].image)[0]?.image || project.name_en"
-                    class="w-auto h-auto max-w-full max-h-[70vh] object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                    :src="displayedImages[0]?.image" 
+                    :alt="project.name_en"
+                    class="w-full h-full object-cover"
                   />
-                </Transition>
+                </div>
+
+                <!-- Ảnh chính (nổi bật) -->
+                <div
+                  @click="openLightbox"
+                  :class="[
+                    'flex-1 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ring-4 ring-offset-4 shadow-2xl flex items-center justify-center group',
+                    colorMode.value === 'dark' 
+                      ? 'ring-blue-500 ring-offset-slate-800' 
+                      : 'ring-blue-400 ring-offset-white'
+                  ]"
+                >
+                  <img 
+                    :src="displayedImages[1]?.image" 
+                    :alt="project.name_en"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                <!-- Ảnh bên phải (mờ) -->
+                <div
+                  :class="[
+                    'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-75 flex items-center justify-center',
+                    colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
+                  ]"
+                >
+                  <img 
+                    :src="displayedImages[2]?.image" 
+                    :alt="project.name_en"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              
-              <!-- Gradient overlay on hover -->
-              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
-              
-              <!-- Navigation buttons - Floating on image -->
+
+              <!-- Navigation buttons -->
               <button 
-                @click.stop="prevImage"
+                @click="prevImage"
                 :class="[
-                  'absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl opacity-0 group-hover:opacity-100 z-10',
+                  'absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl z-10',
                   colorMode.value === 'dark'
                     ? 'bg-slate-800/90 hover:bg-slate-800 border-slate-700 hover:border-slate-600'
                     : 'bg-white/90 hover:bg-white border-gray-200 hover:border-gray-300'
@@ -239,9 +278,9 @@ const { locale } = useI18n()
               </button>
 
               <button 
-                @click.stop="nextImage"
+                @click="nextImage"
                 :class="[
-                  'absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl opacity-0 group-hover:opacity-100 z-10',
+                  'absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl z-10',
                   colorMode.value === 'dark'
                     ? 'bg-slate-800/90 hover:bg-slate-800 border-slate-700 hover:border-slate-600'
                     : 'bg-white/90 hover:bg-white border-gray-200 hover:border-gray-300'
@@ -252,16 +291,16 @@ const { locale } = useI18n()
                 </svg>
               </button>
 
-              <!-- Image counter - Top right -->
+              <!-- Image counter -->
               <div :class="[
-                'absolute top-4 right-4 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10',
+                'absolute top-4 right-4 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-sm font-medium z-10',
                 colorMode.value === 'dark' ? 'bg-black/60' : 'bg-black/50'
               ]">
                 {{ selectedImageIndex + 1 }} / {{ getImages().length }}
               </div>
             </div>
 
-            <!-- Navigation buttons below main image (mobile-friendly) -->
+            <!-- Navigation buttons mobile -->
             <div class="flex justify-center items-center mt-6 gap-4 md:hidden">
               <button 
                 @click="prevImage"
@@ -302,7 +341,7 @@ const { locale } = useI18n()
           <div class="relative">
             <div 
               ref="thumbnailContainer"
-              class="flex gap-4 overflow-x-auto pb-4 pt-2 scroll-smooth snap-x snap-mandatory -mx-4 px-4 scrollbar-thin"
+              class="flex gap-4 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory -mx-4 px-4 scrollbar-thin"
             >
               <TransitionGroup
                 name="thumbnail"
@@ -342,7 +381,6 @@ const { locale } = useI18n()
                     ]" />
                   </Transition>
                   
-                  <!-- Thumbnail index number -->
                   <div :class="[
                     'absolute bottom-2 right-2 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium',
                     colorMode.value === 'dark' ? 'bg-black/60' : 'bg-black/60'
@@ -408,7 +446,6 @@ const { locale } = useI18n()
             />
           </Transition>
 
-          <!-- Navigation controls in lightbox -->
           <button
             @click.stop="prevImage"
             class="absolute left-6 top-1/2 -translate-y-1/2 text-white hover:text-gray-200 transition-all duration-300 hover:scale-110 active:scale-95 rounded-full p-3 hover:bg-white/10"
@@ -476,6 +513,19 @@ const { locale } = useI18n()
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
+}
+
+.carousel-enter-active,
+.carousel-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.carousel-enter-from {
+  opacity: 0;
+}
+
+.carousel-leave-to {
+  opacity: 0;
 }
 
 .thumbnail-enter-active,
