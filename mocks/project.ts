@@ -1971,6 +1971,98 @@ export const categories: Category[] = [
             image: "/uploads/projects/can-ho-chi-diep/PN_6.jpg"
           },
         ]
+      },
+      {
+        id: 37,
+        name_vn: "INDOCHINE",
+        name_en: "INDOCHINE",
+        description_vn: "Thiết kế nội thất căn hộ phong cách Indochine sang trọng, tinh tế.",
+        description_en: "Luxurious and sophisticated Indochine style apartment interior design.",
+        image: "/uploads/projects/indochine/LOGO/PHONG KHACH/2.jpg",
+        slug: "indochine",
+        images: [
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/1.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/2.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/3.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/4.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/5.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/6.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/7.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/8.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/9.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/10.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/11.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/12.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/13.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG KHACH/14.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/1.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/2.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/3.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/4.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/5.jpg"
+          },
+          { 
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/1.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/2.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/3.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/5.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/6.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/7.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/8.jpg"
+          },
+          {
+            image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/9.jpg"
+          }
+        ],
       }
     ],
     name_vn: 'Căn hộ',
@@ -3192,6 +3284,41 @@ export const categories: Category[] = [
 
         ]
       },
+      {
+        id: 57,
+        name_vn: "SHOP QUẦN ÁO - MINIMAL",
+        name_en: "CLOTHING SHOP - MINIMAL",
+        description_vn: "Thiết kế shop quần áo phong cách tối giản, hiện đại.",
+        description_en: "Clothing shop design with a minimalist and modern style.",
+        image: "/uploads/projects/SHOP QUAN AO - MINIMAL/8.jpg",
+        slug: "shop-quan-ao-minimal",
+        images: [
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/1.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/2.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/3.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/4.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/5.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/6.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/7.jpg"
+          },
+          {
+            image: "/uploads/projects/SHOP QUAN AO - MINIMAL/8.jpg"
+          },
+        ],
+      }
       
     ],
     name_vn: 'Khác',
