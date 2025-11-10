@@ -16,22 +16,36 @@ onMounted(() => {
 })
 </script>
 
+
+
+
+
+
+
 <template>
   <section>
     <Header />
     <!-- ✅ Chỉ render khi đã hydrate xong để tránh flash -->
-    <div v-if="isHydrated" :class="[
-      'min-h-screen transition-colors duration-500',
-      colorMode.value === 'dark'
-        ? 'bg-black text-white'
-        : 'bg-white'
-    ]"
-      class="pt-[22%] px-2 md:px-4 md:py-[12%]"
+    <div 
+      v-if="isHydrated" 
+      :class="[
+        'min-h-screen transition-colors duration-500',
+        colorMode.value === 'dark'
+          ? 'bg-black text-white'
+          : 'bg-white text-black'
+      ]"
+      class="
+        pt-8 px-2
+        sm:pt-[110px] sm:px-4
+        md:pt-[130px] md:px-6
+        lg:pt-[150px] lg:px-8
+      "
     >
       <slot />
     </div>
   </section>
 </template>
+
 
 <style scoped>
 div {
