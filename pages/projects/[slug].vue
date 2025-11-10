@@ -206,7 +206,7 @@ const { locale } = useI18n()
         class="max-w-7xl mx-auto px-4 transition-all duration-1000 ease-out delay-300"
         :class="{ 'opacity-0 translate-y-[20px]': !galleryVisible }"
       >
-        <div v-if="getImages().length > 0" class="space-y-3">
+        <div v-if="getImages().length > 0" class="space-y-4">
           <!-- 3-Image Carousel Display -->
           <div class="relative">
             <div 
@@ -236,8 +236,8 @@ const { locale } = useI18n()
                   :class="[
                     'flex-1 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ring-4 ring-offset-4 shadow-2xl flex items-center justify-center group',
                     colorMode.value === 'dark' 
-                      ? 'ring-blue-500 ring-offset-slate-800' 
-                      : 'ring-blue-400 ring-offset-white'
+                      ? 'ring-black ring-offset-slate-800' 
+                      : 'ring-black ring-offset-white'
                   ]"
                 >
                   <img 
@@ -341,7 +341,7 @@ const { locale } = useI18n()
           <div class="relative">
             <div 
               ref="thumbnailContainer"
-              class="flex gap-4 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory -mx-4 px-4 scrollbar-thin"
+              class="flex gap-4 overflow-x-auto pb-1 pt-2 scroll-smooth snap-x snap-mandatory -mx-4 px-4 scrollbar-thin"
             >
               <TransitionGroup
                 name="thumbnail"
@@ -357,8 +357,8 @@ const { locale } = useI18n()
                     'relative shrink-0 h-28 sm:h-32 rounded-xl overflow-hidden cursor-pointer border-2 transition-all duration-300 hover:scale-105 active:scale-95 snap-start',
                     selectedImageIndex === index 
                       ? colorMode.value === 'dark'
-                        ? 'border-blue-500 shadow-lg ring-2 ring-blue-900 scale-105'
-                        : 'border-blue-500 shadow-lg ring-2 ring-blue-200 scale-105'
+                        ? 'border-black shadow-lg ring-2 ring-black scale-105'
+                        : 'border-black shadow-lg ring-2 ring-black scale-105'
                       : colorMode.value === 'dark'
                         ? 'border-slate-700 hover:border-slate-600'
                         : 'border-gray-300 hover:border-gray-400'
