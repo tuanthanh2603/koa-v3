@@ -599,6 +599,41 @@ export const categories: Category[] = [
             image: "/uploads/projects/thang-house/100000.jpg"
           }
         ]
+      },
+      {
+        id: 17,
+        name_vn: "Nhà Trâm Nguyễn",
+        name_en: "Tram Nguyen's House",
+        description_vn: "Thiết kế ngoại thất hiện đại, tinh tế tại Nhà Trâm Nguyễn.",
+        description_en: "Modern and sophisticated exterior design at Tram Nguyen's House.",
+        image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg",
+        slug: "nha-tram-nguyen",
+        images: [
+          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_2.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_3.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_4.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_1.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_2.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_3.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_4.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_5.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_6.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_7.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_8.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_9.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_10.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_11.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_12.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_13.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_14.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_15.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_16.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_17.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_18.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_19.jpg"},
+          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_20.jpg"},
+        ]
       }
 
     ],
@@ -2335,8 +2370,59 @@ export const categories: Category[] = [
             image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG02.jpg"
           },
         ]
+      },
+      {
+        id: 39,
+        name_vn: "NHÀ ANH THÔNG",
+        name_en: "MR. THONG'S HOUSE",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình anh Thông.",
+        description_en: "Modern and convenient apartment interior design for Mr. Thong's family.",
+        image: "/uploads/projects/RENDER ANH THONG/1.jpg",
+        slug: "nha-anh-thong",
+        images: [
+          
+          {
+            image: "/uploads/projects/RENDER ANH THONG/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER ANH THONG/13.jpg"
+          }
+        ]
+      },
 
-      }
     ],
     name_vn: 'Căn hộ',
     name_en: 'Apartment'
@@ -3229,7 +3315,121 @@ export const categories: Category[] = [
   {
     id: 6,
     name: "SPA",
-    projects: [],
+    projects: [
+      {
+        id: 61,
+        name_vn: "SPA LAMIA",
+        name_en: "LAMIA SPA",
+        description_vn: "Thiết kế spa hiện đại, sang trọng tại Lamia.",
+        description_en: "Modern and luxurious spa design at Lamia.",
+        image: "/uploads/projects/SPA LAMIA/MT1.jpg",
+        slug: "spa-lamia",
+        images: [
+          { image: "/uploads/projects/SPA LAMIA/MT1.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/MT2.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/MT3.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/MT4.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/1.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/2.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/3.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/4.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/5.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/6.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/7.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/8.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/9.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/10.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/11.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/12.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/13.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/14.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/15.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/16.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/17.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/18.jpg" },
+          { image: "/uploads/projects/SPA LAMIA/19.jpg" },
+        ],
+      },
+      {
+        id: 62,
+        name_vn: "SPA MIN HEALTHCARE",
+        name_en: "SPA MIN HEALTHCARE",
+        description_vn: "Thiết kế spa hiện đại, tiện nghi tại Min Healthcare.",
+        description_en: "Modern and convenient spa design at Min Healthcare.",
+        image: "/uploads/projects/SPA MIN HEALTHCARE/3.jpg",
+        slug: "spa-min-healthcare",
+        images: [
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/1.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/2.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/3.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/4.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/5.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/6.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/7.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/8.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/9.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/10.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/11.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/12.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/13.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/14.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/15.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/16.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/17.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/18.jpg" },
+        ]
+      },
+      {
+        id: 63,
+        name_vn: "SPA DAI LAM MOC",
+        name_en: "DAI LAM MOC SPA",
+        description_vn: "Thiết kế spa hiện đại, sang trọng tại Đại Lâm Mộc.",
+        description_en: "Modern and luxurious spa design at Dai Lam Moc.",
+        image: "/uploads/projects/SPA DAI LAM MOC/6.jpg",
+        slug: "spa-dai-lam-moc",
+        images: [
+          { image: "/uploads/projects/SPA DAI LAM MOC/1.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/2.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/3.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/4.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/5.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/6.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/7.jpg" },
+          { image: "/uploads/projects/SPA DAI LAM MOC/8.jpg" },
+        ]
+      },
+      {
+        id: 64,
+        name_vn: "SPA MẠC THỊ - HAI BÀ TRƯNG - Q3",
+        name_en: "MAC THI SPA - HAI BA TRUNG - Q3",
+        description_vn: "Thiết kế spa hiện đại, tiện nghi tại Mạc Thị - Hai Bà Trưng - Q3.",
+        description_en: "Modern and convenient spa design at Mac Thi - Hai Ba Trung - Q3.",
+        image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_1.jpg",
+        slug: "spa-mac-thi-hai-ba-trung-q3",
+        images: [
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_1.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_2.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_3.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_4.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/1.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/2.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/3.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/4.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/5.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/6.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/7.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/8.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/9.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/10.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/11.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/12.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/13.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/14.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/15.jpg" },
+          { image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/26.jpg" },
+        ]
+      }
+    ],
     name_vn: 'SPA',
     name_en: 'SPA'
 
@@ -3704,6 +3904,222 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/RENDER VP FREEWAY/28.jpg"
           }
+        ]
+      },
+      {
+        id: 77,
+        name_vn: "WORKROOM",
+        name_en: "WORKROOM",
+        description_vn: "Thiết kế không gian làm việc sáng tạo, hiện đại.",
+        description_en: "Creative and modern workspace design.",
+        image: "/uploads/projects/WORKROOM/1.jpg",
+        slug: "workroom",
+        images: [
+          {
+            image: "/uploads/projects/WORKROOM/1.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/2.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/3.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/4.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/5.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/6.jpg"
+          },
+          {
+            image: "/uploads/projects/WORKROOM/7.jpg"
+          },
+        ]
+      },
+      {
+        id: 78,
+        name_vn: "VĂN PHÒNG TAY AU",
+        name_en: "TAY AU OFFICE",
+        description_vn: "Thiết kế văn phòng làm việc hiện đại, tiện nghi tại Tay Au.",
+        description_en: "Modern and convenient office design at Tay Au.",
+        image: "/uploads/projects/VAN PHONG TAY AU/1.jpg",
+        slug: "van-phong-tay-au",
+        images: [
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/1.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/2.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/3.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/4.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/5.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/6.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/7.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/8.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/9.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/10.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/11.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/12.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/13.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/14.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/15.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/16.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/17.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/18.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG TAY AU/19.jpg"
+          }
+        ]
+      },
+      {
+        id: 79,
+        name_vn: "VĂN PHÒNG ANH ĐẠT QUẬN 9",
+        name_en: "ANH DAT OFFICE DISTRICT 9",
+        description_vn: "Thiết kế văn phòng làm việc hiện đại, tiện nghi tại Quận 9.",
+        description_en: "Modern and convenient office design in District 9.",
+        image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/2.jpg",
+        slug: "van-phong-anh-dat-quan-9",
+        images: [
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/1.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/3.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/4.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/5.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/6.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/7.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/8.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/9.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/10.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/11.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/12.jpg"
+          },
+          {
+            image: "/uploads/projects/VAN PHONG ANH DAT QUAN 9/13.jpg"
+          },
+        ]
+      },
+      {
+        id: 710,
+        name_vn: "HAMMOCK HOTEL",
+        name_en: "HAMMOCK HOTEL",
+        description_vn: "Thiết kế khách sạn Hammock hiện đại, tiện nghi.",
+        description_en: "Modern and convenient Hammock hotel design.",
+        image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/1.jpg",
+        slug: "hammock-hotel",
+        images: [
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/6.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/7.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/8.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/9.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/10.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/11.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/12.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/13.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/1. SANH/14.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/2. STANDARD 1/6.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/6.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/3. STANDARD 2/7.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/6.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/7.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/8.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/9.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/10.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/4. DUPLEX 1/11.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/6.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/7.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/8.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/9.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/10.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/11.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/5. DUPLEX 2/12.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/6. TRIBLE ROOM/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/6. TRIBLE ROOM/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/6. TRIBLE ROOM/3.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/6. TRIBLE ROOM/4.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/6. TRIBLE ROOM/5.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/7. TOILET/1.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/7. TOILET/2.jpg" },
+          { image: "/uploads/projects/HAMMOCK HOTEL/7. TOILET/3.jpg" },
         ]
       }
 
