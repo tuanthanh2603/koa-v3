@@ -118,6 +118,74 @@ const goToProjects = () => {
 }
 
 const { locale } = useI18n()
+
+const steps = [
+  {
+    id: 1,
+    title: 'TIẾP NHẬN',
+    description: 'Tiếp nhận thông tin và yêu cầu của khách hàng.',
+    icon: 'i-heroicons-magnifying-glass',
+    top: true
+  },
+  {
+    id: 2,
+    title: 'TƯ VẤN VÀ BÁO GIÁ',
+    description: 'Tư vấn báo giá gói thiết kế và dự trù gói thi công.',
+    icon: 'i-heroicons-users',
+    top: true
+  },
+  {
+    id: 3,
+    title: 'KHẢO SÁT KỸ HỢP ĐỒNG',
+    description: 'Gặp trực tiếp khách hàng, khảo sát lô đất tư vấn chỉ tiết và ký hợp đồng thiết kế.',
+    icon: 'i-heroicons-hand-raised',
+    top: true
+  },
+  {
+    id: 4,
+    title: 'MẶT BẰNG CÔNG NĂNG',
+    description: 'Triển khai mặt bằng công năng theo yêu cầu yêu cầu của khách hàng.',
+    icon: 'i-heroicons-square-3-stack-3d',
+    top: true
+  },
+  {
+    id: 5,
+    title: 'THIẾT KẾ 3D KIẾN TRÚC',
+    description: 'Thiết kế 3D kiến trúc công trình.',
+    icon: 'i-heroicons-computer-desktop',
+    top: true
+  },
+  {
+    id: 6,
+    title: 'HỒ SƠ XIN PHÉP & HỒ SƠ THI CÔNG',
+    description: 'Triển khai hồ sơ xin phép và hồ sơ thi công công trình.',
+    icon: 'i-heroicons-document-text',
+    top: false
+  },
+  {
+    id: 7,
+    title: 'THIẾT KẾ 3D & TRIỂN KHAI NỘI THẤT',
+    description: 'Thiết kế 3D nội thất công trình và triển khai hồ sơ chỉ tiết nộ thất.',
+    icon: 'i-heroicons-window',
+    top: false
+  },
+  {
+    id: 8,
+    title: 'ĐỒNG BỘ',
+    description: 'Đồng bộ hồ sơ kiến trúc theo nội thất.',
+    icon: 'i-heroicons-check-circle',
+    top: false
+  },
+  {
+    id: 9,
+    title: 'BÀN GIAO',
+    description: 'Bàn giao hồ sơ toàn bộ công trình tới tay khách hàng.',
+    icon: 'i-heroicons-arrow-up-tray',
+    top: false
+  }
+]
+const topSteps = computed(() => steps.filter(s => s.top))
+const bottomSteps = computed(() => steps.filter(s => !s.top))
 </script>
 
 <template>
@@ -478,6 +546,92 @@ const { locale } = useI18n()
       <p :class="colorMode.value === 'dark' ? 'text-slate-400' : 'text-gray-600'">
         {{ locale === 'vi' ? 'Đang tải...' : 'Loading...' }}
       </p>
+    </div>
+  </div>
+  <div v-if="isHydrated" :class="colorMode.value === 'dark' ? 'bg-black text-white' : 'bg-white text-black'" class="min-h-screen transition-colors duration-300 p-8 md:p-16">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="mb-16">
+        <!-- <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-600'" class="text-sm tracking-widest mb-4"></p> -->
+        <h1 :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'" class="text-xl md:text-3xl font-bold tracking-wide">QUY TRÌNH TƯ VẤN THIẾT KẾ</h1>
+      </div>
+
+      <!-- Top Row -->
+      <div class="mb-20">
+        <div class="flex justify-between items-start mb-12 gap-6">
+          <div
+            v-for="step in topSteps"
+            :key="step.id"
+            class="flex flex-col items-center flex-1"
+          >
+            <!-- Card -->
+            <div :class="[
+              'border rounded-lg p-6 w-full mb-8 aspect-square flex flex-col justify-between transition-all duration-300 hover:scale-105',
+              colorMode.value === 'dark' 
+                ? 'border-gray-600 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-700/50 bg-gray-900' 
+                : 'border-gray-300 hover:border-gray-600 hover:shadow-lg hover:shadow-gray-400/50 bg-gray-50'
+            ]">
+              <div class="flex justify-end mb-4">
+                <UIcon 
+                  :name="step.icon" 
+                  :class="colorMode.value === 'dark' ? 'text-gray-300' : 'text-gray-700'" 
+                  class="w-12 h-12 transition-colors duration-300" 
+                />
+              </div>
+              <div>
+                <p :class="colorMode.value === 'dark' ? 'text-gray-500' : 'text-gray-600'" class="text-xs tracking-wider mb-2">0{{ step.id }}.</p>
+                <h3 :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'" class="font-bold text-sm mb-3 line-clamp-2">{{ step.title }}</h3>
+                <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-700'" class="text-xs leading-relaxed">{{ step.description }}</p>
+              </div>
+            </div>
+
+            <!-- Connecting line and circle -->
+            <div class="flex flex-col items-center">
+              <div :class="['w-8 h-8 border-2 rounded-full flex items-center justify-center mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'border-gray-600' : 'border-gray-400']">
+                <div :class="colorMode.value === 'dark' ? 'bg-gray-600' : 'bg-gray-400'" class="w-3 h-3 rounded-full transition-colors duration-300"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div>
+        <div class="flex justify-between items-start gap-6">
+          <div
+            v-for="step in bottomSteps"
+            :key="step.id"
+            class="flex flex-col items-center flex-1"
+          >
+            <!-- Connecting line from top -->
+            <div :class="['w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', isDark ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent']"></div>
+
+            <!-- Circle marker -->
+            <div :class="['w-8 h-8 border-2 rounded-full flex items-center justify-center mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'border-gray-600' : 'border-gray-400']">
+              <div :class="colorMode.value === 'dark' ? 'bg-gray-600' : 'bg-gray-400'" class="w-3 h-3 rounded-full transition-colors duration-300"></div>
+            </div>
+
+            <!-- Card -->
+            <div :class="[
+              'border rounded-lg p-6 w-full transition-all duration-300 hover:scale-105',
+              colorMode.value === 'dark' 
+                ? 'border-gray-600 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-700/50 bg-gray-900' 
+                : 'border-gray-300 hover:border-gray-600 hover:shadow-lg hover:shadow-gray-400/50 bg-gray-50'
+            ]">
+              <div class="flex justify-center mb-4">
+                <UIcon 
+                  :name="step.icon" 
+                  :class="colorMode.value === 'dark' ? 'text-gray-300' : 'text-gray-700'" 
+                  class="w-12 h-12 transition-colors duration-300" 
+                />
+              </div>
+              <p :class="colorMode.value === 'dark' ? 'text-gray-500' : 'text-gray-600'" class="text-xs tracking-wider mb-2 text-center">0{{ step.id }}.</p>
+              <h3 :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'" class="font-bold text-sm mb-3 text-center line-clamp-2">{{ step.title }}</h3>
+              <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-700'" class="text-xs leading-relaxed text-center">{{ step.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
