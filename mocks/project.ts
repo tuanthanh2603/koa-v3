@@ -2038,7 +2038,7 @@ export const categories: Category[] = [
           {
             image: "/uploads/projects/indochine/LOGO/PHONG NGU 2/5.jpg"
           },
-          { 
+          {
             image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/1.jpg"
           },
           {
@@ -2063,6 +2063,279 @@ export const categories: Category[] = [
             image: "/uploads/projects/indochine/LOGO/PHONG NGU MASTER/9.jpg"
           }
         ],
+      },
+      {
+        id: 38,
+        name_vn: "NHÀ CHỊ GIANG",
+        name_en: "MS. GIANG'S HOUSE",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Giang.",
+        description_en: "Modern and convenient apartment interior design for Ms. Giang's family.",
+        image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg",
+        slug: "nha-chi-giang",
+        images: [
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/16.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/19.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/19.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/22.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/22.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/23.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/24.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/25.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/26.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/16.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG01.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG02.jpg"
+          },
+        ]
+
       }
     ],
     name_vn: 'Căn hộ',
@@ -2606,39 +2879,10 @@ export const categories: Category[] = [
   },
   {
     id: 5,
-    name: "Khác",
+    name: "SHOWROOM",
     projects: [
       {
         id: 51,
-        name_vn: "PHÒNG GAME",
-        name_en: "GAME ROOM",
-        description_vn: "Thiết kế phòng game hiện đại, tiện nghi.",
-        description_en: "Modern and convenient game room design.",
-        image: "/uploads/projects/phong-game/1.jpg",
-        slug: "phong-game",
-        images: [
-          {
-            image: "/uploads/projects/phong-game/1.jpg"
-          },
-          {
-            image: "/uploads/projects/phong-game/2.jpg"
-          },
-          {
-            image: "/uploads/projects/phong-game/3.jpg"
-          },
-          {
-            image: "/uploads/projects/phong-game/4.jpg"
-          },
-          {
-            image: "/uploads/projects/phong-game/5.jpg"
-          },
-          {
-            image: "/uploads/projects/phong-game/6.jpg"
-          },
-        ],
-      },
-      {
-        id: 52,
         name_vn: "AZ CAR SHOWROOM",
         name_en: "AZ CAR SHOWROOM",
         description_vn: "Thiết kế showroom ô tô sang trọng, hiện đại.",
@@ -2832,120 +3076,7 @@ export const categories: Category[] = [
         ],
       },
       {
-        id: 53,
-        name_vn: "BILLARDS BÌNH CHÁNH",
-        name_en: "BILLIARDS BINH CHANH",
-        description_vn: "Thiết kế phòng bi-a hiện đại, sang trọng.",
-        description_en: "Modern and luxurious billiards room design.",
-        image: "/uploads/projects/billards-binh-chanh/MT-1.jpg",
-        slug: "billiards-binh-chanh",
-        images: [
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-1.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-2.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-3.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-4.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-5.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/MT-6.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-1.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-2.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-3.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-4.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-5.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-6.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-7.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-8.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-9.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-10.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-11.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-12.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE1-13.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-1.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-2.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-3.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-4.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-5.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-6.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-7.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-8.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE2-9.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE3-1.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZONE3-2.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZWC-1.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZWC-2.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZWC-3.jpg"
-          },
-          {
-            image: "/uploads/projects/billards-binh-chanh/ZWC-4.jpg"
-          },
-        ],
-      },
-      {
-        id: 54,
+        id: 52,
         name_vn: "SHOWROOM LONG ANH",
         name_en: "LONG ANH SHOWROOM",
         description_vn: "Thiết kế showroom ô tô hiện đại, sang trọng tại Long Anh.",
@@ -3090,8 +3221,169 @@ export const categories: Category[] = [
           }
         ]
       },
+    ],
+    name_vn: 'SHOWROOM',
+    name_en: 'SHOWROOM'
+
+  },
+  {
+    id: 6,
+    name: "SPA",
+    projects: [],
+    name_vn: 'SPA',
+    name_en: 'SPA'
+
+  },
+  {
+    id: 7,
+    name: "Khác",
+    projects: [
       {
-        id: 55,
+        id: 71,
+        name_vn: "PHÒNG GAME",
+        name_en: "GAME ROOM",
+        description_vn: "Thiết kế phòng game hiện đại, tiện nghi.",
+        description_en: "Modern and convenient game room design.",
+        image: "/uploads/projects/phong-game/1.jpg",
+        slug: "phong-game",
+        images: [
+          {
+            image: "/uploads/projects/phong-game/1.jpg"
+          },
+          {
+            image: "/uploads/projects/phong-game/2.jpg"
+          },
+          {
+            image: "/uploads/projects/phong-game/3.jpg"
+          },
+          {
+            image: "/uploads/projects/phong-game/4.jpg"
+          },
+          {
+            image: "/uploads/projects/phong-game/5.jpg"
+          },
+          {
+            image: "/uploads/projects/phong-game/6.jpg"
+          },
+        ],
+      },
+
+      {
+        id: 72,
+        name_vn: "BILLARDS BÌNH CHÁNH",
+        name_en: "BILLIARDS BINH CHANH",
+        description_vn: "Thiết kế phòng bi-a hiện đại, sang trọng.",
+        description_en: "Modern and luxurious billiards room design.",
+        image: "/uploads/projects/billards-binh-chanh/MT-1.jpg",
+        slug: "billiards-binh-chanh",
+        images: [
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-1.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-2.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-3.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-4.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-5.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/MT-6.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-1.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-2.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-3.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-4.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-5.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-6.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-7.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-8.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-9.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-10.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-11.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-12.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE1-13.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-1.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-2.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-3.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-4.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-5.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-6.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-7.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-8.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE2-9.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE3-1.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZONE3-2.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZWC-1.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZWC-2.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZWC-3.jpg"
+          },
+          {
+            image: "/uploads/projects/billards-binh-chanh/ZWC-4.jpg"
+          },
+        ],
+      },
+
+      {
+        id: 73,
         name_vn: "QUÁN BIDA D8 STATION",
         name_en: "BILLIARDS CLUB D8 STATION",
         description_vn: "Thiết kế quán bida hiện đại, sang trọng tại Quận 8.",
@@ -3180,7 +3472,7 @@ export const categories: Category[] = [
         ],
       },
       {
-        id: 56,
+        id: 74,
         name_vn: "MEOW BILLIARDS",
         name_en: "MEOW BILLIARDS",
         description_vn: "Thiết kế quán bida phong cách hiện đại, trẻ trung tại Meow Billiards.",
@@ -3285,7 +3577,7 @@ export const categories: Category[] = [
         ]
       },
       {
-        id: 57,
+        id: 75,
         name_vn: "SHOP QUẦN ÁO - MINIMAL",
         name_en: "CLOTHING SHOP - MINIMAL",
         description_vn: "Thiết kế shop quần áo phong cách tối giản, hiện đại.",
@@ -3318,8 +3610,103 @@ export const categories: Category[] = [
             image: "/uploads/projects/SHOP QUAN AO - MINIMAL/8.jpg"
           },
         ],
+      },
+      {
+        id: 76,
+        name_vn: "VĂN PHÒNG FREEWAY",
+        name_en: "FREEWAY OFFICE",
+        description_vn: "Thiết kế văn phòng làm việc hiện đại, tiện nghi tại Freeway.",
+        description_en: "Modern and convenient office design at Freeway.",
+        image: "/uploads/projects/RENDER VP FREEWAY/25.jpg",
+        slug: "van-phong-freeway",
+        images: [
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/16.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/19.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/22.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/23.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/24.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/25.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/26.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/27.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER VP FREEWAY/28.jpg"
+          }
+        ]
       }
-      
+
     ],
     name_vn: 'Khác',
     name_en: 'Other'
