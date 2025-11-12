@@ -557,13 +557,16 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
       </div>
 
       <!-- Top Row -->
-      <div class="mb-20">
-        <div class="flex justify-between items-start mb-12 gap-6">
+      <div class="">
+        <div class="flex justify-between items-start gap-6">
           <div
             v-for="step in topSteps"
             :key="step.id"
             class="flex flex-col items-center flex-1"
           >
+
+          
+        
             <!-- Card -->
             <div :class="[
               'border rounded-lg p-6 w-full mb-8 aspect-square flex flex-col justify-between transition-all duration-300 hover:scale-105',
@@ -591,6 +594,8 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
                 <div :class="colorMode.value === 'dark' ? 'bg-gray-600' : 'bg-gray-400'" class="w-3 h-3 rounded-full transition-colors duration-300"></div>
               </div>
             </div>
+            <div :class="['w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent']"></div>
+
           </div>
         </div>
       </div>
@@ -604,7 +609,7 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
             class="flex flex-col items-center flex-1"
           >
             <!-- Connecting line from top -->
-            <div :class="['w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', isDark ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent']"></div>
+            <div :class="['w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent']"></div>
 
             <!-- Circle marker -->
             <div :class="['w-8 h-8 border-2 rounded-full flex items-center justify-center mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'border-gray-600' : 'border-gray-400']">
