@@ -16,6 +16,9 @@
     "@types/nodemailer": "^7.0.3",
     "nodemailer": "^7.0.10",
     "nuxt": "^3.19.3",
+    "nuxt-simple-robots": "^3.1.10",
+    "nuxt-simple-sitemap": "^4.4.1",
+    "nuxt-site-config": "^3.2.11",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   },
