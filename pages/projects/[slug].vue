@@ -434,7 +434,7 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
                 >
                   <img 
                     :src="img.image" 
-                    :alt="`${project.name_en} - ${index + 1}`"
+                    :alt="`${project.images ? project.images[index]?.image : project.id}-thumbnail`"
                     class="w-full h-full object-cover transition-transform duration-300"
                   />
                   <Transition

@@ -6,6 +6,97 @@ export const categories: Category[] = [
     name: "Nhà phố",
     projects: [
       {
+        id: 10,
+        name_vn: "NOEL'S HOUSE",
+        name_en: "NOEL'S HOUSE",
+        description_vn: "Thiết kế nội thất nhà phố hiện đại, tiện nghi tại Noel's House.",
+        description_en: "Modern, convenient interior design at Noel's House.",
+        image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg",
+        slug: "noels-house",
+        images: [
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_7.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_8.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_7.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_8.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_9.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_10.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_11.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_12.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_13.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_14.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_15.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_16.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_17.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_18.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_19.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_20.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_21.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_22.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_23.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_24.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_25.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_26.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_27.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/IN_28.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/WCT_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/WCT_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/WCT_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER LIVINGROOM/WCT_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_7.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_8.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_9.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_10.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/L2_11.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_7.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/MTER_8.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MASTER + WC MSTER + SHC/WC_MSTER_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/PN1_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/SANH_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/SANH_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_1.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_4.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_5.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_6.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_7.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER THANG + PN/THANG_8.jpg" }
+        ]
+      },
+      {
         id: 11,
         name_vn: "BÍCH HOUSE",
         name_en: "BICH HOUSE",
@@ -609,32 +700,304 @@ export const categories: Category[] = [
         image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg",
         slug: "nha-tram-nguyen",
         images: [
-          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_2.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_3.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/EX_4.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_1.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_2.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_3.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_4.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_5.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_6.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_7.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_8.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_9.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_10.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_11.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_12.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_13.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_14.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_15.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_16.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_17.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_18.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_19.jpg"},
-          {image: "/uploads/projects/NHA TRAM NGUYEN/IN_20.jpg"},
+          { image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/EX_2.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/EX_3.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/EX_4.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_1.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_2.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_3.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_4.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_5.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_6.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_7.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_8.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_9.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_10.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_11.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_12.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_13.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_14.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_15.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_16.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_17.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_18.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_19.jpg" },
+          { image: "/uploads/projects/NHA TRAM NGUYEN/IN_20.jpg" },
         ]
-      }
+      },
+      {
+        id: 18,
+        name_vn: "NHÀ CHỊ GIANG",
+        name_en: "MS. GIANG'S HOUSE",
+        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Giang.",
+        description_en: "Modern and convenient apartment interior design for Ms. Giang's family.",
+        image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg",
+        slug: "nha-chi-giang",
+        images: [
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/16.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/19.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/19.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/22.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/10.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/11.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/13.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/22.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/23.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/24.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/25.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/26.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/9.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/7.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/8.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/1.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/2.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/3.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/4.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/5.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/6.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/20.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/21.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/16.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/12.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/17.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/18.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/14.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/15.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG01.jpg"
+          },
+          {
+            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG02.jpg"
+          },
+        ]
+      },
 
     ],
     name_vn: 'Nhà phố',
@@ -2099,278 +2462,7 @@ export const categories: Category[] = [
           }
         ],
       },
-      {
-        id: 38,
-        name_vn: "NHÀ CHỊ GIANG",
-        name_en: "MS. GIANG'S HOUSE",
-        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Giang.",
-        description_en: "Modern and convenient apartment interior design for Ms. Giang's family.",
-        image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg",
-        slug: "nha-chi-giang",
-        images: [
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/1.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/2.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/3.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/5.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/6.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/7.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/8.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/9.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/10.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/11.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/12.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/13.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/14.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/15.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/16.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/17.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/18.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/19.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/20.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/10.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/11.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/12.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/13.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/19.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/20.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/21.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/2. KHU SINH HOAT CHUNG/22.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/3.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/4.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/5.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/6.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/7.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/8.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/9.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/10.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/11.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/12.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/13.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/3. PHONG MASTER/14.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/21.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/22.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/23.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/24.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/25.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/4. PHNGU BÀ/26.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/1.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/2.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/3.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/4.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/5.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/6.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/7.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/8.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/5. PHONG CON GAI/9.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/1.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/2.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/3.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/4.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/5.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/6.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/7.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/6. PHONG NGU KHACH/8.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/1.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/2.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/3.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/4.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/5.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/7. P THỜ/6.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/20.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CHUNG TANG TRET/21.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/12.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/15.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/17.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC CON GAI/18.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/15.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/16.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/17.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC MASTER/18.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/12.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/15.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/17.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/8. WC/WC PNGU KHACH/18.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/14.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/15.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG01.jpg"
-          },
-          {
-            image: "/uploads/projects/RENDER FULL NHA C GIANG/9. GIAT PHOI - KHO/PG02.jpg"
-          },
-        ]
-      },
+
       {
         id: 39,
         name_vn: "NHÀ ANH THÔNG",
@@ -2380,7 +2472,7 @@ export const categories: Category[] = [
         image: "/uploads/projects/RENDER ANH THONG/1.jpg",
         slug: "nha-anh-thong",
         images: [
-          
+
           {
             image: "/uploads/projects/RENDER ANH THONG/1.jpg"
           },
