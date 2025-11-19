@@ -20,12 +20,12 @@ const currentCategory = computed(() => {
       projects: categories.flatMap(cat => cat.projects)
     }
   }
-  return categories[activeCategory.value]
+  return categories[ activeCategory.value ]
 })
 
 const syncCategoryFromQuery = () => {
   const catId = route.query.category ? Number(route.query.category) : null
-  
+
   if (catId === null) {
     activeCategory.value = null
   } else {
@@ -36,14 +36,14 @@ const syncCategoryFromQuery = () => {
 
 const navigateToProject = (project: Project) => {
   if (project.slug) {
-    const categoryId = activeCategory.value !== null 
-      ? categories[activeCategory.value].id 
+    const categoryId = activeCategory.value !== null
+      ? categories[ activeCategory.value ].id
       : null
-    
+
     if (categoryId) {
       localStorage.setItem('lastProjectCategory', categoryId as unknown as string)
     }
-    
+
     router.push({
       path: `/projects/${project.slug}`,
       query: categoryId ? { category: categoryId } : {}
@@ -92,7 +92,7 @@ const handleCategoryClick = (idx: number | null) => {
   } else {
     router.push({
       path: '/projects',
-      query: { category: categories[idx].id }
+      query: { category: categories[ idx ].id }
     })
   }
 }
@@ -111,47 +111,39 @@ const handleCategoryClick = (idx: number | null) => {
       <!-- Category Navigation -->
       <div class="flex flex-wrap justify-center gap-4 mb-10">
         <!-- Nút "Tất cả" -->
-        <button 
-          @click="handleCategoryClick(null)" 
-          :class="[
-            'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
-            activeCategory === null
-              ? colorMode.value === 'dark'
-                ? 'text-white border-2 border-white bg-white/10'
-                : 'text-black border-2 border-black bg-black/5'
-              : colorMode.value === 'dark'
-                ? 'text-slate-300 border-2 border-slate-600 hover:border-white hover:text-white'
-                : 'text-gray-700 border-2 border-black/30 hover:border-black hover:text-black'
-          ]">
+        <button @click="handleCategoryClick(null)" :class="[
+          'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
+          activeCategory === null
+            ? colorMode.value === 'dark'
+              ? 'text-white border-2 border-white bg-white/10'
+              : 'text-black border-2 border-black bg-black/5'
+            : colorMode.value === 'dark'
+              ? 'text-slate-300 border-2 border-slate-600 hover:border-white hover:text-white'
+              : 'text-gray-700 border-2 border-black/30 hover:border-black hover:text-black'
+        ]">
           {{ locale === 'vi' ? 'Tất cả' : 'All' }}
-          <span
-            :class="[
-              'absolute inset-0 border opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100',
-              colorMode.value === 'dark' ? 'border-white' : 'border-black'
-            ]" />
+          <span :class="[
+            'absolute inset-0 border opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100',
+            colorMode.value === 'dark' ? 'border-white' : 'border-black'
+          ]" />
         </button>
 
         <!-- Các danh mục khác -->
-        <button 
-          v-for="(cat, idx) in categories" 
-          :key="cat.id" 
-          @click="handleCategoryClick(idx)" 
-          :class="[
-            'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
-            activeCategory === idx
-              ? colorMode.value === 'dark'
-                ? 'text-white border-2 border-white bg-white/10'
-                : 'text-black border-2 border-black bg-black/5'
-              : colorMode.value === 'dark'
-                ? 'text-slate-300 border-2 border-slate-600 hover:border-white hover:text-white'
-                : 'text-gray-700 border-2 border-black/30 hover:border-black hover:text-black'
-          ]">
+        <button v-for="(cat, idx) in categories" :key="cat.id" @click="handleCategoryClick(idx)" :class="[
+          'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
+          activeCategory === idx
+            ? colorMode.value === 'dark'
+              ? 'text-white border-2 border-white bg-white/10'
+              : 'text-black border-2 border-black bg-black/5'
+            : colorMode.value === 'dark'
+              ? 'text-slate-300 border-2 border-slate-600 hover:border-white hover:text-white'
+              : 'text-gray-700 border-2 border-black/30 hover:border-black hover:text-black'
+        ]">
           {{ locale === 'vi' ? cat.name_vn : cat.name_en }}
-          <span
-            :class="[
-              'absolute inset-0 border opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100',
-              colorMode.value === 'dark' ? 'border-white' : 'border-black'
-            ]" />
+          <span :class="[
+            'absolute inset-0 border opacity-0 scale-75 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100',
+            colorMode.value === 'dark' ? 'border-white' : 'border-black'
+          ]" />
         </button>
       </div>
     </div>
@@ -159,36 +151,25 @@ const handleCategoryClick = (idx: number | null) => {
     <!-- Projects Grid -->
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <div 
-          v-for="project in currentCategory.projects" 
-          :key="project.id" 
-          @mouseenter="hoveredProject = project.id"
-          @mouseleave="hoveredProject = null" 
-          class="group mb-5">
-          <div 
-            class="relative aspect-square overflow-hidden shadow-lg mb-4 transition-colors duration-300" 
-            :class="colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-200'"
-            @click="handleProjectClick(project)">
-            <img 
-              :src="project.image" 
-              :alt="project.name_en"
+        <div v-for="project in currentCategory.projects" :key="project.id" @mouseenter="hoveredProject = project.id"
+          @mouseleave="hoveredProject = null" class="group mb-5">
+          <div class="relative aspect-square overflow-hidden shadow-lg mb-4 transition-colors duration-300"
+            :class="colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-200'" @click="handleProjectClick(project)">
+            <img :src="project.image" :alt="project.name_en"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 cursor-pointer" />
 
             <div
               class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70 backdrop-blur-sm flex flex-col justify-end p-8 transition-opacity duration-500"
               :class="hoveredProject === project.id ? 'opacity-100' : 'opacity-0'">
-              <div 
-                class="text-white text-left transition-all duration-300" 
-                :class="hoveredProject === project.id
-                  ? 'translate-y-0 opacity-100'
-                  : 'translate-y-8 opacity-0'">
+              <div class="text-white text-left transition-all duration-300" :class="hoveredProject === project.id
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-8 opacity-0'">
                 <h4 class="text-lg font-bold mb-2">{{ locale === 'vi' ? project.name_vn : project.name_en }}</h4>
-                <p class="text-sm text-gray-100 mb-6 line-clamp-4">
-                  {{ locale === 'vi' ? project.description_vn : project.description_en }}
-                </p>
+                <p class="text-sm text-gray-100 mb-6 line-clamp-4"
+                  v-html="locale === 'vi' ? project.description_vn : project.description_en"></p>
 
-                <button 
-                  @click.stop="navigateToProject(project)"
+
+                <button @click.stop="navigateToProject(project)"
                   class="wave-button cursor-pointer group/btn relative w-full bg-white/10 border-2 border-white text-white font-semibold py-3 px-6 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden hover:bg-white hover:text-black hover:shadow-xl">
                   <span class="relative z-10 flex items-center gap-2">
                     {{ locale === 'vi' ? 'Xem chi tiết' : 'View details' }}
@@ -202,12 +183,10 @@ const handleCategoryClick = (idx: number | null) => {
             </div>
           </div>
 
-          <h3 
-            @click="navigateToProject(project)"
-            :class="[
-              'cursor-pointer text-base text-center uppercase tracking-wide transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text',
-              colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
-            ]">
+          <h3 @click="navigateToProject(project)" :class="[
+            'cursor-pointer text-base text-center uppercase tracking-wide transition-all duration-300 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text',
+            colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
+          ]">
             {{ locale === 'vi' ? project.name_vn : project.name_en }}
           </h3>
         </div>

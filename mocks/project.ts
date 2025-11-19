@@ -9,8 +9,25 @@ export const categories: Category[] = [
         id: 10,
         name_vn: "NOEL'S HOUSE",
         name_en: "NOEL'S HOUSE",
-        description_vn: "Thiết kế nội thất nhà phố hiện đại, tiện nghi tại Noel's House.",
-        description_en: "Modern, convenient interior design at Noel's House.",
+        description_vn: `
+        "Hơi ấm đến từ Đà Lạt" 
+        <br/><br/>
+        Một căn nhà nằm ở một trong những dốc Đà Lạt với diện tích bé xinh 5x8.
+        <br/><br/>
+        Tháng 12 khởi đầu với không khí se lạnh của Đà Lạt, KOA được nhận công trình tại đây cùng với sở thích phong cách Địa Trung Hải pha Farm House của gia chủ.
+        <br/><br/>
+        Chủ đầu tư đặt niềm tin và kỳ vọng ở ngôi nhà nhỏ xinh này cho KOA. Với nhiều kinh nghiệm đã đi qua, team KOA sẽ hoàn thành dự án này trong năm tới để có thể đồng hành cùng với nhiều khách hàng có gu và tin tưởng KOA hơn nữa.
+        `,
+        description_en: `
+        "Warmth from Da Lat"
+        <br/><br/>
+        A small house located on one of Da Lat’s sloping roads, with a cozy size of 5x8 meters.
+        <br/><br/>
+        December begins with Da Lat’s chilly atmosphere, and KOA was entrusted with this project — perfectly matching the homeowner’s love for a Mediterranean style blended with Farmhouse elements.
+        <br/><br/>
+        The investor has placed trust and high expectations in this charming little home. With the experience KOA has gained over time, our team is committed to completing the project next year, continuing our journey with clients who share our aesthetic taste and confidence in KOA.
+        `
+        ,
         image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg",
         slug: "noels-house",
         images: [
@@ -100,8 +117,20 @@ export const categories: Category[] = [
         id: 11,
         name_vn: "BÍCH HOUSE",
         name_en: "BICH HOUSE",
-        description_vn: "Thiết kế nội thất nhà phố hiện đại, sang trọng tại Bích House.",
-        description_en: "Modern and luxurious townhouse interior design at Bich House.",
+        description_vn: `
+        “Giữ mãi bản sắc - Cách điệu nghệ thuật”
+        <br/><br/>
+Phong cách làm nhà theo sở thích của khách hàng là một dạng hình thức khó thực hiện nhất. Bởi vì nó dựa vào thẩm mỹ - sở thích - lối sống mà gia chủ chọn lựa, chứ không phải định dạng trên bất kỳ một phong cách có sẵn nào.
+<br/><br/>
+Chúng tôi luôn trân quý từng phong cách thiết kế, nhưng lại cảm thấy tuyệt vời khi gặp được những CĐT có gu thẩm mỹ cao đến thế. Pha chút Việt Nam, nhưng lại không bớt đi phần hiện đại để phù hợp với thời buổi bây giờ.
+        `,
+        description_en: `
+        "Preserving identity - Artistic stylization"
+        <br/><br/>
+Designing a house according to the customer's preferences is one of the most challenging forms. This is because it relies on the aesthetics, tastes, and lifestyle chosen by the homeowner, rather than conforming to any predefined style.
+<br/><br/>
+We always cherish every design style, but we feel wonderful when we encounter homeowners with such high aesthetic tastes. A touch of Vietnam, yet not losing the modern aspect to suit today's era.
+        `,
         image: "/uploads/projects/bich-house/NGOAI THAT NHA CHI TRANG/10000.jpg",
         slug: "bich-house",
         images: [
@@ -299,8 +328,41 @@ export const categories: Category[] = [
         id: 13,
         name_vn: "LỆCH HOUSE",
         name_en: "LECH HOUSE",
-        description_vn: "Thiết kế nội thất nhà phố hiện đại, ấm cúng tại Lệch House.",
-        description_en: "Modern and cozy townhouse interior design at Lech House.",
+        description_vn: `
+        “Tạo dấu ấn cá nhân trong đường Lệch.”
+        <br/>
+____________
+<br/>
+
+Tại sao căn nhà lại tên “LỆCH” ? - “Vẻ đẹp không hoàn hảo” là điều luôn khiến người khác phải ngước nhìn. “Lệch” ở đây để thể hiện sự sai lệch đi những thứ vốn dĩ nó cơ bản. Thông qua ngôn ngữ kiến trúc, Lệch lột tả gọn gàng sự cô đọng khoảnh khắc của tự nhiên, sự bức phá trong lối kiến trúc cũ. Lệch tạo ra một sức sống mãnh liệt trong thời đại biến đổi khí hậu.
+<br/><br/>
+Kết hợp giữa kiến trúc xanh và phong cách nhà Việt Nam, LỆCH tạo cho chúng ta không gian sống thân thuộc nhưng lại vô cùng thoáng đãng khi có cây xanh và giếng trời. 
+<br/><br/>
+KOA luôn muốn mang đến những sản phẩm độc lạ nhưng không kém phần gần gũi. Với lối kiến trúc xanh và nghiêng Việt Nam, chúng tôi vẫn pha vào đó những khoảng không gian đơn giản, mộc mạc. Chúng tôi dùng màu đỏ để nhấn nhá vài chi tiết của căn nhà, khiến không gian trở nên tinh tế, đặc biệt và kết hợp với sắc xanh của thiên nhiên giúp mang đến sự an yên và thư giãn.
+<br/><br/>
+Phần nội thất không quá nổi bật nhưng bù lại rất phù hợp với căn nhà. Chúng tôi chọn làm nổ bật bằng đèn spotlight cùng với vài chiếc ghế màu nâu đỏ để tôn vẻ đẹp của nó.
+<br/>
+_______________
+<br/>
+“Mượn nắng tả không gian” - Điểm nhấn của ngôi nhà chính là những khoảng nắng ngã xuống những tán cây, khiến không gian trở nên thơ mộng và “tình” vô cùng. 
+Kiến trúc xanh và “lợi dụng” khoảng nắng của không gian chính là những điều mà KOA luôn hướng đến – Khai thác ngôi nhà trở nên sống động và có “sinh khí”.
+        `,
+        description_en: `
+        "Creating a personal mark on Lech Street."
+        <br/>
+        ____________
+        <br/>
+        Why is the house named "LECH"? - "Imperfect beauty" is something that always makes others look up. "Lech" here represents the deviation from the basic norm. Through architectural language, Lech succinctly captures the moments of nature, breaking away from old architectural styles. Lech creates a strong vitality in an era of climate change.
+        <br/><br/>
+        Combining green architecture with Vietnamese house styles, LECH provides us with a familiar living space that is also very airy, thanks to the greenery and skylights.
+        <br/><br/>
+        KOA always aims to deliver unique products that are also close to home. With green architecture and a Vietnamese tilt, we incorporate simple, rustic spaces. We use red to highlight certain details of the house, making the space sophisticated and special, while the green of nature brings peace and relaxation.
+        <br/><br/>
+        The interior is not overly prominent but fits the house well. We highlight it with spotlight lighting and a few brown-red chairs to enhance its beauty.
+        <br/>
+        _______________
+        <br/>
+        "Borrowing sunlight to depict space" - The highlight of the house is the patches of sunlight falling on the tree canopies, making the space poetic and incredibly "romantic".`,
         image: "/uploads/projects/lech-house/NGOAITHAT_4.jpg",
         slug: "lech-house",
         images: [
@@ -430,8 +492,46 @@ export const categories: Category[] = [
         id: 14,
         name_vn: "LOTUS'S HOUSE",
         name_en: "LOTUS'S HOUSE",
-        description_vn: "Thiết kế nội thất nhà phố hiện đại, tinh tế tại Lotus's House.",
-        description_en: "Modern, sophisticated townhouse interior design at Lotus's House.",
+        description_vn: `
+        HOUSE GARDEN PREMIUM
+        <br/>
+__________________
+<br/>
+
+“ Nhà cấp 4 không chỉ là một căn nhà có 4 bức tường.  “
+<br/>
+
+Chúng tôi chọn phong cách thiết kế Japandi để thực hiện ngôi nhà vườn có diện tích lên đến 150m2. Một trong những sản phẩm mà KOA cảm thấy tự hào khi được gia chủ tin tưởng giao phó. 
+<br/>
+Để mang đến một không gian sống có hồn, chúng tôi đề cao sự tinh tế - đơn giản nhưng đầy đủ công năng đến từ thiết kế. 
+<br/>
+Vì sao chúng tôi lại sử dụng thiết kế này ? 
+<br/>
+Không hề khó hiểu khi KOA đưa ra phương án thiết kế này, bởi vì chúng tôi luôn muốn đem ánh sáng tự nhiên, làn sóng thiên nhiên xuất hiện tại nơi ở của khách hàng. 
+<br/>
+Từ những chi tiết nhỏ nhất cũng toát lên sự lịch lãm, hoàn hảo của Japandi. Ngoài không gian thoáng đãng, chúng tôi còn đưa những sản phẩm đậm chất Nhật Bản để tạo điểm nhấn. Kết hợp với nội thất mộc mạc, màu sắc nhẹ nhàng mang khí chất thanh lịch và điềm đạm mà Japandi đã xây dựng. Đặt vào không gian của nhà phố hay căn hộ hiện đại sẽ tạo nên một bầu không khí ấm cúng, phù hợp với cuộc sống của các hộ gia đình tại Việt Nam.
+<br/>
+Phong cách Japandi rất được ưa chuộng trong không gian sống hiện đại. Bên cạnh việc dựng lên một không gian sống với lối thiết kế tối giản, Japandi còn tối ưu hoá thông minh. Từ nội thất, gam màu sáng cho đến tận dụng ánh sáng tự nhiên mang đến cảm giác rộng rãi, thoáng đãng. Ngoài ra còn có cây xanh, hoa cảnh để tăng tính thẩm mỹ và chất nghệ thuật.
+        `,
+        description_en: `
+        HOUSE GARDEN PREMIUM
+        <br/>
+        __________________
+        <br/>
+        "A single-story house is not just a house with four walls."
+        <br/>
+        We chose the Japandi design style to create a garden house with an area of up to 150m2. It is one of the products that KOA feels proud of when entrusted by the homeowner.
+        <br/>
+        To bring a soulful living space, we emphasize sophistication - simplicity but full of functionality from the design.
+        <br/>
+        Why did we use this design?
+        <br/>
+        It is not difficult to understand why KOA proposed this design option, because we always want to bring natural light and waves of nature into our customers' living spaces.
+        <br/>
+        From the smallest details, the elegance and perfection of Japandi are evident. Besides the airy space, we also introduced products with a strong Japanese character to create highlights. Combined with rustic furniture and gentle colors, it brings out the elegant and calm temperament that Japandi has built. Placing it in the space of a townhouse or modern apartment creates a cozy atmosphere, suitable for the lives of families in Vietnam.
+        <br/>
+        The Japandi style is very popular in modern living spaces. In addition to creating a living space with a minimalist design, Japandi also optimizes intelligently. From furniture, bright colors to utilizing natural light, it brings a sense of spaciousness and airiness. Additionally, there are green plants and ornamental flowers to enhance aesthetics and artistic quality.
+        `,
         image: "/uploads/projects/lotuss-house/4.jpg",
         slug: "lotuss-house",
         images: [
@@ -578,10 +678,19 @@ export const categories: Category[] = [
       },
       {
         id: 15,
-        name_vn: "NHA PHO CHI THAO HOA HUNG",
+        name_vn: "NHÀ PHỐ CHỊ THẢO HÒA HƯNG",
         name_en: "TOWNHOUSE OF MS THAO IN HOA HUNG",
-        description_vn: "Thiết kế nội thất nhà phố hiện đại",
-        description_en: "Modern and convenient interior design",
+        description_vn: `
+        “Hiện đại pha chút cổ điển” là cụm từ để diễn tả ngôi nhà nằm giữa trung tâm Q10 này.
+        <br/><br/>
+        Gia chủ thích nét tân cổ nhưng lại không muốn bị đè nặng vào không gian sống vì muốn có luồng khí “thở” trong nhà. KOA đã tận dụng các không gian để có thể lưu trữ thiết kế này giữa SG, với tiêu chí “bền - đẹp - lâu”.
+        `,
+        description_en:
+          `
+        "Modern with a touch of classic" is the phrase to describe this house located in the center of District 10.
+        <br/><br/>
+        The homeowner likes the neoclassical style but does not want to be weighed down by the living space because they want to have a "breathing" atmosphere in the house. KOA has utilized spaces to store this design in Saigon, with the criteria of "durable - beautiful - long-lasting".
+        `,
         image: "/uploads/projects/nha-pho-chi-thao-hoa-hung/1_Interactive LightMix.jpg",
         slug: "nha-pho-chi-thao-hoa-hung",
         images: [
@@ -730,8 +839,34 @@ export const categories: Category[] = [
         id: 18,
         name_vn: "NHÀ CHỊ GIANG",
         name_en: "MS. GIANG'S HOUSE",
-        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Giang.",
-        description_en: "Modern and convenient apartment interior design for Ms. Giang's family.",
+        description_vn: `
+        GIANG HOUSE - Ấm cúng cùng gam màu wabi x modern
+        <br/>
+        --
+        <br/>
+        “Giá trị của việc cá nhân hoá chính nơi ở của bạn”
+        <br/><br/>
+        Một căn nhà phố toạ lạc tại Đà Nẵng với nhiều mong muốn của gia chủ rằng “nhẹ nhàng - tính tế - hiện đại”.
+        <br/><br/>
+        KOA mang đến một sản phẩm phù hợp với sở thích của rất nhiều người khi muốn mang bản chất của wabisabi nhưng không muốn “nặng” về nó, kết hợp với hiện đại để thuận mắt chủ nhà hơn. 
+        <br/><br/>
+        Đây là sản phẩm đã được “cá nhân hoá” theo sở thích của gia chủ. 
+KOA luôn muốn tạo nên một không gian theo ý chủ nhà để họ có thể tận hưởng và đắm chìm trong chính căn nhà của mình.
+        `,
+        description_en: `
+        GIANG HOUSE - Cozy with wabi x modern colors
+        <br/>
+        --
+        <br/>
+        "The value of personalizing your home"
+        <br/><br/>
+        A townhouse located in Da Nang with many desires of the homeowner that is "light - sophisticated - modern".
+        <br/><br/>
+        KOA brings a product that suits the tastes of many people who want to bring the essence of wabisabi but do not want to be "heavy" about it, combined with modernity to be more convenient for the homeowner.
+        <br/><br/>
+        This is a product that has been "personalized" according to the owner's preferences.
+KOA always wants to create a space according to the owner's wishes so that they can enjoy and immerse themselves in their own home.
+        `,
         image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg",
         slug: "nha-chi-giang",
         images: [
@@ -2294,8 +2429,32 @@ export const categories: Category[] = [
         id: 36,
         name_vn: "CĂN HỘ CHỊ DIỆP",
         name_en: "MS. DIEP'S APARTMENT",
-        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi cho gia đình chị Diệp.",
-        description_en: "Modern and convenient apartment interior design for Ms. Diep's family.",
+        description_vn: `
+        CÔNG TRÌNH THỰC TẾ - SKY VIEW BINH DUONG
+        <br/><br/>
+MEOW HOUSE - DIEP’S APARTMENT
+<br/>
+—————
+<br/>
+Đem phong cách wabisabi gửi gắm đến không gian sống cùng với các hoàng thượng. 
+<br/>
+Chút ấm áp của hơi nắng hướng Đông buổi sáng kết hợp với tone màu gỗ ấm tô điểm cho căn hộ thêm phần bắt mắt.
+<br/>
+Căn nhà chỉ gói gọn đơn giản nhưng tràn đầy yêu thương của gia chủ đối với các hoàng thượng khi dành riêng 1 phòng cho các con.
+        `,
+        description_en: `
+        REAL PROJECT - SKY VIEW BINH DUONG
+        <br/><br/>
+MEOW HOUSE - DIEP’S APARTMENT
+<br/>
+—————
+<br/>
+Bringing the wabisabi style to the living space along with the kings.
+<br/>
+A bit of warmth from the east morning sun combined with warm wood tones makes the apartment more eye-catching.
+<br/>
+The house is simply packed but full of love from the owner for the kings when dedicating a room for the kids.
+        `,
         image: "/uploads/projects/can-ho-chi-diep/KB_1.jpg",
         slug: "can-ho-chi-diep",
         images: [
@@ -2527,8 +2686,24 @@ export const categories: Category[] = [
         id: 41,
         name_vn: "CASE DE ROSA TUY HOÀ",
         name_en: "CASE DE ROSA TUY HOÀ",
-        description_vn: "Thiết kế quán cafe phong cách Địa Trung Hải.",
-        description_en: "Cafe design in Mediterranean style.",
+        description_vn: `
+        “Đất Phú Trời Yên” - Phú Yên đầy nắng ấm
+        <br/><br/>
+        Một vùng đất bình yên, toạ lạc tại miền Trung.
+        <br/><br/>
+        Một công trình đầy nắng và gió, điểm nhấn của bãi biển trên đường Độc Lập - Tuy Hoà.
+        <br/><br/>
+        KOA được may mắn tham gia thiết kế và thi công công trình tại nơi đây. Phú Yên đầy tình yêu thương và ngày càng phát triển về mặt du lịch, nếu có cơ hội, KOA luôn muốn mang những màu sắc đặc trưng của các tỉnh đến với tay khách hàng.
+        `,
+        description_en: `
+        "Land of Peaceful Sky" - Phu Yen full of warm sunshine
+        <br/><br/>
+        A peaceful land located in the Central region.
+        <br/><br/>
+        A project full of sunshine and wind, a highlight of the beach on Doc Lap - Tuy Hoa road.
+        <br/><br/>
+        KOA was fortunate to participate in the design and construction of the project here. Phu Yen is full of love and is increasingly developing in terms of tourism. If given the opportunity, KOA always wants to bring the distinctive colors of the provinces to customers.
+        `,
         image: "/uploads/projects/case-de-rosa-tuy-hoa/_DSC9400.jpg",
         slug: "case-de-rosa-tuy-hoa",
         images: [
@@ -2849,10 +3024,27 @@ export const categories: Category[] = [
       },
       {
         id: 44,
-        name_vn: "QUAN CAFE CHO IU CHILL",
+        name_vn: "QUÁN CAFE CHỜ IU CHILL",
         name_en: "CHO IU CHILL CAFE",
-        description_vn: "Thiết kế quán cafe sân vườn thoáng mát, gần gũi thiên nhiên.",
-        description_en: "Design of a cool garden cafe, close to nature.",
+        description_vn: `
+        COFFEE CHỜ IU CHILL - PHƯỚC HẢI
+        <br/>
+        --
+        <br/>
+        Một quán coffee KOA đã hoàn thành từ lâu, mang hơi hướng địa trung hải để hợp với vùng biển phía Nam đầy thơ mộng.
+        <br/><br/>
+        Đã có ai đi và trải nghiệm quán chưa ạ? Nếu có dịp hãy ghé và tận hưởng khoảng không gian tại đây nhé! KOA mong sẽ mang nhiều sản phẩm tuyệt vời như thế này đến với các tỉnh khác.
+        `,
+        description_en:
+          `
+        CHO IU CHILL COFFEE - PHUOC HAI
+        <br/>
+        --
+        <br/>
+        A coffee shop that KOA has completed for a long time, with a Mediterranean vibe to suit the poetic southern beach area.
+        <br/><br/>
+        Has anyone been and experienced the shop yet? If you have the chance, please stop by and enjoy the space here! KOA hopes to bring many wonderful products like this to other provinces.
+        `,
         image: "/uploads/projects/quan-cafe-cho-iu-chill/NGOAI THAT/1.jpg",
         slug: "quan-cafe-cho-iu-chill",
         images: [
@@ -3459,16 +3651,16 @@ export const categories: Category[] = [
           { image: "/uploads/projects/SPA MIN HEALTHCARE/6.jpg" },
           { image: "/uploads/projects/SPA MIN HEALTHCARE/7.jpg" },
           { image: "/uploads/projects/SPA MIN HEALTHCARE/8.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/9.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/10.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/11.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/12.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/13.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/14.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/15.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/16.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/17.jpg" },
-          { image: "/uploads/projects/SPA MIN HEALTHCARE/18.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_1.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_2.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_3.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_4.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_5.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PT_6.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PV_1.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PV_2.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PV_3.jpg" },
+          { image: "/uploads/projects/SPA MIN HEALTHCARE/PV_4.jpg" },
         ]
       },
       {
@@ -3494,7 +3686,12 @@ export const categories: Category[] = [
         id: 64,
         name_vn: "SPA MẠC THỊ - HAI BÀ TRƯNG - Q3",
         name_en: "MAC THI SPA - HAI BA TRUNG - Q3",
-        description_vn: "Thiết kế spa hiện đại, tiện nghi tại Mạc Thị - Hai Bà Trưng - Q3.",
+        description_vn: `
+        “Nơi chữa lành những tâm hồn”
+        <br/><br/>
+Chúng tôi đưa kiệt tác của mình kết hợp với phong cách của Ấn Độ. Những đặc trưng của văn hoá tại India, giúp không gian trở nên lắng đọng và ấm cúng, nhưng không kém phần sang trọng. 
+Điểm nhấn trong thiết kế lần này đó là gam màu gỗ trầm xen lẫn ánh đèn vàng chiếu điểm đầy lãng mạn. Ảo thuật đèn spotlight chính là điểm mạnh nhất của thiết kế này.
+        `,
         description_en: "Modern and convenient spa design at Mac Thi - Hai Ba Trung - Q3.",
         image: "/uploads/projects/SPA MẠC THỊ - HAI BÀ TRƯNG - Q3/EX_1.jpg",
         slug: "spa-mac-thi-hai-ba-trung-q3",
@@ -3564,7 +3761,19 @@ export const categories: Category[] = [
         id: 72,
         name_vn: "BILLARDS BÌNH CHÁNH",
         name_en: "BILLIARDS BINH CHANH",
-        description_vn: "Thiết kế phòng bi-a hiện đại, sang trọng.",
+        description_vn: `
+        COMPLEX AREA - DG BILLIARD & CHILL
+<br/><br/>
+Như thế nào mới gọi là một không gian để chơi Bi-a thực thụ ?
+<br/><br/>
+Một không gian phức hợp làm cho đội ngũ KOA và CĐT phải đau đầu, nhưng bù lại một kết quả đáng để say “WOW”. Lần đầu KOA thực hiện công trình “2in1”, không những có billiard, ở đây chúng ta còn xen lẫn lounge. Đem đến cảm giác vừa chơi vừa bụi nhưng không kém phần sang chảnh qua góc máy của team KOA.
+<br/><br/>
+Chúng tôi đưa ra ý tưởng và thực hiện nó rất nhanh. Chỉ trong vòng 1 tháng đổ lại, nhưng mọi thứ vẫn chỉnh chu, sắc nét và khiến chúng tôi phải tự hào vì nó. 
+<br/><br/>
+Đây là nơi để giới trẻ tụ tập vui vẻ, chơi bời lành mạnh và là nơi sống ảo tuyệt vời. Vì chúng tôi hiểu được ánh sáng, lạm dụng nó để khiến những bức ảnh được trở nên đỉnh của chóp.
+<br/><br/>
+Cảm ơn DG Billiard & Chill đã tin tưởng giao phó công trình này cho KOA Architecture. Để chúng tôi có cơ hội cống hiến cũng như đưa sản phẩm tới được nhiều người.
+        `,
         description_en: "Modern and luxurious billiards room design.",
         image: "/uploads/projects/billards-binh-chanh/MT-1.jpg",
         slug: "billiards-binh-chanh",
