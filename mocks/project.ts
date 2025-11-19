@@ -1174,8 +1174,28 @@ KOA always wants to create a space according to the owner's wishes so that they 
         id: 21,
         name_vn: "Villa Đồng Nai 1",
         name_en: "Villa Dong Nai 1",
-        description_vn: "Không gian xanh, hài hòa thiên nhiên với hồ cá koi.",
-        description_en: "Green space, harmonious with nature with koi pond.",
+        description_vn: `
+        Mediterranean Revival
+        <br/>
+————
+<br/>
+“Chút nắng, chút gió, chút hương biển bay” 
+<br/>
+Một căn villa với phong cách Địa Trung Hải đầy sức hấp dẫn có mặt tại khu vực Đồng Nai.
+<br/>
+Sự kết hợp giữa sở thích của chủ nhà và ý đồ của KOA tạo nên 1 sản phẩm đầy nắng và gió. Mỗi sản phẩm của KOA đều mang 1 bản sắc riêng biệt của mỗi gia chủ - Đó là điều mà chúng tôi luôn hướng tới.
+        `,
+        description_en: `
+        Mediterranean Revival
+        <br/>
+————
+<br/>
+"A bit of sunshine, a bit of wind, a bit of sea breeze"
+<br/>
+A villa with the attractive Mediterranean style located in the Dong Nai area.
+<br/>
+The combination of the homeowner's preferences and KOA's intentions creates a product full of sunshine and wind. Each product of KOA carries a unique identity of each homeowner - That is what we always aim for.
+        `,
         image: "/uploads/projects/villa-dong-nai-1/1.jpg",
         slug: "villa-dong-nai-1",
         images: [
@@ -1230,8 +1250,28 @@ KOA always wants to create a space according to the owner's wishes so that they 
         id: 22,
         name_vn: "Villa Đồng Nai 2",
         name_en: "Villa Dong Nai 2",
-        description_vn: "Tân cổ điển kết hợp hiện đại, nội thất cao cấp.",
-        description_en: "Classic meets modern, high-end interior.",
+        description_vn: `
+        Mediterranean Revival
+        <br/>
+————
+<br/>
+“Chút nắng, chút gió, chút hương biển bay” 
+<br/>
+Một căn villa với phong cách Địa Trung Hải đầy sức hấp dẫn có mặt tại khu vực Đồng Nai.
+<br/>
+Sự kết hợp giữa sở thích của chủ nhà và ý đồ của KOA tạo nên 1 sản phẩm đầy nắng và gió. Mỗi sản phẩm của KOA đều mang 1 bản sắc riêng biệt của mỗi gia chủ - Đó là điều mà chúng tôi luôn hướng tới.
+        `,
+        description_en: `
+        Mediterranean Revival
+        <br/>
+————
+<br/>
+"A bit of sunshine, a bit of wind, a bit of sea breeze"
+<br/>
+A villa with the attractive Mediterranean style located in the Dong Nai area.
+<br/>
+The combination of the homeowner's preferences and KOA's intentions creates a product full of sunshine and wind. Each product of KOA carries a unique identity of each homeowner - That is what we always aim for.
+        `,
         image: "/uploads/projects/villa-dong-nai-2/SHC/26.jpg",
         slug: "villa-dong-nai-2",
         images: [
