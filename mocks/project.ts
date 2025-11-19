@@ -802,10 +802,38 @@ Phong cách Japandi rất được ưa chuộng trong không gian sống hiện 
       },
       {
         id: 17,
-        name_vn: "Nhà Trâm Nguyễn",
+        name_vn: "Nhà Trâm Nguyên",
         name_en: "Tram Nguyen's House",
-        description_vn: "Thiết kế ngoại thất hiện đại, tinh tế tại Nhà Trâm Nguyễn.",
-        description_en: "Modern and sophisticated exterior design at Tram Nguyen's House.",
+        description_vn: `
+        SỰ ĐỔI MỚI CỦA XU HƯỚNG
+<br/>
+NHÀ PHỐ
+<br/>
+Binh Thanh District - Một dự án mới tinh vừa được hoàn thành và đang thi công của KOA. Bất kì sản phẩm nào cũng đều là tâm huyết và sự nỗ lực hết mình. 
+<br/>
+——————————————
+<br/>
+Với phong cách thiết kế Wabisabi là một thuật ngữ không còn xa lạ trong ngành. Ngôi nhà được thiết kế tối giản nhưng không bớt đi phần tiện lợi. KOA mang thiết kế này đến cho những tâm hồn sống vì thực tại, chấp nhận những “vẻ đẹp không hoàn hảo”, khiến con người phải cá nhân hoá cảm xúc để thích nghi. Nhưng bù lại, dù có trải qua bao nhiêu thời gian thì vẻ đẹp này vẫn trường tồn và có ý nghĩa của riêng nó.
+<br/>
+Không gian ấm cúng KOA làm cho cặp vợ chồng trẻ. Dùng gam màu vàng cam để nhấn nhá tinh tế và ánh sáng được thiết lập hợp lý để ngôi nhà trở nên nổi bật. Thêm vào đó là nét cá tính cho không gian cải tạo nhà phố nhưng không mất đi sự an yên của nơi đây. Giản dị và mộc mạc, tôn trọng những nét đẹp nguyên bản là thông điệp mà KOA muốn truyền tải đến khách hàng trong dự án lần này. 
+<br/>
+Cùng KOA Architecture xem lại những hình ảnh thiết kế của căn nhà trên nhé.
+        `,
+        description_en: `
+        THE RENEWAL OF TRENDS
+<br/>
+TOWNHOUSE
+<br/>
+Binh Thanh District - A brand new project that has just been completed and is under construction by KOA. Every product is a dedication and wholehearted effort.
+<br/>
+——————————————
+<br/>
+With the Wabisabi design style being a familiar term in the industry. The house is designed to be minimalist but does not lack convenience. KOA brings this design to souls living for the present, accepting "imperfect beauty", forcing people to personalize their emotions to adapt. But in return, no matter how much time passes, this beauty remains eternal and has its own meaning.
+<br/>
+KOA creates a cozy space for the young couple. Using warm orange tones for subtle highlights and lighting set up reasonably to make the house stand out. In addition, it adds personality to the townhouse renovation space without losing the peace of the place. Simplicity and rusticity, respecting the original beauty are the messages that KOA wants to convey to customers in this project.
+<br/>
+Let's revisit the design images of the house with KOA Architecture.
+        `,
         image: "/uploads/projects/NHA TRAM NGUYEN/EX_1.jpg",
         slug: "nha-tram-nguyen",
         images: [
@@ -2266,8 +2294,20 @@ KOA always wants to create a space according to the owner's wishes so that they 
         id: 34,
         name_vn: "DIAMOND CELADON TÂN PHÚ",
         name_en: "DIAMOND CELADON TAN PHU",
-        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi tại Diamond Celadon Tân Phú.",
-        description_en: "Modern and convenient apartment interior design at Diamond Celadon Tan Phu.",
+        description_vn: `
+        Tìm về sự bình yên trong căn hộ chung cư phong cách Wabi-Sabi
+<br/>
+Giữa nhịp sống hối hả của thành phố, ta luôn khao khát một chốn bình yên để tìm về cân bằng và an yên tâm hồn. Phong cách Wabi-Sabi, với vẻ đẹp mộc mạc, giản dị và trân trọng những giá trị tự nhiên, mang đến cho căn hộ chung cư của bạn một không gian hoàn hảo để tận hưởng sự thanh thản và thư giãn.
+<br/>
+Sống trong một căn hộ mang phong cách Wabi-Sabi, bạn sẽ cảm nhận được sự nhẹ nhàng, thư thái và tìm thấy sự cân bằng cho cuộc sống của mình.
+        `,
+        description_en: `
+        Finding peace in a Wabi-Sabi style apartment
+<br/>
+Amidst the hustle and bustle of the city, we always yearn for a peaceful place to find balance and tranquility for our souls. The Wabi-Sabi style, with its rustic beauty, simplicity, and appreciation for natural values, brings to your apartment a perfect space to enjoy serenity and relaxation.
+<br/>
+Living in a Wabi-Sabi style apartment, you will feel lightness, tranquility, and find balance in your life.
+        `,
         image: "/uploads/projects/diamond-celadon-tan-phu/1.jpg",
         slug: "diamond-celadon-tan-phu",
         images: [
