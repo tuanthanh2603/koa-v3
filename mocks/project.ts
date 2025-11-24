@@ -2041,7 +2041,7 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
         name_en: "ZEN HOUSE GARDEN HOUSE",
         description_vn: "Thiết kế nhà vườn phong cách Zen, gần gũi thiên nhiên.",
         description_en: "Zen-style garden house design, close to nature.",
-        image: "/uploads/projects/nha-vuon-zen-house/IN_10.jpg",
+        image: "/uploads/projects/nha-vuon-zen-house/EX_1.jpg",
         slug: "nha-vuon-zen-house",
         images: [
           {
@@ -2245,8 +2245,28 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
         id: 33,
         name_vn: "CHUNG CƯ HAPPY ONE BÌNH DƯƠNG",
         name_en: "HAPPY ONE APARTMENT BINH DUONG",
-        description_vn: "Thiết kế nội thất căn hộ hiện đại, tiện nghi tại Happy One Bình Dương.",
-        description_en: "Modern and convenient apartment interior design at Happy One Binh Duong.",
+        description_vn: `
+        HOUSE OF SUNSHINE
+        <br/>
+———
+<br/>
+Lại là một tác phẩm đầy nắng đến từ KOA. Thể hiện sự ấm cúng với gam màu gỗ, các vật liệu tone ấm để tôn lên nét đẹp của một căn nhà đơn giản nhưng không kém phần hiện đại. 
+<br/>
+Chúng ta cũng biết lợi ích của ánh nắng không chỉ là sức khoẻ mà còn về tinh thần. Hãy tưởng tượng bạn đang sống ở trong không gian này, cảm giác healing đến từng chi tiết.
+<br/>
+Không gian sống không phải chỉ đẹp mà còn phải tiện nghi, công năng hợp lý. Vì thế chúng tôi luôn muốn tạo ra những không gian sống phù hợp với gia chủ nhưng vẫn khắc hoạ được vẻ đẹp của nó.
+        `,
+        description_en: `
+        HOUSE OF SUNSHINE
+        <br/>
+———
+<br/>
+Another sunny masterpiece from KOA. It expresses warmth with wood tones and warm materials to highlight the beauty of a simple yet modern home.
+<br/>
+We also know the benefits of sunlight not only for health but also for the spirit. Imagine living in this space, feeling healing in every detail.
+<br/>
+Living spaces should not only be beautiful but also convenient and functional. Therefore, we always want to create living spaces that suit the homeowners while still portraying their beauty.
+        `,
         image: "/uploads/projects/chung-cu-happy-one-binh-duong/1.jpg",
         slug: "chung-cu-happy-one-binh-duong",
         images: [
@@ -3747,8 +3767,28 @@ The house is simply packed but full of love from the owner for the kings when de
         id: 63,
         name_vn: "SPA DAI LAM MOC",
         name_en: "DAI LAM MOC SPA",
-        description_vn: "Thiết kế spa hiện đại, sang trọng tại Đại Lâm Mộc.",
-        description_en: "Modern and luxurious spa design at Dai Lam Moc.",
+        description_vn: `
+        SPA STYLE ZEN JAPAN
+        <br/>
+——————
+<br/>
+Thiết kế Spa phong cách Zen được lấy cảm hứng từ sự kết hợp giữa Nhật Bản và văn hoá Phật Giáo. Vì Spa là nơi thư giãn, giải phóng căng thẳng nên phong cách Zen rất hợp lý khi  xuất phát từ sự đơn điệu mang lại cảm giác phục hồi, thư thái cho khách hàng.
+<br/>
+Để mang lại cảm giác tĩnh lặng, bình yên khi khách hàng đặt chân đến nơi đây, KOA sử dụng gam màu gỗ trầm và ánh đèn vàng nhẹ nhàng để nhấn mạnh sức hút của thiết kế. Thêm vào đó, chúng tôi đề cao việc kết hợp với thiên nhiên tạo nên một khoảng không gian mở, rộng rãi, thoáng đãng nhưng không kém phần sang trọng hay mất chất.
+<br/>
+Đến với KOA, bất kì không gian nào cũng phải mang ý nghĩa. Chúng tôi luôn muốn tạo nên những không gian thở, yên bình trong cuộc sống hối hả này.
+        `,
+        description_en: `
+          SPA STYLE ZEN JAPAN
+          <br/>
+——————
+<br/>
+The Zen-style Spa design is inspired by the combination of Japan and Buddhist culture. Since the Spa is a place to relax and relieve stress, the Zen style is very reasonable when it originates from simplicity, bringing a sense of recovery and relaxation to customers.
+<br/>
+To bring a sense of tranquility and peace when customers set foot here, KOA uses warm wood tones and soft yellow lights to emphasize the attraction of the design. In addition, we emphasize the combination with nature to create an open, spacious, airy space that is no less luxurious or losing its essence.
+<br/>
+Coming to KOA, any space must be meaningful. We always want to create spaces to breathe, peaceful in this hectic life.
+        `,
         image: "/uploads/projects/SPA DAI LAM MOC/6.jpg",
         slug: "spa-dai-lam-moc",
         images: [
