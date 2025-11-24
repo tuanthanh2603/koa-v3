@@ -109,10 +109,10 @@ const handleCategoryClick = (idx: number | null) => {
     <!-- Header -->
     <div class="max-w-7xl mx-auto mb-10">
       <!-- Category Navigation -->
-      <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <div class="grid grid-cols-3 md:flex md:flex-wrap md:justify-center gap-2 md:gap-4 mb-10 mt-16">
         <!-- Nút "Tất cả" -->
         <button @click="handleCategoryClick(null)" :class="[
-          'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
+          'relative px-4 py-2 md:px-6 md:py-3 font-semibold text-xs md:text-sm overflow-hidden transition-all duration-300 group text-center w-full md:w-36',
           activeCategory === null
             ? colorMode.value === 'dark'
               ? 'text-white border-2 border-white bg-white/10'
@@ -130,7 +130,7 @@ const handleCategoryClick = (idx: number | null) => {
 
         <!-- Các danh mục khác -->
         <button v-for="(cat, idx) in categories" :key="cat.id" @click="handleCategoryClick(idx)" :class="[
-          'relative w-36 px-6 py-3 font-semibold text-sm overflow-hidden transition-all duration-300 group text-center',
+          'relative px-4 py-2 md:px-6 md:py-3 font-semibold text-xs md:text-sm overflow-hidden transition-all duration-300 group text-center w-full md:w-36',
           activeCategory === idx
             ? colorMode.value === 'dark'
               ? 'text-white border-2 border-white bg-white/10'

@@ -476,22 +476,18 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
     </div>
   </div>
   <div v-if="isHydrated" :class="colorMode.value === 'dark' ? 'bg-black text-white' : 'bg-white text-black'"
-    class="min-h-screen transition-colors duration-300 p-8 md:p-16">
+    class="min-h-screen transition-colors duration-300 p-4 md:p-8 lg:p-16">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
-      <div class="mb-16">
-        <!-- <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-600'" class="text-sm tracking-widest mb-4"></p> -->
+      <div class="mb-8 md:mb-16">
         <h1 :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'"
-          class="text-xl md:text-3xl font-bold tracking-wide">QUY TRÌNH TƯ VẤN THIẾT KẾ</h1>
+          class="text-lg md:text-3xl font-bold tracking-wide">QUY TRÌNH TƯ VẤN THIẾT KẾ</h1>
       </div>
 
-      <!-- Top Row -->
-      <div class="">
+      <!-- Desktop View: Top Row -->
+      <div class="hidden md:block">
         <div class="flex justify-between items-start gap-6">
           <div v-for="step in topSteps" :key="step.id" class="flex flex-col items-center flex-1">
-
-
-
             <!-- Card -->
             <div :class="[
               'border rounded-lg p-6 w-full mb-8 aspect-square flex flex-col justify-between transition-all duration-300 hover:scale-105',
@@ -524,28 +520,24 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
             <div
               :class="[ 'w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent' ]">
             </div>
-
           </div>
         </div>
       </div>
 
-      <!-- Bottom Row -->
-      <div>
+      <!-- Desktop View: Bottom Row -->
+      <div class="hidden md:block">
         <div class="flex justify-between items-start gap-6">
           <div v-for="step in bottomSteps" :key="step.id" class="flex flex-col items-center flex-1">
-            <!-- Connecting line from top -->
             <div
               :class="[ 'w-0.5 h-12 bg-gradient-to-b mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent' ]">
             </div>
 
-            <!-- Circle marker -->
             <div
               :class="[ 'w-8 h-8 border-2 rounded-full flex items-center justify-center mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'border-gray-600' : 'border-gray-400' ]">
               <div :class="colorMode.value === 'dark' ? 'bg-gray-600' : 'bg-gray-400'"
                 class="w-3 h-3 rounded-full transition-colors duration-300"></div>
             </div>
 
-            <!-- Card -->
             <div :class="[
               'border rounded-lg p-6 w-full transition-all duration-300 hover:scale-105',
               colorMode.value === 'dark'
@@ -562,6 +554,44 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
                 class="font-bold text-sm mb-3 text-center line-clamp-2">{{ step.title }}</h3>
               <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-700'"
                 class="text-xs leading-relaxed text-center">{{ step.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View: Single Column -->
+      <div class="md:hidden">
+        <div class="flex flex-col gap-6">
+          <div v-for="step in [...topSteps, ...bottomSteps]" :key="step.id" class="flex flex-col items-center">
+            <!-- Connecting line -->
+            <div v-if="step.id > 1"
+              :class="[ 'w-0.5 h-6 bg-gradient-to-b mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'from-gray-600 to-transparent' : 'from-gray-400 to-transparent' ]">
+            </div>
+
+            <!-- Circle marker -->
+            <div
+              :class="[ 'w-6 h-6 border-2 rounded-full flex items-center justify-center mb-4 transition-colors duration-300', colorMode.value === 'dark' ? 'border-gray-600' : 'border-gray-400' ]">
+              <div :class="colorMode.value === 'dark' ? 'bg-gray-600' : 'bg-gray-400'"
+                class="w-2 h-2 rounded-full transition-colors duration-300"></div>
+            </div>
+
+            <!-- Card -->
+            <div :class="[
+              'border rounded-lg p-4 w-full transition-all duration-300 active:scale-95',
+              colorMode.value === 'dark'
+                ? 'border-gray-600 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-700/50 bg-gray-900'
+                : 'border-gray-300 hover:border-gray-600 hover:shadow-lg hover:shadow-gray-400/50 bg-gray-50'
+            ]">
+              <div class="flex justify-center mb-3">
+                <UIcon :name="step.icon" :class="colorMode.value === 'dark' ? 'text-gray-300' : 'text-gray-700'"
+                  class="w-8 h-8 transition-colors duration-300" />
+              </div>
+              <p :class="colorMode.value === 'dark' ? 'text-gray-500' : 'text-gray-600'"
+                class="text-xs tracking-wider mb-1 text-center">0{{ step.id }}.</p>
+              <h3 :class="colorMode.value === 'dark' ? 'text-white' : 'text-black'"
+                class="font-bold text-xs mb-2 text-center line-clamp-2">{{ step.title }}</h3>
+              <p :class="colorMode.value === 'dark' ? 'text-gray-400' : 'text-gray-700'"
+                class="text-xs leading-relaxed text-center line-clamp-3">{{ step.description }}</p>
             </div>
           </div>
         </div>
