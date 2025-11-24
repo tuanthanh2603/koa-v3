@@ -145,7 +145,6 @@ section {
     grid-template-columns: 1fr;
     height: 100vh;
     grid-auto-rows: 1fr;
-    /* Có 5 item hiện tại → chia đều 5 phần; nếu số lượng thay đổi, grid-auto-rows vẫn đảm bảo các hàng bằng nhau trong 100vh */
     grid-template-rows: repeat(5, 1fr);
   }
   
@@ -170,12 +169,10 @@ section {
   position: relative;
   overflow: hidden;
   
-  /* ✅ Quan trọng: will-change + transform-gpu */
   will-change: filter, transform, z-index;
   transform: translateZ(0);
   backface-visibility: hidden;
   
-  /* ✅ Chỉ transition filter & transform */
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
@@ -197,22 +194,27 @@ section {
   }
 }
 
-/* Label */
+/* Label - Luôn sáng */
 .label {
   font-family: 'MBFSpaceHabitat', sans-serif;
   font-size: 1.25rem;
   position: relative;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  will-change: background-color, transform;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: background-color, transform, box-shadow;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 .label.hovered {
   background-color: rgba(0, 0, 0, 0.7);
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 /* Overlay */
