@@ -4,6 +4,7 @@ export interface Category {
     name_vn: string
     name_en: string
     projects: Project[]
+    slug: string
 }
 export interface Image {
     image: string

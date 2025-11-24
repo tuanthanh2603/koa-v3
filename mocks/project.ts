@@ -1164,7 +1164,9 @@ KOA always wants to create a space according to the owner's wishes so that they 
 
     ],
     name_vn: 'Nhà phố',
-    name_en: 'Townhouse'
+    name_en: 'Townhouse',
+    slug: "townhouse"
+
   },
   {
     id: 2,
@@ -2099,7 +2101,8 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
       }
     ],
     name_vn: 'Villa',
-    name_en: 'Villa'
+    name_en: 'Villa',
+    slug: "villa"
   },
   {
     id: 3,
@@ -2776,7 +2779,9 @@ The house is simply packed but full of love from the owner for the kings when de
 
     ],
     name_vn: 'Căn hộ',
-    name_en: 'Apartment'
+    name_en: 'Apartment',
+    slug: "apartment"
+    
   },
   {
     id: 4,
@@ -3345,7 +3350,8 @@ The house is simply packed but full of love from the owner for the kings when de
 
     ],
     name_vn: 'F&B',
-    name_en: 'F&B'
+    name_en: 'F&B',
+    slug: "f&b"
   },
   {
     id: 5,
@@ -3693,8 +3699,8 @@ The house is simply packed but full of love from the owner for the kings when de
       },
     ],
     name_vn: 'SHOWROOM',
-    name_en: 'SHOWROOM'
-
+    name_en: 'SHOWROOM',
+    slug: "showroom"
   },
   {
     id: 6,
@@ -3840,7 +3846,8 @@ Chúng tôi đưa kiệt tác của mình kết hợp với phong cách của �
       }
     ],
     name_vn: 'SPA',
-    name_en: 'SPA'
+    name_en: 'SPA',
+    slug: "spa"
 
   },
   {
@@ -4546,7 +4553,8 @@ Cảm ơn DG Billiard & Chill đã tin tưởng giao phó công trình này cho 
 
     ],
     name_vn: 'Khác',
-    name_en: 'Other'
+    name_en: 'Other',
+    slug: "orther"
   },
 ]
 
