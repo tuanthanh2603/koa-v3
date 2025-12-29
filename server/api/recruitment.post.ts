@@ -1,130 +1,142 @@
-import { H3Event, sendError, createError, readBody } from 'h3'
+import {
+  H3Event,
+  defineEventHandler,
+  sendError,
+  createError,
+  readMultipartFormData,
+  getRequestIP,
+  getRequestHeader
+} from 'h3'
 import nodemailer from 'nodemailer'
-
-interface RecruitmentPayload {
-  fullName: string
-  email: string
-  phone: string
-  position: string
-  experience?: string
-  education?: string
-  skills?: string
-  coverLetter?: string
-}
 
 export default defineEventHandler(async (event: H3Event) => {
   try {
-    const body = (await readBody(event)) as Partial<RecruitmentPayload> | null
+    // 1️⃣ Read multipart/form-data
+    const formData = await readMultipartFormData(event)
 
-    if (!body || typeof body !== 'object') {
-      throw createError({ statusCode: 400, statusMessage: 'Invalid payload' })
+    if (!formData) {
+      throw createError({
+        statusCode: 400,
+        statusMessage: 'Invalid form data'
+      })
     }
 
-    const fullName = String(body.fullName || '').trim()
-    const email = String(body.email || '').trim()
-    const phone = String(body.phone || '').trim()
-    const position = String(body.position || '').trim()
-    const experience = String(body.experience || '').trim()
-    const education = String(body.education || '').trim()
-    const skills = String(body.skills || '').trim()
-    const coverLetter = String(body.coverLetter || '').trim()
+    // Helper lấy field text
+    const getField = (name: string) =>
+      String(formData.find(f => f.name === name)?.data || '').trim()
 
-    if (!fullName) {
-      throw createError({ statusCode: 422, statusMessage: 'Full name is required' })
-    }
-    if (!email) {
-      throw createError({ statusCode: 422, statusMessage: 'Email is required' })
-    }
-    if (!phone) {
-      throw createError({ statusCode: 422, statusMessage: 'Phone is required' })
-    }
-    if (!position) {
-      throw createError({ statusCode: 422, statusMessage: 'Position is required' })
+    // 2️⃣ Parse fields
+    const fullName = getField('fullName')
+    const email = getField('email')
+    const phone = getField('phone')
+    const position = getField('position')
+    const experience = getField('experience')
+    const education = getField('education')
+    const skills = getField('skills')
+    const coverLetter = getField('coverLetter')
+
+    const fileField = formData.find(f => f.name === 'file' && f.type)
+
+    // 3️⃣ Validate bắt buộc
+    if (!fullName || !email || !phone || !position) {
+      throw createError({
+        statusCode: 422,
+        statusMessage: 'Vui lòng điền đầy đủ thông tin bắt buộc'
+      })
     }
 
-    // Email configuration - UPDATE THESE VALUES
-    const smtpHost = 'smtp.gmail.com'
-    const smtpPort = 587
-    const smtpUser = 'koa.webcontact@gmail.com'
-    const smtpPass = 'siccsfqoyxvheuby'
-    const toEmail = 'koastudio.vn@gmail.com'
+    // 4️⃣ Validate file (nếu có)
+    let attachment: any = null
 
-    // Send email
-    try {
-      // Simple HTML escape function
-      const escapeHtml = (text: string) => {
-        return text
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;')
-          .replace(/'/g, '&#039;')
+    if (fileField) {
+      const MAX_SIZE = 5 * 1024 * 1024 // 5MB
+      const ALLOWED_TYPES = [
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+      ]
+
+      if (fileField.data.length > MAX_SIZE) {
+        throw createError({
+          statusCode: 422,
+          statusMessage: 'File vượt quá 5MB'
+        })
       }
 
-      // Create transporter
-      const transporter = nodemailer.createTransport({
-        host: smtpHost,
-        port: smtpPort,
-        secure: false, // true for 465, false for other ports
-        auth: {
-          user: smtpUser,
-          pass: smtpPass,
-        },
-      })
+      if (!ALLOWED_TYPES.includes(fileField.type!)) {
+        throw createError({
+          statusCode: 422,
+          statusMessage: 'Định dạng file không hợp lệ (PDF, DOC, DOCX)'
+        })
+      }
 
-      // Prepare email content
-      const emailHtml = `
-          <h2>Ứng tuyển mới từ website</h2>
-          <p><strong>Họ và tên:</strong> ${escapeHtml(fullName)}</p>
-          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-          <p><strong>Số điện thoại:</strong> ${escapeHtml(phone)}</p>
-          <p><strong>Vị trí ứng tuyển:</strong> ${escapeHtml(position)}</p>
-          ${experience ? `<p><strong>Kinh nghiệm:</strong><br>${escapeHtml(experience).replace(/\n/g, '<br>')}</p>` : ''}
-          ${education ? `<p><strong>Học vấn:</strong><br>${escapeHtml(education).replace(/\n/g, '<br>')}</p>` : ''}
-          ${skills ? `<p><strong>Kỹ năng:</strong><br>${escapeHtml(skills).replace(/\n/g, '<br>')}</p>` : ''}
-          ${coverLetter ? `<p><strong>Thư giới thiệu:</strong><br>${escapeHtml(coverLetter).replace(/\n/g, '<br>')}</p>` : ''}
-          <hr>
-          <p><small>Thời gian: ${new Date().toLocaleString('vi-VN')}</small></p>
-        `
-
-      // Send email
-      await transporter.sendMail({
-        from: `"Website KOA - Recruitment" <${smtpUser}>`,
-        to: toEmail,
-        subject: `Ứng tuyển mới: ${escapeHtml(fullName)} - ${escapeHtml(position)}`,
-        html: emailHtml,
-      })
-
-      // eslint-disable-next-line no-console
-      console.info('[Recruitment] Email sent successfully')
-    } catch (emailError: any) {
-      // Log email error but don't fail the request
-      // eslint-disable-next-line no-console
-      console.error('[Recruitment] Email error:', emailError.message)
+      attachment = {
+        filename: fileField.filename || 'cv',
+        content: fileField.data, // Buffer (KHÔNG lưu server)
+        contentType: fileField.type
+      }
     }
 
-    // Log the submission
-    // eslint-disable-next-line no-console
-    console.info('[Recruitment] New application:', {
+    // 5️⃣ SMTP config
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
+      auth: {
+        user: 'koa.webcontact@gmail.com',
+        pass: 'siccsfqoyxvheuby'
+      }
+    })
+
+    // 6️⃣ Nội dung email
+    const emailHtml = `
+      <h2>Ứng tuyển mới từ website</h2>
+      <p><strong>Họ và tên:</strong> ${fullName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Số điện thoại:</strong> ${phone}</p>
+      <p><strong>Vị trí ứng tuyển:</strong> ${position}</p>
+
+      ${experience ? `<p><strong>Kinh nghiệm:</strong><br>${experience.replace(/\n/g, '<br>')}</p>` : ''}
+      ${education ? `<p><strong>Học vấn:</strong><br>${education.replace(/\n/g, '<br>')}</p>` : ''}
+      ${skills ? `<p><strong>Kỹ năng:</strong><br>${skills.replace(/\n/g, '<br>')}</p>` : ''}
+      ${coverLetter ? `<p><strong>Thư giới thiệu:</strong><br>${coverLetter.replace(/\n/g, '<br>')}</p>` : ''}
+
+      <hr>
+      <p>
+        <small>
+          Thời gian: ${new Date().toLocaleString('vi-VN')}<br>
+          IP: ${getRequestIP(event)}<br>
+          User-Agent: ${getRequestHeader(event, 'user-agent') || ''}
+        </small>
+      </p>
+    `
+
+    // 7️⃣ Send email (đính kèm CV nếu có)
+    await transporter.sendMail({
+      from: `"KOA Recruitment" <koa.webcontact@gmail.com>`,
+      to: 'koastudio.vn@gmail.com',
+      // to: 'tuanthanhktltk21@gmail.com',
+      subject: `Ứng tuyển mới: ${fullName} – ${position}`,
+      html: emailHtml,
+      attachments: attachment ? [attachment] : []
+    })
+
+    // 8️⃣ Log server
+    console.info('[Recruitment] New application', {
       fullName,
       email,
       phone,
       position,
-      experience,
-      education,
-      skills,
-      coverLetter,
-      receivedAt: new Date().toISOString(),
-      ip: getRequestIP(event),
-      ua: getRequestHeader(event, 'user-agent') || '',
+      hasCV: !!attachment,
+      ip: getRequestIP(event)
     })
 
     return {
       ok: true,
-      message: 'Submitted successfully',
+      message: 'Gửi hồ sơ thành công'
     }
+
   } catch (err: any) {
     return sendError(event, err)
   }
 })
-

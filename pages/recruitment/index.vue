@@ -16,6 +16,7 @@ interface ApplicationForm {
   education: string
   skills: string
   coverLetter: string
+  file: File | null
 }
 
 const colorMode = useColorMode()
@@ -39,8 +40,10 @@ const form = ref<ApplicationForm>({
   experience: '',
   education: '',
   skills: '',
-  coverLetter: ''
+  coverLetter: '',
+  file: null
 })
+
 
 const submitted = ref(false)
 const submitting = ref(false)
@@ -57,6 +60,7 @@ onMounted(() => {
   }
 })
 
+const fileInput = ref<HTMLInputElement | null>(null)
 const submitForm = async () => {
   submitError.value = ''
 
@@ -66,37 +70,47 @@ const submitForm = async () => {
   }
 
   submitting.value = true
+
   try {
+    const formData = new FormData()
+    formData.append('fullName', form.value.fullName)
+    formData.append('email', form.value.email)
+    formData.append('phone', form.value.phone)
+    formData.append('position', form.value.position)
+    formData.append('experience', form.value.experience)
+    formData.append('education', form.value.education)
+    formData.append('skills', form.value.skills)
+    formData.append('coverLetter', form.value.coverLetter)
+
+    if (form.value.file) {
+      formData.append('file', form.value.file)
+    }
+
     const res = await fetch('/api/recruitment', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form.value),
+      body: formData // ❗ KHÔNG set Content-Type
     })
+
     const data = await res.json()
+
     if (!res.ok || !data?.ok) {
       throw new Error(data?.statusMessage || 'Gửi không thành công')
     }
+
     submitted.value = true
-    form.value = {
-      fullName: '',
-      email: '',
-      phone: '',
-      position: '',
-      experience: '',
-      education: '',
-      skills: '',
-      coverLetter: ''
-    }
-    // Auto hide success message after 5 seconds
+    resetForm()
+
     setTimeout(() => {
       submitted.value = false
     }, 5000)
+
   } catch (err: any) {
     submitError.value = err?.message || 'Có lỗi xảy ra. Vui lòng thử lại.'
   } finally {
     submitting.value = false
   }
 }
+
 
 const resetForm = () => {
   form.value = {
@@ -107,10 +121,27 @@ const resetForm = () => {
     experience: '',
     education: '',
     skills: '',
-    coverLetter: ''
+    coverLetter: '',
+    file: null
   }
   submitError.value = ''
 }
+const handleFileUpload = (event: Event) => {
+  const input = event.target as HTMLInputElement
+  const file = input.files?.[ 0 ]
+
+  if (!file) return
+
+  if (file.size > 5 * 1024 * 1024) {
+    alert('Tệp quá lớn! Vui lòng chọn tệp nhỏ hơn 5MB.')
+    input.value = ''
+    return
+  }
+
+  form.value.file = file
+}
+
+
 </script>
 
 <template>
@@ -161,7 +192,8 @@ const resetForm = () => {
               'text-2xl font-bold mb-6 flex items-center gap-3 transition-colors duration-300',
               colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
             ]">
-              <svg :class="['w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black']" fill="currentColor" viewBox="0 0 20 20">
+              <svg :class="[ 'w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black' ]"
+                fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
@@ -200,7 +232,8 @@ const resetForm = () => {
               'text-2xl font-bold mb-8 flex items-center gap-3 transition-colors duration-300',
               colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
             ]">
-              <svg :class="['w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black']" fill="currentColor" viewBox="0 0 20 20">
+              <svg :class="[ 'w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black' ]"
+                fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
                   clip-rule="evenodd" />
@@ -352,7 +385,8 @@ const resetForm = () => {
               'text-2xl font-bold mb-6 flex items-center gap-3 transition-colors duration-300',
               colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
             ]">
-              <svg :class="['w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black']" fill="currentColor" viewBox="0 0 20 20">
+              <svg :class="[ 'w-8 h-8', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black' ]"
+                fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
@@ -463,7 +497,8 @@ const resetForm = () => {
               'text-2xl font-bold mb-2 flex items-center gap-2 transition-colors duration-300',
               colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900'
             ]">
-              <svg :class="['w-6 h-6', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black']" fill="currentColor" viewBox="0 0 20 20">
+              <svg :class="[ 'w-6 h-6', colorMode.value === 'dark' ? 'text-slate-200' : 'text-black' ]"
+                fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
               </svg>
@@ -485,14 +520,12 @@ const resetForm = () => {
                 ]">
                   Họ và tên *
                 </label>
-                <input v-model="form.fullName" type="text" placeholder="Nhập họ và tên"
-                  :class="[
-                    'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
-                    colorMode.value === 'dark'
-                      ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
-                      : 'bg-white text-black border-gray-300 placeholder-gray-400'
-                  ]"
-                />
+                <input v-model="form.fullName" type="text" placeholder="Nhập họ và tên" :class="[
+                  'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
+                  colorMode.value === 'dark'
+                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
+                    : 'bg-white text-black border-gray-300 placeholder-gray-400'
+                ]" />
               </div>
 
               <!-- Email -->
@@ -503,14 +536,12 @@ const resetForm = () => {
                 ]">
                   Email *
                 </label>
-                <input v-model="form.email" type="email" placeholder="your@email.com"
-                  :class="[
-                    'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
-                    colorMode.value === 'dark'
-                      ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
-                      : 'bg-white text-black border-gray-300 placeholder-gray-400'
-                  ]"
-                />
+                <input v-model="form.email" type="email" placeholder="your@email.com" :class="[
+                  'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
+                  colorMode.value === 'dark'
+                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
+                    : 'bg-white text-black border-gray-300 placeholder-gray-400'
+                ]" />
               </div>
 
               <!-- Phone -->
@@ -521,14 +552,12 @@ const resetForm = () => {
                 ]">
                   Số điện thoại *
                 </label>
-                <input v-model="form.phone" type="tel" placeholder="0123 456 789"
-                  :class="[
-                    'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
-                    colorMode.value === 'dark'
-                      ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
-                      : 'bg-white text-black border-gray-300 placeholder-gray-400'
-                  ]"
-                />
+                <input v-model="form.phone" type="tel" placeholder="0123 456 789" :class="[
+                  'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
+                  colorMode.value === 'dark'
+                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
+                    : 'bg-white text-black border-gray-300 placeholder-gray-400'
+                ]" />
               </div>
 
               <!-- Position -->
@@ -539,14 +568,12 @@ const resetForm = () => {
                 ]">
                   Vị trí ứng tuyển *
                 </label>
-                <select v-model="form.position"
-                  :class="[
-                    'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
-                    colorMode.value === 'dark'
-                      ? 'bg-slate-800 text-slate-100 border-slate-700'
-                      : 'bg-white text-black border-gray-300'
-                  ]"
-                >
+                <select v-model="form.position" :class="[
+                  'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all',
+                  colorMode.value === 'dark'
+                    ? 'bg-slate-800 text-slate-100 border-slate-700'
+                    : 'bg-white text-black border-gray-300'
+                ]">
                   <option value="">-- Chọn vị trí --</option>
                   <option v-for="pos in positions" :key="pos.id" :value="pos.title">
                     {{ pos.title }}
@@ -562,14 +589,12 @@ const resetForm = () => {
                 ]">
                   Kinh nghiệm
                 </label>
-                <textarea v-model="form.experience" placeholder="Mô tả kinh nghiệm làm việc của bạn..." rows="3"
-                  :class="[
-                    'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none',
-                    colorMode.value === 'dark'
-                      ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
-                      : 'bg-white text-black border-gray-300 placeholder-gray-400'
-                  ]"
-                />
+                <textarea v-model="form.experience" placeholder="Mô tả kinh nghiệm làm việc của bạn..." rows="3" :class="[
+                  'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none',
+                  colorMode.value === 'dark'
+                    ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
+                    : 'bg-white text-black border-gray-300 placeholder-gray-400'
+                ]" />
               </div>
 
               <!-- Skills -->
@@ -580,26 +605,53 @@ const resetForm = () => {
                 ]">
                   Kỹ năng
                 </label>
-                <textarea v-model="form.skills" placeholder="Liệt kê các kỹ năng chính (VD: Photoshop, ...)"
-                  rows="2"
+                <textarea v-model="form.skills" placeholder="Liệt kê các kỹ năng chính (VD: Photoshop, ...)" rows="2"
                   :class="[
                     'w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none',
                     colorMode.value === 'dark'
                       ? 'bg-slate-800 text-slate-100 border-slate-700 placeholder-slate-500'
                       : 'bg-white text-black border-gray-300 placeholder-gray-400'
-                  ]"
-                />
+                  ]" />
               </div>
 
-              <!-- Submit Button -->
-              <button type="submit" :disabled="submitting"
-                :class="[
-                  'w-full font-bold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2',
+              <!-- Attachment -->
+              <div :class="[
+                'flex items-center gap-3 px-4 py-2 border rounded-lg cursor-pointer transition-all',
+                'focus-within:ring-2 focus-within:ring-blue-500',
+                colorMode.value === 'dark'
+                  ? 'bg-slate-800 border-slate-700 hover:border-slate-600'
+                  : 'bg-white border-gray-300 hover:border-gray-400'
+              ]">
+                <input ref="fileInput" type="file" class="hidden" accept=".pdf,.doc,.docx" @change="handleFileUpload" />
+
+                <button type="button" @click="fileInput?.click()" :class="[
+                  'px-4 py-1.5 rounded-md text-sm font-semibold transition-colors shrink-0',
                   colorMode.value === 'dark'
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 disabled:opacity-50 disabled:cursor-not-allowed text-white'
-                    : 'bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 disabled:opacity-50 disabled:cursor-not-allowed text-white'
-                ]"
-              >
+                    ? 'bg-slate-700 text-slate-100 hover:bg-slate-600'
+                    : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                ]">
+                  Chọn tệp
+                </button>
+
+                <span class="text-sm truncate" :class="[
+                  form.file
+                    ? (colorMode.value === 'dark' ? 'text-slate-100' : 'text-gray-900')
+                    : (colorMode.value === 'dark' ? 'text-slate-400' : 'text-gray-500')
+                ]">
+                  {{ form.file ? form.file.name : 'Chưa chọn tệp nào' }}
+                </span>
+              </div>
+
+
+
+
+              <!-- Submit Button -->
+              <button type="submit" :disabled="submitting" :class="[
+                'w-full font-bold py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2',
+                colorMode.value === 'dark'
+                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 disabled:opacity-50 disabled:cursor-not-allowed text-white'
+                  : 'bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 disabled:opacity-50 disabled:cursor-not-allowed text-white'
+              ]">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -608,26 +660,22 @@ const resetForm = () => {
               </button>
 
               <!-- Reset Button -->
-              <button type="button" @click="resetForm"
-                :class="[
-                  'w-full border-2 font-semibold py-2 rounded-lg transition-all',
-                  colorMode.value === 'dark'
-                    ? 'border-slate-700 text-slate-200 hover:border-slate-600 hover:bg-slate-800'
-                    : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50'
-                ]"
-              >
+              <button type="button" @click="resetForm" :class="[
+                'w-full border-2 font-semibold py-2 rounded-lg transition-all',
+                colorMode.value === 'dark'
+                  ? 'border-slate-700 text-slate-200 hover:border-slate-600 hover:bg-slate-800'
+                  : 'border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50'
+              ]">
                 Xóa form
               </button>
             </form>
 
-            <div v-if="submitError"
-              :class="[
-                'mt-4 border px-4 py-3 rounded-lg text-sm transition-colors duration-300',
-                colorMode.value === 'dark'
-                  ? 'bg-red-900/30 border-red-700 text-red-400'
-                  : 'bg-red-50 border-red-300 text-red-700'
-              ]"
-            >
+            <div v-if="submitError" :class="[
+              'mt-4 border px-4 py-3 rounded-lg text-sm transition-colors duration-300',
+              colorMode.value === 'dark'
+                ? 'bg-red-900/30 border-red-700 text-red-400'
+                : 'bg-red-50 border-red-300 text-red-700'
+            ]">
               {{ submitError }}
             </div>
 
