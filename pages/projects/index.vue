@@ -12,16 +12,24 @@ const hoveredProject = ref<number | null>(null)
 const { locale } = useI18n()
 
 const currentCategory = computed(() => {
-  if (activeCategory.value === null) {
-    return {
-      id: 0,
-      name_en: 'All Projects',
-      name_vn: 'Tất cả dự án',
-      projects: categories.flatMap(cat => cat.projects)
-    }
+  const projects =
+    activeCategory.value === null
+      ? categories.flatMap(cat => cat.projects)
+      : categories[activeCategory.value].projects
+
+  return {
+    ...(activeCategory.value === null
+      ? {
+          id: 0,
+          name_en: 'All Projects',
+          name_vn: 'Tất cả dự án'
+        }
+      : categories[activeCategory.value]),
+    projects: [...projects].sort((a, b) => a.id - b.id)
+
   }
-  return categories[ activeCategory.value ]
 })
+
 
 const syncCategoryFromQuery = () => {
   const catId = route.query.category ? Number(route.query.category) : null

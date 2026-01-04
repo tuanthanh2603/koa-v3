@@ -269,7 +269,7 @@ We always cherish every design style, but we feel wonderful when we encounter ho
         ]
       },
       {
-        id: 12,
+        id: 13,
         name_vn: "KIỀU'S HOUSE",
         name_en: "KIEU'S HOUSE",
         description_vn: "Thiết kế nội thất nhà phố hiện đại, tiện nghi tại Kiều's House.",
@@ -325,7 +325,7 @@ We always cherish every design style, but we feel wonderful when we encounter ho
         ]
       },
       {
-        id: 13,
+        id: 14,
         name_vn: "LỆCH HOUSE",
         name_en: "LECH HOUSE",
         description_vn: `
@@ -489,7 +489,7 @@ Kiến trúc xanh và “lợi dụng” khoảng nắng của không gian chín
         ]
       },
       {
-        id: 14,
+        id: 15,
         name_vn: "LOTUS'S HOUSE",
         name_en: "LOTUS'S HOUSE",
         description_vn: `
@@ -677,7 +677,7 @@ Phong cách Japandi rất được ưa chuộng trong không gian sống hiện 
         ]
       },
       {
-        id: 15,
+        id: 16,
         name_vn: "NHÀ PHỐ CHỊ THẢO HÒA HƯNG",
         name_en: "TOWNHOUSE OF MS THAO IN HOA HUNG",
         description_vn: `
@@ -760,7 +760,7 @@ Phong cách Japandi rất được ưa chuộng trong không gian sống hiện 
         ]
       },
       {
-        id: 16,
+        id: 17,
         name_vn: "Thang House",
         name_en: "Thang House",
         description_vn: "Thiết kế ngoại thất hiện đại, sang trọng tại Thang House.",
@@ -801,7 +801,7 @@ Phong cách Japandi rất được ưa chuộng trong không gian sống hiện 
         ]
       },
       {
-        id: 17,
+        id: 18,
         name_vn: "Nhà Trâm Nguyên",
         name_en: "Tram Nguyen's House",
         description_vn: `
@@ -864,7 +864,7 @@ Let's revisit the design images of the house with KOA Architecture.
         ]
       },
       {
-        id: 18,
+        id: 19.2,
         name_vn: "NHÀ CHỊ GIANG",
         name_en: "MS. GIANG'S HOUSE",
         description_vn: `
@@ -1161,6 +1161,108 @@ KOA always wants to create a space according to the owner's wishes so that they 
           },
         ]
       },
+      {
+        id: 19.3,
+        name_vn: "Nhà Cô Phương",
+        name_en: "Ms. Phuong's House",
+        description_vn: `
+        NHÀ CÔ PHƯƠNG - Sự giao thoa giữa hiện đại và cổ điển
+<br/>
+————
+<br/>
+“Ngôi nhà là nơi để trở về sau những bộn bề cuộc sống”
+<br/><br/>
+Một căn nhà phố tọa lạc tại Quận 3 với mong muốn của gia chủ là một không gian sống hiện đại, tiện nghi nhưng vẫn mang nét đẹp cổ điển, sang trọng.
+<br/><br/>
+KOA đã mang đến một sản phẩm phù hợp với sở thích của gia chủ khi kết hợp hài hòa giữa hai phong cách hiện đại và cổ điển. 
+<br/><br/>
+Cùng KOA Architecture xem lại những hình ảnh thiết kế của căn nhà trên nhé.
+        `,
+        description_en: `
+        MS. PHUONG'S HOUSE - The intersection of modern and classical
+<br/>
+————
+<br/>
+"The house is a place to return to after the hustle and bustle of life"
+<br/><br/>
+A townhouse located in District 3 with the homeowner's desire for a modern, convenient living space that still carries classical, luxurious beauty.
+<br/><br/>
+KOA has brought a product that suits the homeowner's tastes by harmoniously combining two styles: modern and classical.
+<br/><br/>
+Let's revisit the design images of the house with KOA Architecture.
+        `,
+        image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_1.jpg",
+        slug: "nha-co-phuong",
+        images: [
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_5.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_6.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_7.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_8.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_5.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_6.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_7.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_8.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_9.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_10.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_11.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_12.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_13.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_14.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_15.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_16.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_17.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_18.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_19.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_20.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_21.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2KB_22.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_5.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_6.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2SHC_7.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_5.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_6.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_7.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_8.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_9.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_10.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_11.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_12.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_12.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_13.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3MTBR_15.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_5.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_6.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1_7.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1WC_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1WC_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1WC_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/BDR1WC_4.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_1.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_2.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_3.jpg" },
+          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_4.jpg" },
+        ]
+      }
 
     ],
     name_vn: 'Nhà phố',
@@ -1658,12 +1760,12 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
         ]
       },
       {
-        id: 24,
+        id: 12,
         name_vn: "VILLA ĐĂK LĂK",
         name_en: "VILLA Dak Lak",
         description_vn: "Thiết kế nội thất villa hiện đại, sang trọng tại Đăk Lăk.",
         description_en: "Modern and luxurious villa interior design at Dak Lak.",
-        image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/17.jpg",
+        image: "/uploads/projects/villa-dak-lak/NGOAI THAT 1/121.jpg",
         slug: "villa-dak-lak",
         images: [
           {
