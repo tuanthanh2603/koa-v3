@@ -279,18 +279,18 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
       </div>
 
       <!-- Main Gallery -->
-      <div class="max-w-7xl mx-auto px-4 transition-all duration-1000 ease-out delay-300"
+      <div class="max-w-7xl min-h-screen mx-auto px-4 transition-all duration-1000 ease-out delay-300"
         :class="{ 'opacity-0 translate-y-[20px]': !galleryVisible }">
-        <div v-if="getImages().length > 0" class="space-y-4">
+        <div v-if="getImages().length > 0" class="min-h-[70%]">
           <!-- 3-Image Carousel Display -->
           <div :class="[
-            'relative rounded-2xl overflow-hidden flex items-center justify-center transition-colors duration-300 py-2 max-h-[85vh] carousel-container',
+            'relative rounded-2xl overflow-hidden flex items-center justify-center transition-colors duration-300 mb-2 carousel-container',
             colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-100'
           ]">
-            <div class="flex items-center justify-center w-full h-full relative">
+            <div class="flex items-center justify-center w-full h-full relative p-[8px]">
               <!-- Ảnh bên trái (mờ) -->
               <div :class="[
-                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-75 flex items-center justify-center',
+                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-65 flex items-center justify-center',
                 colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
               ]">
                 <img :src="displayedImages[ 0 ]?.image" :alt="project.name_en" class="w-full h-full object-cover" />
@@ -310,7 +310,7 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
 
               <!-- Ảnh bên phải (mờ) -->
               <div :class="[
-                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-75 flex items-center justify-center',
+                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-65 flex items-center justify-center',
                 colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
               ]">
                 <img :src="displayedImages[ 2 ]?.image" :alt="project.name_en" class="w-full h-full object-cover" />
