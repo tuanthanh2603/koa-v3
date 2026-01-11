@@ -28,12 +28,12 @@ export const categories: Category[] = [
         The investor has placed trust and high expectations in this charming little home. With the experience KOA has gained over time, our team is committed to completing the project next year, continuing our journey with clients who share our aesthetic taste and confidence in KOA.
         `
         ,
-        image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg",
+        image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_3.jpg",
         slug: "noels-house",
         images: [
-          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg" },
-          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_2.jpg" },
           { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_3.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_2.jpg" },
+          { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_1.jpg" },
           { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_4.jpg" },
           { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_5.jpg" },
           { image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_6.jpg" },
@@ -894,9 +894,17 @@ KOA luôn muốn tạo nên một không gian theo ý chủ nhà để họ có 
         This is a product that has been "personalized" according to the owner's preferences.
 KOA always wants to create a space according to the owner's wishes so that they can enjoy and immerse themselves in their own home.
         `,
-        image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/4.jpg",
+        image: "/uploads/projects/RENDER FULL NHA C GIANG/3.jpg",
         slug: "nha-chi-giang",
         images: [
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/1.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/2.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/3.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/4.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/5.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/6.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/7.jpg" },
+          { image: "/uploads/projects/RENDER FULL NHA C GIANG/8.jpg" },
           {
             image: "/uploads/projects/RENDER FULL NHA C GIANG/1. KHACH BEP/1.jpg"
           },
@@ -1190,17 +1198,9 @@ KOA has brought a product that suits the homeowner's tastes by harmoniously comb
 <br/><br/>
 Let's revisit the design images of the house with KOA Architecture.
         `,
-        image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3.jpg",
+        image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_1.jpg",
         slug: "nha-co-phuong",
         images: [
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/2.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/3.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/4.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/5.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/6.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/7.jpg" },
-          { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/8.jpg" },
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_1.jpg" },
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_2.jpg" },
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/1EX_3.jpg" },
@@ -1268,6 +1268,128 @@ Let's revisit the design images of the house with KOA Architecture.
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_2.jpg" },
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_3.jpg" },
           { image: "/uploads/projects/NHÀ CÔ PHƯƠNG/MTWC_4.jpg" },
+        ]
+      },
+      {
+        id: 20,
+        name_vn: "Nhà Chị Quỳnh",
+        name_en: "Ms. Quynh's House",
+        description_vn: `
+        NHÀ CHỊ QUỲNH - Sự kết hợp hài hòa giữa phong cách hiện đại và tối giản
+<br/>
+————
+<br/>
+“Ngôi nhà là nơi để trở về sau những bộn bề cuộc sống”
+<br/><br/>
+Một căn nhà phố tọa lạc tại Quận 3 với mong muốn của gia chủ là một không gian sống hiện đại, tiện nghi nhưng vẫn mang nét đẹp tối giản, thanh lịch.
+<br/><br/>
+KOA đã mang đến một sản phẩm phù hợp với sở thích của gia chủ khi kết hợp hài hòa giữa hai phong cách hiện đại và tối giản. 
+<br/><br/>
+Cùng KOA Architecture xem lại những hình ảnh thiết kế của căn nhà trên nhé.
+        `,
+        description_en: `
+        MS. QUYNH'S HOUSE - A harmonious combination of modern and minimalist styles
+<br/>
+————
+<br/>
+"The house is a place to return to after the hustle and bustle of life"
+<br/><br/>
+A townhouse located in District 3 with the homeowner's desire for a modern, convenient living space that still carries minimalist, elegant beauty.
+<br/><br/>
+KOA has brought a product that suits the homeowner's tastes by harmoniously combining two styles: modern and minimalist.
+<br/><br/>
+Let's revisit the design images of the house with KOA Architecture.
+        `,
+        image: "/uploads/projects/RENDER FINAL NHA C QUYNH/0. MAT TIEN/1.jpg",
+        slug: "nha-chi-quynh",
+        images: [
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/0. MAT TIEN/1.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/0. MAT TIEN/2.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/0. MAT TIEN/3.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/0. MAT TIEN/4.jpg" },
+
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/1.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/2.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/3.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/4.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/5.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/6.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/7.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/8.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/9.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/10.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/11.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/12.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/13.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/14.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/15.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/16.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/17.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/18.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/19.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/20.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/21.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/22.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/23.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/24.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/25.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/26.jpg" },
+
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/27.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/28.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/29.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/30.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/31.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/32.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/33.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/34.jpg" },
+
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c3.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c4.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c8a.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c9a.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O10100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O20100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O50100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O60100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O70100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O100100.jpg" },
+
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K130100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K140100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K150100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K160100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K170100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K180100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K190100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K200100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K210100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K220100.jpg" },
+
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K10100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K20100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K30100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K40100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K50100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K100100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K110100.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K120100.jpg" },
+
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c6.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c7.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9a.jpg" },
+
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/5.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/6.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/7.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/8.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/9.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/10.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/11.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/12.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/13.jpg" },
+  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/14.jpg" }
         ]
       }
 
@@ -2417,43 +2539,43 @@ The house's structure gives viewers and residents a different feeling, not too c
           { image: "/uploads/projects/RENDER FULL K'S VILLA/6. PNGU MASTER/CLOSET - WC/night c (5).jpg" },
 
           { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c27 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c28 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c70000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c80000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c90000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c28 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c70000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c80000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/7. PNGU 1 TANG 3/pn2 c90000 copy.jpg" },
 
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn42 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn45 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn47 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn430000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn42 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn45 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn47 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/8. PNGU 2 TANG 3/pn430000 copy.jpg" },
 
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w38 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w39 copy2.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w40 copy2.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w66 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w38 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w39 copy2.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w40 copy2.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG GIAT/w66 copy.jpg" },
 
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C490000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C510000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C520000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C530000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C580000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C590000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C490000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C510000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C520000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C530000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C580000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/PHONG THO/C590000 copy.jpg" },
 
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c25z copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c50.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C120000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C130000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c140000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c150000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c160000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c170000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C290000 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C360000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c25z copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c50.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C120000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C130000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c140000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c150000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c160000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/c170000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C290000 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/SHC/C360000 copy.jpg" },
 
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c69 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c70 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c71 copy.jpg" },
-  { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c72 copy.jpg" }
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c69 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c70 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c71 copy.jpg" },
+          { image: "/uploads/projects/RENDER FULL K'S VILLA/9. SINH HOAT CHUNG TANG 3/WC CHUNG/c72 copy.jpg" }
 
         ]
 
