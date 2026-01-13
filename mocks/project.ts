@@ -6,7 +6,7 @@ export const categories: Category[] = [
     name: "Nhà phố",
     projects: [
       {
-        id: 10,
+        id: 19.3,
         name_vn: "NOEL'S HOUSE",
         name_en: "NOEL'S HOUSE",
         description_vn: `
@@ -26,8 +26,7 @@ export const categories: Category[] = [
         December begins with Da Lat’s chilly atmosphere, and KOA was entrusted with this project — perfectly matching the homeowner’s love for a Mediterranean style blended with Farmhouse elements.
         <br/><br/>
         The investor has placed trust and high expectations in this charming little home. With the experience KOA has gained over time, our team is committed to completing the project next year, continuing our journey with clients who share our aesthetic taste and confidence in KOA.
-        `
-        ,
+        `,
         image: "/uploads/projects/NOEL's HOUSE/RENDER MAT TIEN/EX_3.jpg",
         slug: "noels-house",
         images: [
@@ -488,7 +487,7 @@ Kiến trúc xanh và “lợi dụng” khoảng nắng của không gian chín
         ]
       },
       {
-        id: 15,
+        id: 20,
         name_vn: "LOTUS'S HOUSE",
         name_en: "LOTUS'S HOUSE",
         description_vn: `
@@ -1169,7 +1168,7 @@ KOA always wants to create a space according to the owner's wishes so that they 
         ]
       },
       {
-        id: 19.3,
+        id: 10,
         name_vn: "Nhà Cô Phương",
         name_en: "Ms. Phuong's House",
         description_vn: `
@@ -1271,7 +1270,7 @@ Let's revisit the design images of the house with KOA Architecture.
         ]
       },
       {
-        id: 20,
+        id: 15,
         name_vn: "Nhà Chị Quỳnh",
         name_en: "Ms. Quynh's House",
         description_vn: `
@@ -1336,60 +1335,60 @@ Let's revisit the design images of the house with KOA Architecture.
           { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/1.KHACH BEP/26.jpg" },
 
           { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/27.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/28.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/29.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/30.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/31.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/32.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/33.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/34.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/28.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/29.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/30.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/31.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/32.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/33.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/2.SHC/34.jpg" },
 
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c3.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c4.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c8a.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c9a.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O10100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O20100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O50100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O60100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O70100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O100100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c3.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c4.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c8a.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/c9a.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O10100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O20100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O50100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O60100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O70100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/3.PNGU ONG BA/O100100.jpg" },
 
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K130100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K140100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K150100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K160100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K170100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K180100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K190100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K200100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K210100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K220100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K130100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K140100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K150100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K160100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K170100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K180100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K190100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K200100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K210100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/4.PNGU MASTER/K220100.jpg" },
 
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K10100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K20100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K30100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K40100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K50100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K100100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K110100.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K120100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K10100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K20100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K30100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K40100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K50100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K100100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K110100.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/5.PNGU CON GAI/K120100.jpg" },
 
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c6.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c7.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9a.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c6.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c7.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/6.WC CHUNG TANG 3/c9a.jpg" },
 
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/5.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/6.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/7.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/8.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/9.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/10.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/11.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/12.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/13.jpg" },
-  { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/14.jpg" }
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/5.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/6.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/7.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/8.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/9.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/10.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/11.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/12.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/13.jpg" },
+          { image: "/uploads/projects/RENDER FINAL NHA C QUYNH/7.TANG THƯỢNG/14.jpg" }
         ]
       }
 
@@ -1889,7 +1888,7 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
         ]
       },
       {
-        id: 12,
+        id: 0.12,
         name_vn: "VILLA ĐĂK LĂK",
         name_en: "VILLA Dak Lak",
         description_vn: "Thiết kế nội thất villa hiện đại, sang trọng tại Đăk Lăk.",
@@ -2331,7 +2330,7 @@ The combination of the homeowner's preferences and KOA's intentions creates a pr
         ]
       },
       {
-        id: 26,
+        id: 10.4,
         name_vn: "K VILLA",
         name_en: "K VILLA",
         description_vn:
