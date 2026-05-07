@@ -2,14 +2,6 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
-import img1 from '~/assets/images/PK_SKYVIEW1.jpg'
-import img2 from '~/assets/images/PK_SKYVIEW6.jpg'
-import img3 from '~/assets/images/PLV_SKYVIEW4.jpg'
-import imgDuAn from '~/assets/home_image/du-an.jpg'
-import imgKienThuc from '~/assets/home_image/kien-thuc.jpg'
-import imgTuyenDung from '~/assets/home_image/tuyen-dung.jpg'
-import imgThongTin from '~/assets/home_image/thong-tin.jpg'
-import imgLienHe from '~/assets/home_image/lien-he.jpg'
 interface GridItem {
   label: string
   image: string
@@ -21,21 +13,51 @@ const hoveredIndex = ref<number | null>(null)
 const imagesLoaded = ref<Set<number>>(new Set())
 
 const items: GridItem[] = [
-  { label: 'Dự án', image: imgDuAn, path: '/projects' },
-  { label: 'Kiến thức', image: imgKienThuc, path: '/knowledge' },
-  { label: 'Tuyển dụng', image: imgTuyenDung, path: '/recruitment' },
-  { label: 'Thông tin', image: imgThongTin, path: '/info' },
-  { label: 'Liên hệ', image: imgLienHe, path: '/contact' }
+  {
+    label: 'Dự án',
+    image:
+      'https://res.cloudinary.com/dzo8r1nvv/image/upload/f_auto,q_auto,w_1200/v1778182403/6a8ddfe2-5670-44c2-96c9-7064ba09767a.png',
+    path: '/projects'
+  },
+  {
+    label: 'Kiến thức',
+    image:
+      'https://res.cloudinary.com/dzo8r1nvv/image/upload/v1778182389/1c34e69a-6a14-416f-a08e-f898133c0970.png',
+    path: '/knowledge'
+  },
+  {
+    label: 'Tuyển dụng',
+    image:
+      'https://res.cloudinary.com/dzo8r1nvv/image/upload/v1778182276/2ef5a743-7d3d-42ad-910d-898e2a7da5b4.png',
+    path: '/recruitment'
+  },
+  {
+    label: 'Thông tin',
+    image:
+      'https://res.cloudinary.com/dzo8r1nvv/image/upload/v1778182365/29db0fb7-b29d-4dad-bb0b-01b9cc97c0a0.png',
+    path: '/info'
+  },
+  {
+    label: 'Liên hệ',
+    image:
+      'https://res.cloudinary.com/dzo8r1nvv/image/upload/v1778182377/ecef3436-19e6-4635-be18-4d2b02d763df.png',
+    path: '/contact'
+  }
 ]
 
 const preloadImages = () => {
   items.forEach((item, index) => {
     const img = new Image()
-    img.onload = () => imagesLoaded.value.add(index)
+
+    img.onload = () => {
+      imagesLoaded.value.add(index)
+    }
+
     img.onerror = () => {
       console.warn(`Failed to load image: ${item.image}`)
       imagesLoaded.value.add(index)
     }
+
     img.src = item.image
   })
 }
@@ -44,15 +66,19 @@ onMounted(() => {
   preloadImages()
 })
 
-const isImageLoaded = (index: number) => imagesLoaded.value.has(index)
+const isImageLoaded = (index: number) => {
+  return imagesLoaded.value.has(index)
+}
 
 const getFilter = (index: number) => {
   if (hoveredIndex.value === null) {
     return 'brightness(0.5)'
   }
+
   if (hoveredIndex.value === index) {
     return 'brightness(1.1)'
   }
+
   return 'brightness(0.3) blur(1px)'
 }
 
