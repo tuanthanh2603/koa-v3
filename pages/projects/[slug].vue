@@ -11,7 +11,6 @@ const isHydrated = ref(false)
 const project = ref<Project | null>(null)
 const selectedImageIndex = ref(0)
 const isLightboxOpen = ref(false)
-const thumbnailContainer = ref<HTMLElement | null>(null)
 const pageLoaded = ref(false)
 const headerVisible = ref(false)
 const galleryVisible = ref(false)
@@ -24,21 +23,6 @@ const currentCategory = computed(() => {
 })
 
 const categoryId = computed(() => currentCategory.value?.id || '')
-
-// Lấy 3 ảnh để hiển thị (trước, hiện tại, sau)
-const displayedImages = computed(() => {
-  const images = getImages()
-  if (images.length === 0) return []
-
-  const prevIndex = (selectedImageIndex.value - 1 + images.length) % images.length
-  const nextIndex = (selectedImageIndex.value + 1) % images.length
-
-  return [
-    images[ prevIndex ],
-    images[ selectedImageIndex.value ],
-    images[ nextIndex ]
-  ]
-})
 
 onMounted(async () => {
   if (process.client) {
@@ -74,50 +58,18 @@ const getImages = () => {
   return project.value.images || (project.value.image ? [ { id: '1', image: project.value.image } ] : [])
 }
 
-const selectImage = (index: number) => {
-  selectedImageIndex.value = index
-  scrollThumbnailIntoView(index)
-}
-
-const scrollThumbnailIntoView = (index: number) => {
-  if (!thumbnailContainer.value) return
-
-  const thumbnails = thumbnailContainer.value.querySelectorAll('[data-thumbnail]')
-  const thumbnail = thumbnails[ index ] as HTMLElement
-
-  if (thumbnail) {
-    thumbnail.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-  }
-}
-
-const imageAnimation = ref('')
-
 const nextImage = () => {
-  imageAnimation.value = 'slide-out-left'
-  setTimeout(() => {
-    const images = getImages()
-    selectImage((selectedImageIndex.value + 1) % images.length)
-    imageAnimation.value = 'slide-in-left'
-  }, 300)
-  setTimeout(() => {
-    imageAnimation.value = ''
-  }, 600)
+  const images = getImages()
+  selectedImageIndex.value = (selectedImageIndex.value + 1) % images.length
 }
 
 const prevImage = () => {
-  imageAnimation.value = 'slide-out-right'
-  setTimeout(() => {
-    const images = getImages()
-    selectImage((selectedImageIndex.value - 1 + images.length) % images.length)
-    imageAnimation.value = 'slide-in-right'
-  }, 300)
-  setTimeout(() => {
-    imageAnimation.value = ''
-  }, 600)
+  const images = getImages()
+  selectedImageIndex.value = (selectedImageIndex.value - 1 + images.length) % images.length
 }
 
-
-const openLightbox = () => {
+const openLightbox = (index: number) => {
+  selectedImageIndex.value = index
   isLightboxOpen.value = true
 }
 
@@ -279,152 +231,26 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
       </div>
 
       <!-- Main Gallery -->
-      <div class="max-w-7xl min-h-screen mx-auto px-4 transition-all duration-1000 ease-out delay-300"
+      <div class="max-w-7xl mx-auto px-4 pb-12 transition-all duration-1000 ease-out delay-300"
         :class="{ 'opacity-0 translate-y-[20px]': !galleryVisible }">
-        <div v-if="getImages().length > 0" class="min-h-[70%]">
-          <!-- 3-Image Carousel Display -->
-          <div :class="[
-            'relative rounded-2xl overflow-hidden flex items-center justify-center transition-colors duration-300 mb-2 carousel-container',
-            colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-100'
-          ]">
-            <div class="flex items-center justify-center w-full h-full relative p-[8px]">
-              <!-- Ảnh bên trái (mờ) -->
-              <div :class="[
-                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-65 flex items-center justify-center',
-                colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
-              ]">
-                <img :src="displayedImages[ 0 ]?.image" :alt="project.name_en" class="w-full h-full object-cover" />
-              </div>
-
-              <!-- Ảnh chính (nổi bật) -->
-              <div @click="openLightbox" :class="[
-                'flex-1 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ring-2 ring-offset-4 shadow-2xl flex items-center justify-center group image-item',
-                colorMode.value === 'dark'
-                  ? 'ring-black ring-offset-slate-800'
-                  : 'ring-black ring-offset-white',
-                imageAnimation
-              ]">
-                <img :src="displayedImages[ 1 ]?.image" :alt="project.name_en"
-                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-              </div>
-
-              <!-- Ảnh bên phải (mờ) -->
-              <div :class="[
-                'flex-1 h-full rounded-lg overflow-hidden opacity-40 transition-all duration-300 transform scale-65 flex items-center justify-center',
-                colorMode.value === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
-              ]">
-                <img :src="displayedImages[ 2 ]?.image" :alt="project.name_en" class="w-full h-full object-cover" />
-              </div>
-            </div>
-
-            <!-- Navigation buttons -->
-            <button @click="prevImage" :class="[
-              'absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl z-10',
-              colorMode.value === 'dark'
-                ? 'bg-slate-800/90 hover:bg-slate-800 border-slate-700 hover:border-slate-600'
-                : 'bg-white/90 hover:bg-white border-gray-200 hover:border-gray-300'
-            ]">
-              <svg class="w-5 h-5" :class="colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-700'" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <button @click="nextImage" :class="[
-              'absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm border transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg hover:shadow-xl z-10',
-              colorMode.value === 'dark'
-                ? 'bg-slate-800/90 hover:bg-slate-800 border-slate-700 hover:border-slate-600'
-                : 'bg-white/90 hover:bg-white border-gray-200 hover:border-gray-300'
-            ]">
-              <svg class="w-5 h-5" :class="colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-700'" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-
-            <!-- Image counter -->
-            <div :class="[
-              'absolute top-4 right-4 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-sm font-medium z-10 transition-all duration-300',
-              colorMode.value === 'dark' ? 'bg-black/60' : 'bg-black/50'
-            ]">
-              {{ selectedImageIndex + 1 }} / {{ getImages().length }}
-            </div>
-          </div>
-
-          <!-- Navigation buttons mobile -->
-          <div class="flex justify-center items-center mt-6 gap-4 md:hidden">
-            <button @click="prevImage" :class="[
-              'flex items-center justify-center w-12 h-12 rounded-lg border-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm hover:shadow-md',
-              colorMode.value === 'dark'
-                ? 'bg-slate-800 border-slate-700 hover:border-slate-600 hover:bg-slate-700'
-                : 'bg-white border-gray-300 hover:border-gray-600 hover:bg-gray-50'
-            ]">
-              <svg class="w-5 h-5" :class="colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-700'" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <p :class="[
-              'text-sm font-medium transition-colors duration-300',
-              colorMode.value === 'dark' ? 'text-slate-400' : 'text-gray-600'
-            ]">
-              {{ selectedImageIndex + 1 }} / {{ getImages().length }}
-            </p>
-            <button @click="nextImage" :class="[
-              'flex items-center justify-center w-12 h-12 rounded-lg border-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm hover:shadow-md',
-              colorMode.value === 'dark'
-                ? 'bg-slate-800 border-slate-700 hover:border-slate-600 hover:bg-slate-700'
-                : 'bg-white border-gray-300 hover:border-gray-600 hover:bg-gray-50'
-            ]">
-              <svg class="w-5 h-5" :class="colorMode.value === 'dark' ? 'text-slate-200' : 'text-gray-700'" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Thumbnail Strip - Horizontal Scroll -->
-        <div class="relative">
-          <div ref="thumbnailContainer"
-            class="flex gap-4 overflow-x-auto pb-1 pt-2 scroll-smooth snap-x snap-mandatory -mx-4 px-4 scrollbar-thin">
-            <TransitionGroup name="thumbnail" tag="div" class="flex gap-4">
-              <div v-for="(img, index) in getImages()" :key="`${img.image}-${index}`" :data-thumbnail="index"
-                @click="selectImage(index)" :class="[
-                  'relative shrink-0 h-28 sm:h-32 rounded-xl overflow-hidden cursor-pointer border-2 transition-all duration-300 hover:scale-105 active:scale-95 snap-start',
-                  selectedImageIndex === index
-                    ? colorMode.value === 'dark'
-                      ? 'border-black shadow-lg ring-2 ring-black scale-105'
-                      : 'border-black shadow-lg ring-2 ring-black scale-105'
-                    : colorMode.value === 'dark'
-                      ? 'border-slate-700 hover:border-slate-600'
-                      : 'border-gray-300 hover:border-gray-400'
-                ]">
-                <img :src="img.image" :alt="`${project.images ? project.images[ index ]?.image : project.id}-thumbnail`"
-                  class="w-full h-full object-cover transition-transform duration-300" />
-                <Transition enter-active-class="transition-opacity duration-300"
-                  leave-active-class="transition-opacity duration-300" enter-from-class="opacity-0"
-                  leave-to-class="opacity-0">
-                  <div v-if="selectedImageIndex === index" :class="[
-                    'absolute inset-0',
-                    colorMode.value === 'dark' ? 'bg-blue-600/20' : 'bg-blue-500/20'
-                  ]" />
-                </Transition>
-
-                <div :class="[
-                  'absolute bottom-2 right-2 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium',
-                  colorMode.value === 'dark' ? 'bg-black/60' : 'bg-black/60'
-                ]">
-                  {{ index + 1 }}
-                </div>
-              </div>
-            </TransitionGroup>
+        <div v-if="getImages().length > 0" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <div
+            v-for="(img, index) in getImages()"
+            :key="`${img.image}-${index}`"
+            @click="openLightbox(index)"
+            :class="[
+              'aspect-[4/3] overflow-hidden cursor-pointer group',
+              colorMode.value === 'dark' ? 'bg-slate-800' : 'bg-gray-100'
+            ]"
+          >
+            <img
+              :src="img.image"
+              :alt="`${locale === 'vi' ? project.name_vn : project.name_en} - ${index + 1}`"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
         </div>
       </div>
-
-      <!-- No images message -->
-
     </div>
 
     <!-- Lightbox Modal -->
@@ -605,152 +431,13 @@ const bottomSteps = computed(() => steps.filter(s => !s.top))
 </template>
 
 <style scoped>
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 3px;
-  transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
-}
-
-.scrollbar-thin::-webkit-scrollbar {
-  height: 4px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #9ca3af;
-  border-radius: 2px;
-}
-
-.scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background: #6b7280;
-}
-
-.carousel-enter-active,
-.carousel-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.carousel-enter-from {
-  opacity: 0;
-}
-
-.carousel-leave-to {
-  opacity: 0;
-}
-
-.thumbnail-enter-active,
-.thumbnail-leave-active {
-  transition: all 0.3s ease;
-}
-
-.thumbnail-enter-from {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.thumbnail-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
 img {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
-  scroll-padding: 10px;
-}
-
 button:focus-visible {
   outline: 2px solid rgba(59, 130, 246, 0.5);
   outline-offset: 2px;
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%) rotateY(90deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0) rotateY(0deg);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%) rotateY(-90deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0) rotateY(0deg);
-  }
-}
-
-@keyframes slideOutLeft {
-  from {
-    opacity: 1;
-    transform: translateX(0) rotateY(0deg);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(-100%) rotateY(-90deg);
-  }
-}
-
-@keyframes slideOutRight {
-  from {
-    opacity: 1;
-    transform: translateX(0) rotateY(0deg);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(100%) rotateY(90deg);
-  }
-}
-
-.carousel-container {
-  perspective: 1000px;
-}
-
-.image-item {
-  animation-duration: 0.6s;
-  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
-  animation-fill-mode: both;
-}
-
-.slide-in-left {
-  animation-name: slideInLeft;
-}
-
-.slide-in-right {
-  animation-name: slideInRight;
-}
-
-.slide-out-left {
-  animation-name: slideOutLeft;
-}
-
-.slide-out-right {
-  animation-name: slideOutRight;
 }
 </style>
